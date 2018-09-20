@@ -1,0 +1,9 @@
+{% extends "form.html" %}
+{% block title %}Deletion{% endblock %}
+{% block content %}
+
+<h1>Delete salesman: {{ salesman.salesman_id }} ?</h1>
+<form method="post">
+    <button type="submit" class="btn btn-danger" value="Submit">Submit</button>
+</form>
+{% endblock %}

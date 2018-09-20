@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Salesman details{% endblock %}
+
+{% block content %}
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">Salesman_id</th>
+			<th scope="col">Name</th>
+			<th scope="col">City</th>
+			<th scope="col">Commission</th></tr>
+		</tr>
+	</thead>
+	{% for salesman in salesman_list: %}
+	<tr>
+		<td>{{ salesman["salesman_id"] }}</td>
+		<td>{{ salesman["name"] }}</td>
+		<td>{{ salesman["city"] }}</td>
+		<td>{{ salesman["commission"] }}</td>
+		<td>
+			<a class="btn btn-outline-secondary btn-sm" href="./update/{{salesman.salesman_id}}"><i class="fa fa-pencil"></i></a>
+			<a class="btn btn-outline-secondary btn-sm" href="./delete/{{salesman.salesman_id}}"><i class="fa fa-trash"></i></a>
+		</td>
+	</tr>
+	{% endfor %}
+</table>
+<a class="btn btn-secondary" href="./create"><i class="fa fa-plus"></i></a>
+{% endblock %}
+
