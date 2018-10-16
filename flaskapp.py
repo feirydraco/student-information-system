@@ -38,11 +38,11 @@ def index():
 @app.route('/create', methods=['GET', 'POST'])
 def create():
 	if request.method == "GET":
-		return render_template("create.html",salesman=None)
+		return render_template("create.html",student=None)
 	if request.method == "POST":
-		salesman = request.form.to_dict()
-		values = [salesman["salesman_id"], salesman["name"], salesman["city"], salesman["commission"]]
-		change_db("INSERT INTO salesman (salesman_id, name, city, commission) VALUES (?, ?, ?, ?)", values)
+		student = request.form.to_dict()
+		values = [student["USN"], student["Name"], student["Semester"], student["Age"], student["Section"], student["Class_ID"], student["Mentor"]]
+		change_db("INSERT INTO Student VALUES (?, ?, ?, ?, ?, ?, ?)", values)
 		return redirect(url_for("index"))
 
 @app.route('/update/<int:salesman_id>', methods=['GET', 'POST'])
