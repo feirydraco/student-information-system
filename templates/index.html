@@ -9,8 +9,8 @@
 			<th scope="col">USN</th>
 			<th scope="col">Name</th>
 			<th scope="col">Semester</th>
-			<th scope="col">Age</th>
 			<th scope="col">Section</th>
+			<th scope="col">Date Of Birth</th>
 			<th scope="col">Mentor</th>
 			<th scope="col">Update</th>
 		</tr>
@@ -20,8 +20,8 @@
 		<td>{{ student["USN"] }}</td>
 		<td>{{ student["Name"] }}</td>
 		<td>{{ student["Semester"] }}</td>
-		<td>{{ student["Age"] }}</td>
 		<td>{{ student["Section"] }}</td>
+		<td>{{ student["dob"]}}</td>
 		<td>{{ student["Mentor"] }}</td>
 		<td>
 			<a class="btn btn-warning btn-sm" href="./update/{{student.USN}}"><i class="fa fa-pencil"></i></a>
