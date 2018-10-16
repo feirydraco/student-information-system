@@ -1,30 +1,35 @@
 {% extends "base.html" %}
 
-{% block title %}Salesman details{% endblock %}
+{% block title %}Student details{% endblock %}
 
 {% block content %}
 <table class="table">
 	<thead>
 		<tr>
-			<th scope="col">Salesman_id</th>
+			<th scope="col">USN</th>
 			<th scope="col">Name</th>
-			<th scope="col">City</th>
-			<th scope="col">Commission</th></tr>
+			<th scope="col">Semester</th>
+			<th scope="col">Age</th>
+			<th scope="col">Section</th>
+			<th scope="col">Mentor</th>
+			<th scope="col">Update</th>
 		</tr>
 	</thead>
-	{% for salesman in salesman_list: %}
+	{% for student in student_list: %}
 	<tr>
-		<td>{{ salesman["salesman_id"] }}</td>
-		<td>{{ salesman["name"] }}</td>
-		<td>{{ salesman["city"] }}</td>
-		<td>{{ salesman["commission"] }}</td>
+		<td>{{ student["USN"] }}</td>
+		<td>{{ student["Name"] }}</td>
+		<td>{{ student["Semester"] }}</td>
+		<td>{{ student["Age"] }}</td>
+		<td>{{ student["Section"] }}</td>
+		<td>{{ student["Mentor"] }}</td>
 		<td>
-			<a class="btn btn-outline-secondary btn-sm" href="./update/{{salesman.salesman_id}}"><i class="fa fa-pencil"></i></a>
-			<a class="btn btn-outline-secondary btn-sm" href="./delete/{{salesman.salesman_id}}"><i class="fa fa-trash"></i></a>
+			<a class="btn btn-warning btn-sm" href="./update/{{student.USN}}"><i class="fa fa-pencil"></i></a>
+			<a class="btn btn-danger btn-sm" href="./delete/{{student.USN}}"><i class="fa fa-trash"></i></a>
 		</td>
+
 	</tr>
 	{% endfor %}
 </table>
-<a class="btn btn-secondary" href="./create"><i class="fa fa-plus"></i></a>
+<a class="btn btn-primary" href="./create"><i class="fa fa-plus"></i></a>
 {% endblock %}
-

@@ -32,8 +32,8 @@ def close_connection(exception):
 
 @app.route("/")
 def index():
-	salesman_list = query_db("SELECT * FROM salesman")
-	return render_template("index.html", salesman_list=salesman_list)
+	student_list = query_db("SELECT * FROM student")
+	return render_template("index.html", student_list=student_list)
 
 @app.route('/create', methods=['GET', 'POST'])
 def create():
