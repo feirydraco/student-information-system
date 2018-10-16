@@ -45,15 +45,15 @@ def create():
 		change_db("INSERT INTO Student VALUES (?, ?, ?, ?, ?, ?, ?)", values)
 		return redirect(url_for("index"))
 
-@app.route('/update/<int:salesman_id>', methods=['GET', 'POST'])
-def update(salesman_id):
+@app.route('/update/<string:USN>', methods=['GET', 'POST'])
+def update(USN):
 	if request.method == "GET":
-		salesman = query_db("SELECT * FROM salesman WHERE salesman_id=?", [salesman_id], one=True)
-		return render_template("update.html", salesman=salesman)
+		student = query_db("SELECT * FROM Student WHERE USN=?", [USN], one=True)
+		return render_template("update.html", student=student)
 	if request.method == "POST":
-		salesman = request.form.to_dict()
-		values = [salesman["salesman_id"], salesman["name"], salesman["city"], salesman["commission"], salesman_id]
-		change_db("UPDATE salesman SET salesman_id=?, name=?, city=?, commission=? WHERE salesman_id=?", values)
+		student = request.form.to_dict()
+		values = [student["USN"], student["Name"], student["Semester"], student["Age"], student["Section"], student["Class_ID"], student["Mentor"], USN]
+		change_db("UPDATE Student SET USN=?, Name=?, Semester=?, Age=?, Section=?, Class_ID=?, Mentor=? WHERE USN=?", values)
 		return redirect(url_for("index"))
 
 @app.route('/delete/<int:salesman_id>', methods=['GET', 'POST'])
