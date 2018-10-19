@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Student Hobbies Details{% endblock %}
+
+{% block content %}
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">USN</th>
+			<th scope="col">Activity</th>
+		</tr>
+	</thead>
+	{% for co_curricular in co_curricular_list: %}
+	<tr>
+		<td>{{ co_curricular["USN"] }}</td>
+		<td>{{ co_curricular["Activity"] }}</td>
+		<td>
+			<a class="btn btn-warning btn-sm" href="./update/{{student.USN}}"><i class="fa fa-pencil"></i></a>
+			<a class="btn btn-danger btn-sm" href="./delete/{{student.USN}}"><i class="fa fa-trash"></i></a>
+		</td>
+
+	</tr>
+	{% endfor %}
+</table>
+<a class="btn btn-primary" href="./create"><i class="fa fa-plus"></i></a>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Student Projects{% endblock %}
+
+{% block content %}
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">USN</th>
+			<th scope="col">Project Number</th>
+			<th scope="col">Project Name</th>
+		</tr>
+	</thead>
+	{% for project in project_list: %}
+	<tr>
+		<td>{{ project["USN"] }}</td>
+		<td>{{ project["Project_No"] }}</td>
+		<td>{{ project["Project_Topic"] }}</td>
+		<td>
+			<a class="btn btn-warning btn-sm" href="./update/{{project.Project_No}}"><i class="fa fa-pencil"></i></a>
+			<a class="btn btn-danger btn-sm" href="./delete/{{project.Project_Topic}}"><i class="fa fa-trash"></i></a>
+		</td>
+
+	</tr>
+	{% endfor %}
+</table>
+<a class="btn btn-primary" href="./create"><i class="fa fa-plus"></i></a>
+{% endblock %}
