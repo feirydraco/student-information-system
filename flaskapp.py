@@ -98,9 +98,9 @@ def create_teacher():
 		return render_template("/student/create_student.html", teacher=None)
 	if request.method == "POST":
 		teacher = request.form.to_dict()
-		values = [student["USN"], student["Name"], student["Semester"], student["dob"], student["Section"], student["Class_ID"], student["Mentor"]]
+		values = [teacher["Teacher"], teacher["Name"], teacher["Class_ID"], teacher["Sub"]]
 		change_db("INSERT INTO Student VALUES (?, ?, ?, ?, ?, ?, ?)", values)
-		return redirect(url_for("index_student"))
+		return redirect(url_for("index_teacher"))
 
 
 @app.route('/update_teacher/<string:Teacher_ID>', methods=['GET', 'POST'])
