@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+ {% block content %}
+ <form action="#" method="post">
+	 <div class="form-group row">
+			 <label for="mail" class="col-sm-2 col-form-label">Class_ID</label>
+			 <div class="col-sm-10">
+					 <input type="text" class="form-control" id="Class_ID" name="Class_ID" value={{Class.Class_ID}}>
+			 </div>
+	 </div>
+	 <div class="form-group row">
+			 <label for="mail" class="col-sm-2 col-form-label">Subject</label>
+			 <div class="col-sm-10">
+					 <input type="text" class="form-control" id="Subject" name="Subject" value={{Class.Subject}}>
+			 </div>
+	 </div>
+	 <button type="submit" class="btn btn-secondary" value="Submit">Submit</button>
+</form>
+{% endblock %}
