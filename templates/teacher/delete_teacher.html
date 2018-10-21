@@ -1,0 +1,10 @@
+{% extends "teacher_form.html" %}
+{% block title %}Delete{% endblock %}
+{% block content %}
+<div class="h-100 row align-items-center">
+<h2>Delete Student: {{ teacher.Name }}, {{ teacher.Teacher_ID }}?</h2>
+<form method="post">
+    <button type="submit" class="btn btn-danger" value="Submit">Submit</button>
+</form>
+</div>
+{% endblock %}

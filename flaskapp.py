@@ -40,9 +40,9 @@ def close_connection(exception):
 		db.close()
 
 @app.route("/")
-def index():
+def index_student():
 	student_list = query_db("SELECT * FROM student")
-	return render_template("index.html", student_list=student_list)
+	return render_template("index_student.html", student_list=student_list)
 
 @app.route("/teachers")
 def index_teacher():
