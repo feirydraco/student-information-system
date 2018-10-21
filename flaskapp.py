@@ -39,32 +39,34 @@ def close_connection(exception):
 	if db is not None:
 		db.close()
 
+
 @app.route("/")
+def index():
+	return render_template("index.html")
+
+
+@app.route("/student")
 def index_student():
 	student_list = query_db("SELECT * FROM student")
-	return render_template("index_student.html", student_list=student_list)
+	return render_template("/student/index_student.html", student_list=student_list)
 
-@app.route("/teachers")
-def index_teacher():
-	teacher_list = query_db("SELECT * FROM teacher")
-	return render_template("index_teacher.html", teacher_list=teacher_list)
 
-@app.route('/create', methods=['GET', 'POST'])
-def create():
+@app.route('/create_student', methods=['GET', 'POST'])
+def create_student():
 	if request.method == "GET":
-		return render_template("create.html",student=None)
+		return render_template("/student/create_student.html",student=None)
 	if request.method == "POST":
 		student = request.form.to_dict()
-		values = [student["USN"], student["Name"], student["Semester"], student["Age"], student["Section"], student["Class_ID"], student["Mentor"]]
+		values = [student["USN"], student["Name"], student["Semester"], student["dob"], student["Section"], student["Class_ID"], student["Mentor"]]
 		change_db("INSERT INTO Student VALUES (?, ?, ?, ?, ?, ?, ?)", values)
-		return redirect(url_for("index"))
+		return redirect(url_for("index_student"))
 
-@app.route('/update/<string:USN>', methods=['GET', 'POST'])
-def update(USN):
+@app.route('/update_student/<string:USN>', methods=['GET', 'POST'])
+def update_student(USN):
 	if request.method == "GET":
 		student = query_db("SELECT * FROM Student WHERE USN=?", [USN], one=True)
 		print(student["Mentor"])
-		return render_template("update.html", student=student)
+		return render_template("/student/update_student.html", student=student)
 	if request.method == "POST":
 		student = request.form.to_dict()
 
@@ -74,7 +76,32 @@ def update(USN):
 		values = [student["USN"], student["Name"], student["Semester"], student["dob"], student["Section"], student["Class_ID"], student["Mentor"], USN]
 		change_db("UPDATE Student SET USN=?, Name=?, Semester=?, dob=?, Section=?, Class_ID=?, Mentor=? WHERE USN=?", values)
 
-		return redirect(url_for("index"))
+		return redirect(url_for("index_student"))
+
+@app.route('/delete_student/<string:USN>', methods=['GET', 'POST'])
+def delete(USN):
+	if request.method == "GET":
+		student = query_db("SELECT * FROM student WHERE USN=?", [USN], one=True)
+		return render_template("/student/delete_student.html", student=student)
+	if request.method == "POST":
+		change_db("DELETE FROM student where USN=?", [USN])
+		return redirect(url_for("index_student"))
+
+@app.route("/teachers")
+def index_teacher():
+	teacher_list = query_db("SELECT * FROM teacher")
+	return render_template("index_teacher.html", teacher_list=teacher_list)
+
+@app.route('/create_teacher', methods=['GET', 'POST'])
+def create_teacher():
+	if request.method == "GET":
+		return render_template("/student/create_student.html", teacher=None)
+	if request.method == "POST":
+		teacher = request.form.to_dict()
+		values = [student["USN"], student["Name"], student["Semester"], student["dob"], student["Section"], student["Class_ID"], student["Mentor"]]
+		change_db("INSERT INTO Student VALUES (?, ?, ?, ?, ?, ?, ?)", values)
+		return redirect(url_for("index_student"))
+
 
 @app.route('/update_teacher/<string:Teacher_ID>', methods=['GET', 'POST'])
 def update_teacher(Teacher_ID):
@@ -88,14 +115,5 @@ def update_teacher(Teacher_ID):
 
 		return redirect(url_for("index_teacher"))
 
-@app.route('/delete/<string:USN>', methods=['GET', 'POST'])
-def delete(USN):
-	if request.method == "GET":
-		student = query_db("SELECT * FROM student WHERE USN=?", [USN], one=True)
-		return render_template("delete.html", student=student)
-	if request.method == "POST":
-		change_db("DELETE FROM student where USN=?", [USN])
-		return redirect(url_for("index"))
-
 if __name__ == '__main__':
-	app.run(host="0.0.0.0",port=5010, debug=True)
+	app.run(host="0.0.0.0",port=5000, debug=True)
