@@ -23,16 +23,7 @@ def change_db(query,args=()):
 	cur = get_db().execute(query, args)
 	get_db().commit()
 	cur.close()
-
-# def format_datetime(value, format='medium'):
-# 	if format == 'full':
-# 		format="EEEE, d. MMMM y 'at' HH:mm"
-# 	elif format == 'medium':
-# 		format="EE dd.MM.y HH:mm"
-# 	return babel.dates.format_datetime(value, format)
-#
-# app.jinja_env.filters['datetime'] = format_datetime
-
+	
 @app.teardown_appcontext
 def close_connection(exception):
 	db = getattr(g, '_database', None)
