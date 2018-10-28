@@ -236,6 +236,17 @@ def index_test():
 	tests = query_db("SELECT * FROM tests")
 	return render_template("/test/index_tests.html", tests=tests)
 
+@app.route('/update_tests/<string:USN>/<string:SubCode>', methods=['GET', 'POST'])
+def update_test(USN, SubCode):
+	if request.method == "GET":
+		tests = query_db("SELECT * FROM tests WHERE USN=? and SubCode=? ", [USN, SubCode], one=True)
+		return render_template("/test/update_tests.html", tests=tests)
+	if request.method == "POST":
+		tests = request.form.to_dict()
+		values = [tests["Test1"], tests["Test2"], tests["Test3"], USN, SubCode]
+		change_db("UPDATE Tests SET Test1=?, Test2=?, Test3=? WHERE USN=? and SubCode=?", values)
+		return redirect(url_for("index_test"))
+
 #
 #
 # TEST BLOCK
