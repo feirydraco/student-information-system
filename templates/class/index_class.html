@@ -14,12 +14,7 @@
 	<tr>
 		<td>{{ class["Class_ID"] }}</td>
 		<td>{{ class["Subject"] }}</td>
-		<td>
-			<a class="btn btn-warning btn-sm" href="./update_class/{{class.Class_ID}}"><i class="fa fa-pencil"></i></a>
-			<a class="btn btn-danger btn-sm" href="./delete_class/{{class.Class_ID}}"><i class="fa fa-trash"></i></a>
-		</td>
 	</tr>
 	{% endfor %}
 </table>
-<a class="btn btn-primary" href="./create"><i class="fa fa-plus"></i></a>
 {% endblock %}
