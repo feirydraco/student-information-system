@@ -1,7 +1,7 @@
 from flask import Flask, url_for, render_template, g, request, redirect
 import os
 import sqlite3
-
+from urllib.parse import unquote
 
 app = Flask(__name__)
 DATABASE = "data.db"
@@ -164,15 +164,81 @@ def index_class():
 #
 #
 
-@app.route("/projects")
-def index_class():
+@app.route("/project")
+def index_project():
 	project_list = query_db("SELECT * FROM Project")
 	return render_template("/project/index_project.html", project_list=project_list)
+
+@app.route('/create_project', methods=['GET', 'POST'])
+def create_project():
+	if request.method == "GET":
+		return render_template("/project/create_project.html", project=None)
+	if request.method == "POST":
+		project = request.form.to_dict()
+		values = [project["Project_No"], project["Project_Topic"], project["USN"]]
+		change_db("INSERT INTO Project VALUES (?, ?, ?)", values)
+		return redirect(url_for("index_project"))
+
+
+@app.route('/update_project/<string:Project_No>/<string:USN>', methods=['GET', 'POST'])
+def update_project(Project_No, USN):
+	if request.method == "GET":
+		project = query_db("SELECT * FROM project WHERE Project_No=? and USN=? ", [Project_No, USN], one=True)
+		return render_template("/project/update_project.html", project=project)
+	if request.method == "POST":
+		project = request.form.to_dict()
+		values = [teacher["Project_No"], project["Project_Topic"], project["USN"], Project_No, USN]
+		change_db("UPDATE Project SET Project_No=?, Project_Topic=?, USN=? WHERE Project_No=? and USN=?", values)
+		return redirect(url_for("index_project"))
+
+@app.route('/delete_project/<string:Project_No>/<string:USN>', methods=['GET', 'POST'])
+def delete_project(Project_No, USN):
+	if request.method == "GET":
+		project = query_db("SELECT * FROM Project WHERE Project_No=? and USN=?", [Project_No, USN], one=True)
+		return render_template("/project/delete_project.html", project=project)
+	if request.method == "POST":
+		change_db("DELETE FROM Project where Project_No=? and USN=?", [Project_No, USN])
+		return redirect(url_for("index_project"))
 
 
 #
 #
 # PROJECT BLOCK
+#
+#
+
+#
+#
+# SUBJECT BLOCK
+#
+#
+
+@app.route("/subjects")
+def index_subject():
+	subject_list = query_db("SELECT * FROM Subject")
+	return render_template("/subject/index_subject.html", subject_list=subject_list)
+
+
+#
+#
+# SUBJECT BLOCK
+#
+#
+
+#
+#
+# TEST BLOCK
+#
+#
+
+@app.route("/tests")
+def index_test():
+	tests = query_db("SELECT * FROM tests")
+	return render_template("/test/index_tests.html", tests=tests)
+
+#
+#
+# TEST BLOCK
 #
 #
 if __name__ == '__main__':

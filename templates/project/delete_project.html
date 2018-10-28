@@ -1,0 +1,11 @@
+{% extends "/project/form_project.html" %}
+{% block title %}Delete{% endblock %}
+{% block content %}
+<div class="h-100 row align-items-center">
+<h2>Delete Project: {{ project.Project_Topic }}?</h2>
+<form method="post">
+    <button type="submit" class="btn btn-danger" value="Submit">Submit</button>
+</form>
+</div>
+
+{% endblock %}

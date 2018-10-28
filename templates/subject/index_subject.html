@@ -1,5 +1,5 @@
-% extends "base.html" %}
-
+{% extends "base.html" %}
+}
 {% block title %}Subject Details{% endblock %}
 
 {% block content %}
@@ -14,13 +14,7 @@
 	<tr>
 		<td>{{ subject["Sub_Code"] }}</td>
 		<td>{{ subject["Sub_Name"] }}</td>
-		<td>
-			<a class="btn btn-warning btn-sm" href="./update/{{subject.Sub_Code}}"><i class="fa fa-pencil"></i></a>
-			<a class="btn btn-danger btn-sm" href="./delete/{{subject.Sub_Code}}"><i class="fa fa-trash"></i></a>
-		</td>
-
 	</tr>
 	{% endfor %}
 </table>
-<a class="btn btn-primary" href="./create"><i class="fa fa-plus"></i></a>
 {% endblock %}

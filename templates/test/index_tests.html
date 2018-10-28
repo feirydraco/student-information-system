@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Test Performance{% endblock %}
+
+{% block content %}
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">USN</th>
+			<th scope="col">Subject Code</th>
+			<th scope="col">Test 1</th>
+			<th scope="col">Test 2</th>
+			<th scope="col">Test 3</th>
+			<th scope="col">Cumulative Test Score</th>
+		</tr>
+	</thead>
+	{% for test in tests: %}
+	<tr>
+		<td>{{ test["USN"] }}</td>
+		<td>{{ test["SubCode"] }}</td>
+		<td>{{ test["Test1"] }}</td>
+		<td>{{ test["Test2"] }}</td>
+		<td>{{ test["Test3"] }}</td>
+		<td>{{ test["Test_Cumalative"]}}</td>
+		<td>
+			<a class="btn btn-warning btn-sm" href="./update/{{test.USN}}/{{test.SubCode}}"><i class="fa fa-pencil"></i></a>
+			<a class="btn btn-danger btn-sm" href="./delete/{{test.USN}}/{{test.SubCode}}"><i class="fa fa-trash"></i></a>
+		</td>
+
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}
