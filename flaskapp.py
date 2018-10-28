@@ -245,6 +245,9 @@ def update_test(USN, SubCode):
 		tests = request.form.to_dict()
 		values = [tests["Test1"], tests["Test2"], tests["Test3"], USN, SubCode]
 		change_db("UPDATE Tests SET Test1=?, Test2=?, Test3=? WHERE USN=? and SubCode=?", values)
+		avg = (int(tests["Test1"]) + int(tests["Test2"]) + int(tests["Test3"])) // 3
+		values = [avg, USN, SubCode]
+		change_db("UPDATE Tests Set Test_Cumalative=? WHERE USN=? and SubCode=?", values)
 		return redirect(url_for("index_test"))
 
 #
