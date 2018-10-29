@@ -18,7 +18,7 @@ def get_db():
 def query_db(query, args=(), one=False):
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
-    cur.close()
+    cur.close()123
     return (rv[0] if rv else None) if one else rv
 
 
@@ -35,9 +35,17 @@ def close_connection(exception):
         db.close()
 
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def index():
-    return render_template("index.html")
+    error = None
+    if request.method == "GET":
+        return render_template("index.html")
+    if request.method == "POST":
+        if request.form['id'] != 'admin' and request.form['password'] != 'password':
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            return redirect(url_for("index"))
+        return render_template("index.html", error=error)
 
 #
 #
