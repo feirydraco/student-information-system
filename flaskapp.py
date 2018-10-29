@@ -255,5 +255,43 @@ def update_test(USN, SubCode):
 # TEST BLOCK
 #
 #
+
+#
+#
+# CO_CURRICULAR BLOCK
+#
+#
+
+# @app.route("/cc")
+# def index_cc():
+# 	cc = query_db("SELECT * FROM Co_Curricular")
+# 	return render_template("/cc/index_cc.html", cc=cc)
+#
+# @app.route('/update_cc/<string:USN>', methods=['GET', 'POST'])
+# def update_cc(USN):
+# 	if request.method == "GET":
+# 		teacher = query_db("SELECT * FROM teacher WHERE Teacher_ID=?", [Teacher_ID], one=True)
+# 		return render_template("/teacher/update_teacher.html", teacher=teacher)
+# 	if request.method == "POST":
+# 		teacher = request.form.to_dict()
+# 		values = [teacher["Teacher_ID"], teacher["Name"], teacher["Class_ID"], teacher["Subject"], Teacher_ID]
+# 		change_db("UPDATE Teacher SET Teacher_ID=?, Name=?, Class_ID=?, Sub=? WHERE Teacher_ID=?", values)
+#
+# 		return redirect(url_for("index_teacher"))
+#
+# @app.route('/delete_cc/<string:USN>', methods=['GET', 'POST'])
+# def delete_cc(USN):
+# 	if request.method == "GET":
+# 		cc = query_db("SELECT * FROM Co_Curricular WHERE USN=?", [USN], one=True)
+# 		return render_template("/teacher/delete_teacher.html", teacher=teacher)
+# 	if request.method == "POST":
+# 		change_db("DELETE FROM teacher where Teacher_Id=?", [Teacher_Id])
+# 		return redirect(url_for("index_teacher"))
+
+#
+#
+# CO_CURRICULAR BLOCK
+#
+#
 if __name__ == '__main__':
 	app.run(host="0.0.0.0",port=5000, debug=True)
