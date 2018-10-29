@@ -4,23 +4,23 @@
 
 {% block content %}
 <table class="table">
-	<thead>
-		<tr>
-			<th scope="col">USN</th>
-			<th scope="col">Activity</th>
-		</tr>
-	</thead>
-	{% for c in cc: %}
-	<tr>
-		<td>{{ c["USN"] }}</td>
-		<td>{{ c["Activity"] }}</td>
-		<td>
-			<a class="btn btn-warning btn-sm" href="./update_cc/{{cc.USN}}"><i class="fa fa-pencil"></i></a>
-			<a class="btn btn-danger btn-sm" href="./delete_cc/{{cc.USN}}"><i class="fa fa-trash"></i></a>
-		</td>
+  <thead>
+    <tr>
+      <th scope="col">USN</th>
+      <th scope="col">Activity</th>
+    </tr>
+  </thead>
+  {% for c in cc: %}
+  <tr>
+    <td>{{ c["USN"] }}</td>
+    <td>{{ c["Activity"] }}</td>
+    <td>
+      <a class="btn btn-warning btn-sm" href="./update_cc/{{cc.USN}}"><i class="fa fa-pencil"></i></a>
+      <a class="btn btn-danger btn-sm" href="./delete_cc/{{cc.USN}}"><i class="fa fa-trash"></i></a>
+    </td>
 
-	</tr>
-	{% endfor %}
+  </tr>
+  {% endfor %}
 </table>
 <a class="btn btn-primary" href="./create_cc"><i class="fa fa-plus"></i></a>
 {% endblock %}

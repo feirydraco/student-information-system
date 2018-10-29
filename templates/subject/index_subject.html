@@ -4,17 +4,17 @@
 
 {% block content %}
 <table class="table">
-	<thead>
-		<tr>
-			<th scope="col">Subject Code</th>
-			<th scope="col">Subject Name</th>
-		</tr>
-	</thead>
-	{% for subject in subject_list: %}
-	<tr>
-		<td>{{ subject["Sub_Code"] }}</td>
-		<td>{{ subject["Sub_Name"] }}</td>
-	</tr>
-	{% endfor %}
+  <thead>
+    <tr>
+      <th scope="col">Subject Code</th>
+      <th scope="col">Subject Name</th>
+    </tr>
+  </thead>
+  {% for subject in subject_list: %}
+  <tr>
+    <td>{{ subject["Sub_Code"] }}</td>
+    <td>{{ subject["Sub_Name"] }}</td>
+  </tr>
+  {% endfor %}
 </table>
 {% endblock %}

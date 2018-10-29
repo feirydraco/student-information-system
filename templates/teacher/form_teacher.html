@@ -1,31 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-<form action = "#" method="post">
-    <div class="form-group row">
-        <label for="mail" class="col-sm-2 col-form-label">Teacher ID</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="Teacher_Id" name="Teacher_Id" value={{teacher.Teacher_Id}}>
-        </div>
+<form action="#" method="post">
+  <div class="form-group row">
+    <label for="mail" class="col-sm-2 col-form-label">Teacher ID</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="Teacher_Id" name="Teacher_Id" value={{teacher.Teacher_Id}}>
     </div>
-    <div class="form-group row">
-        <label for="mail" class="col-sm-2 col-form-label">Name</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="Name" name="Name" value={{teacher.Name}}>
-        </div>
+  </div>
+  <div class="form-group row">
+    <label for="mail" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="Name" name="Name" value={{teacher.Name}}>
     </div>
-    <div class="form-group row">
-        <label for="mail" class="col-sm-2 col-form-label">Class ID</label>
-        <div class="col-sm-10">
-            <input type="number" class="form-control" id="Class_ID" name="Class_ID" value={{teacher.Class_ID}}>
-        </div>
+  </div>
+  <div class="form-group row">
+    <label for="mail" class="col-sm-2 col-form-label">Class ID</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="Class_ID" name="Class_ID" value={{teacher.Class_ID}}>
     </div>
-    <div class="form-group row">
-        <label for="mail" class="col-sm-2 col-form-label">Subject</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="Subject" name="Subject" value={{teacher.Sub}}>
-        </div>
+  </div>
+  <div class="form-group row">
+    <label for="mail" class="col-sm-2 col-form-label">Subject</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="Subject" name="Subject" value={{teacher.Sub}}>
     </div>
-    <button type="submit" class="btn btn-secondary" value="Submit">Submit</button>
+  </div>
+  <button type="submit" class="btn btn-secondary" value="Submit">Submit</button>
 </form>
 {% endblock %}
