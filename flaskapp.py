@@ -6,6 +6,7 @@ from urllib.parse import unquote
 app = Flask(__name__)
 DATABASE = "data.db"
 
+logged_in = False
 
 def get_db():
     db = getattr(g, '_database', None)
@@ -34,18 +35,9 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
-
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def index():
-    error = None
-    if request.method == "GET":
-        return render_template("index.html")
-    if request.method == "POST":
-        if request.form['id'] != 'admin' and request.form['password'] != 'password':
-            error = 'Invalid Credentials. Please try again.'
-        else:
-            return redirect(url_for("index"))
-        return render_template("index.html", error=error)
+    return render_template("index.html")
 
 #
 #

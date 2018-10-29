@@ -13,13 +13,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.0/bootstrap.min.js"></script>
-
+  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dashboard.css" rel="stylesheet">
 </head>
 <style>
   body {
     padding-top: 40px;
-    background-color: #0099cc;
-    background-image: url({{ url_for('static', filename='img/bg.jpg') }});
+    background-color: #ffffff;
   }
 </style>
 
@@ -44,17 +44,13 @@
             </ul>
           </li>
           <li class="{{active_switch_teacher}} dropdown dropdown-toggle"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Teacher <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ url_for("index_teacher") }}">Teacher</a></li>
-            <li><a href="{{  url_for("index_test") }}">Tests</a></li>
-            <li><a href="{{ url_for("index_class") }}">Class</a></li>
-          </ul>
+            <ul class="dropdown-menu">
+              <li><a href="{{ url_for("index_teacher") }}">Teacher</a></li>
+              <li><a href="{{  url_for("index_test") }}">Tests</a></li>
+              <li><a href="{{ url_for("index_class") }}">Class</a></li>
+            </ul>
           </li>
           <li class="{{active_switch_subjects}}"><a href="{{  url_for("index_subject") }}">Subjects</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
       </div>
     </div>
