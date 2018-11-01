@@ -8,6 +8,7 @@ DATABASE = "data.db"
 
 logged_in = False
 
+
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
@@ -35,9 +36,15 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
+
 @app.route("/")
 def index():
-    return render_template("index.html")
+    if request.method == "GET":
+        return render_template("index.html")
+    if request.method == "POST":
+        tokens = request.form.to_list()
+        print(tokens)
+        return render_template("search_results.html")
 
 #
 #
@@ -275,8 +282,8 @@ def update_test(USN, SubCode):
         values = [tests["Test1"], tests["Test2"], tests["Test3"], USN, SubCode]
         change_db(
             "UPDATE Tests SET Test1=?, Test2=?, Test3=? WHERE USN=? and SubCode=?", values)
-        avg = (int(tests["Test1"]) + int(tests["Test2"]) +
-               int(tests["Test3"])) // 3
+        avg = (int(tests["Test1"]) + int(tests["Test2"])
+               + int(tests["Test3"])) // 3
         values = [avg, USN, SubCode]
         change_db(
             "UPDATE Tests Set Test_Cumalative=? WHERE USN=? and SubCode=?", values)
