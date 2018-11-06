@@ -1,0 +1,3 @@
+{"Prof. Hemanth": "teacher","Prof. Sunil": "teacher","Dr. Girijma": "teacher","Prof. Bhavanishankar": "teacher","Yash": "student","Shivam": "student","Amitesh": "student","Ojaswin Mujoo": "student","Akshat Saxena": "student","student": ["0.0.0.0:5000/student"],
+"teacher": ["0.0.0.0:5000/teacher"]
+}

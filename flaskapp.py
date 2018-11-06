@@ -1,10 +1,15 @@
-from flask import Flask, url_for, render_template, g, request, redirect
+from flask import Flask, url_for, render_template, g, request, redirect, flash
+from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
+import json
+from difflib import get_close_matches
 import os
 import sqlite3
 from urllib.parse import unquote
 
 app = Flask(__name__)
 DATABASE = "data.db"
+#Config 
+app.config.from_object(__name__)
 
 logged_in = False
 
@@ -46,6 +51,32 @@ def index():
         print(tokens)
         return render_template("search_results.html")
 
+data = json.load(open("Search.json"))
+def GetLink(word):
+	if word in data:
+		return(data[word])
+	elif word.upper() in data:
+		return(data[word.upper()])
+	elif get_close_matches(word, data.keys()):
+		return (data[get_close_matches(word,data.keys())[0]])
+	else:
+		return ""
+	
+
+class ReusableForm(Form):
+    name = TextField('Name:', validators=[validators.required()])
+
+@app.route("/", methods=['POST'])
+def mySearch():
+	form = ReusableForm(request.form)
+	print (form.errors)
+	if request.method == 'POST':
+		name = request.form.get('text')
+		print(name)
+		tableName = GetLink(name)
+		if tableName != "":
+			return redirect(url_for("index_" + tableName))
+	return redirect(url_for("index"))
 #
 #
 # STUDENT BLOCK
@@ -55,8 +86,10 @@ def index():
 
 @app.route("/student")
 def index_student():
-    student_list = query_db("SELECT * FROM student")
-    return render_template("/student/index_student.html", student_list=student_list)
+	mySearch()
+	student_list = query_db("SELECT * FROM student")
+	return render_template("/student/index_student.html", student_list=student_list)
+
 
 
 @app.route('/create_student', methods=['GET', 'POST'])
