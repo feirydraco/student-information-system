@@ -8,7 +8,7 @@ from urllib.parse import unquote
 
 app = Flask(__name__)
 DATABASE = "data.db"
-#Config 
+#Config
 app.config.from_object(__name__)
 
 logged_in = False
@@ -61,7 +61,7 @@ def GetLink(word):
 		return (data[get_close_matches(word,data.keys())[0]])
 	else:
 		return ""
-	
+
 
 class ReusableForm(Form):
     name = TextField('Name:', validators=[validators.required()])
@@ -207,7 +207,8 @@ def delete_teacher(Teacher_Id):
 
 @app.route("/class")
 def index_class():
-    class_list = query_db("SELECT * FROM class")
+    class_list = query_db("SELECT * FROM class \
+                           ORDER BY Class_ID ASC")
     return render_template("/class/index_class.html", class_list=class_list)
 
 #
