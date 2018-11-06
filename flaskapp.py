@@ -10,6 +10,7 @@ app = Flask(__name__)
 DATABASE = "data.db"
 #Config 
 app.config.from_object(__name__)
+
 logged_in = False
 
 
@@ -41,9 +42,6 @@ def close_connection(exception):
         db.close()
 
 
-
-
-
 @app.route("/")
 def index():
     if request.method == "GET":
@@ -52,11 +50,6 @@ def index():
         tokens = request.form.to_list()
         print(tokens)
         return render_template("search_results.html")
-
-
-
-
-
 
 data = json.load(open("Search.json"))
 def GetLink(word):
@@ -84,9 +77,6 @@ def mySearch():
 		if tableName != "":
 			return redirect(url_for("index_" + tableName))
 	return redirect(url_for("index"))
-
-
-
 #
 #
 # STUDENT BLOCK
@@ -99,6 +89,7 @@ def index_student():
 	mySearch()
 	student_list = query_db("SELECT * FROM student")
 	return render_template("/student/index_student.html", student_list=student_list)
+
 
 
 @app.route('/create_student', methods=['GET', 'POST'])
