@@ -1,0 +1,12 @@
+{% extends "/student/form_student.html" %}
+{% set active_switch_student = "active" %}
+{% block title %}Delete{% endblock %}
+{% block content %}
+<div class="h-100 row align-items-center">
+  <h2>Delete Student: {{ student.Name }}, {{ student.USN }}?</h2>
+  <form method="post">
+    <button type="submit" class="btn btn-danger" value="Submit">Submit</button>
+  </form>
+</div>
+
+{% endblock %}
