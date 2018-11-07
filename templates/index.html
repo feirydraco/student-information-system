@@ -1,8 +1,32 @@
 {% extends "base.html" %}
 
 {% block title %}{% endblock %}
-<div class="jumbotron">
+
 {% block content %}
-Homepage
-{% endblock %}
+<div class="page-header">
+  <h1 id="title">Student Database Management System</h1>
 </div>
+<div class="jumbotron">
+  <h1 class="display-3">5th Semester DBMS Project</h1>
+  <p class="lead">A Student DBMS built on <a href="http://flask.pocoo.org/">Flask</a></p>
+  <hr class="my-4">
+  <p>Submitted by:</p>
+  <p class="lead">
+    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+      <div class="card-body">
+        <h4 class="card-title">1RN16CS121</h4>
+        <p class="card-text">
+          <a class="btn btn-primary btn-lg fa fa-github" href="#" role="button">Vivek Kumar Singh</a>
+        </p>
+      </div>
+    </div>
+    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+      <div class="card-body">
+        <h4 class="card-title">1RN16CS123</h4>
+        <p class="card-text">
+          <a class="btn btn-primary btn-lg fa fa-github" href="#" role="button">Yash Vora</a>
+        </p>
+      </div>
+    </div>
+</div>
+{% endblock %}
