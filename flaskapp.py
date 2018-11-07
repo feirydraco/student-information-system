@@ -151,7 +151,8 @@ def delete_student(USN):
 #
 @app.route("/teacher")
 def index_teacher():
-    teacher_list = query_db("SELECT * FROM teacher")
+    teacher_list = query_db("SELECT * FROM teacher \
+                             ")
     return render_template("/teacher/index_teacher.html", teacher_list=teacher_list)
 
 
@@ -302,7 +303,8 @@ def index_subject():
 
 @app.route("/tests")
 def index_test():
-    tests = query_db("SELECT * FROM tests")
+    tests = query_db("SELECT * FROM tests \
+                      ORDER BY USN")
     return render_template("/test/index_tests.html", tests=tests)
 
 
