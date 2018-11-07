@@ -87,7 +87,8 @@ def mySearch():
 @app.route("/student")
 def index_student():
 	mySearch()
-	student_list = query_db("SELECT * FROM student")
+	student_list = query_db("SELECT * FROM student \
+                             ORDER BY USN")
 	return render_template("/student/index_student.html", student_list=student_list)
 
 
