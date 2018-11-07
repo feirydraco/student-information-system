@@ -6,8 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/fa/font-awesome.min.css") }}">
   <link rel="stylesheet" href="{{ url_for('static', filename="css/slate/bootstrap.min.css") }}" media="screen">
   <link rel="stylesheet" href="{{ url_for('static', filename="css/custom.min.css") }}">
   <link href="{{ url_for('static', filename="css/bootstrap.min.css") }}" rel="stylesheet">
@@ -101,13 +100,13 @@
 </style>
 
 <body>
-  <nav class="sidenav">1
+  <nav class="sidenav">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">CSE</a>
     </div>
 
     <div class="navbar-header">
-      <a href="/">Home</a></li>
+      <a href="/">Home</a>
       <a href="{{ url_for("index_student") }}">Student</a>
       <a href="{{ url_for("index_project") }}">Projects</a>
       <a href="{{ url_for("index_teacher") }}">Teacher</a>
