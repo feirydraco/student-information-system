@@ -8,10 +8,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css") }}" media="screen">
-  <link rel="stylesheet" href="../_assets/css/custom.min.css">
-  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="dashboard.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/slate/bootstrap.min.css") }}" media="screen">
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/custom.min.css") }}">
+  <link href="{{ url_for('static', filename="css/bootstrap.min.css") }}" rel="stylesheet">
 </head>
 <style>
   body {
@@ -82,6 +81,14 @@
     background-repeat: no-repeat;
     -webkit-filter: none;
     filter: none;
+  }
+
+  .card_vivek {
+    padding-left: 50px;
+  }
+
+  .card_yash {
+    padding-left: 30px;
   }
 </style>
 
