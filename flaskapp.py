@@ -8,7 +8,7 @@ from urllib.parse import unquote
 
 app = Flask(__name__)
 DATABASE = "data.db"
-#Config
+# Config
 app.config.from_object(__name__)
 
 logged_in = False
@@ -51,32 +51,36 @@ def index():
         print(tokens)
         return render_template("search_results.html")
 
+
 data = json.load(open("Search.json"))
+
+
 def GetLink(word):
-	if word in data:
-		return(data[word])
-	elif word.upper() in data:
-		return(data[word.upper()])
-	elif get_close_matches(word, data.keys()):
-		return (data[get_close_matches(word,data.keys())[0]])
-	else:
-		return ""
+    if word in data:
+        return(data[word])
+    elif word.upper() in data:
+        return(data[word.upper()])
+    elif get_close_matches(word, data.keys()):
+        return (data[get_close_matches(word, data.keys())[0]])
+    else:
+        return ""
 
 
 class ReusableForm(Form):
     name = TextField('Name:', validators=[validators.required()])
 
+
 @app.route("/", methods=['POST'])
 def mySearch():
-	form = ReusableForm(request.form)
-	print (form.errors)
-	if request.method == 'POST':
-		name = request.form.get('text')
-		print(name)
-		tableName = GetLink(name)
-		if tableName != "":
-			return redirect(url_for("index_" + tableName))
-	return redirect(url_for("index"))
+    form = ReusableForm(request.form)
+    print(form.errors)
+    if request.method == 'POST':
+        name = request.form.get('text')
+        print(name)
+        tableName = GetLink(name)
+        if tableName != "":
+            return redirect(url_for("index_" + tableName))
+    return redirect(url_for("index"))
 #
 #
 # STUDENT BLOCK
@@ -86,11 +90,10 @@ def mySearch():
 
 @app.route("/student")
 def index_student():
-	mySearch()
-	student_list = query_db("SELECT * FROM student \
+    mySearch()
+    student_list = query_db("SELECT * FROM student \
                              ORDER BY USN")
-	return render_template("/student/index_student.html", student_list=student_list)
-
+    return render_template("/student/index_student.html", student_list=student_list)
 
 
 @app.route('/create_student', methods=['GET', 'POST'])
@@ -319,8 +322,8 @@ def update_test(USN, SubCode):
         values = [tests["Test1"], tests["Test2"], tests["Test3"], USN, SubCode]
         change_db(
             "UPDATE Tests SET Test1=?, Test2=?, Test3=? WHERE USN=? and SubCode=?", values)
-        avg = (int(tests["Test1"]) + int(tests["Test2"])
-               + int(tests["Test3"])) // 3
+        avg = (int(tests["Test1"]) + int(tests["Test2"]) +
+               int(tests["Test3"])) // 3
         values = [avg, USN, SubCode]
         change_db(
             "UPDATE Tests Set Test_Cumalative=? WHERE USN=? and SubCode=?", values)
@@ -370,5 +373,7 @@ def update_test(USN, SubCode):
 # CO_CURRICULAR BLOCK
 #
 #
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)

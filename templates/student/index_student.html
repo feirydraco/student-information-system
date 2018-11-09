@@ -2,24 +2,31 @@
 {% set active_switch_student = "active" %}
 {% block title %}{% endblock %}
 {% block content %}
-<div class="card-group padding-cards">
-  {% for student in student_list: %}
-  <div class="card-group padding-cards">
-    <div class="card-fluid text-dark bg-light mb-3" style="width: 20rem;">
-      <div class="card-body">
-        <h2 class="card-title">{{ student["Name"] }}</h2>
-        <p class="card-text">{{ student["USN"] }}</p>
-      </div>
-      <div class="card-body">
-        <a class="btn btn-warning btn-sm" href="./update_student/{{student.USN}}"><i class="fa fa-pencil" style="font-size:14px"></i></a>
-        <a class="btn btn-danger btn-sm" href="./delete_student/{{student.USN}}"><i class="fa fa-trash" style="font-size:14px"></i></a>
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal{{student.USN}}">More Details</button>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
+<div class="container-fluid">
+
+
+
 </div>
 
+<div class="container-fluid">
+  <div class="card-group padding-cards">
+    {% for student in student_list: %}
+    <div class="card-group padding-cards">
+      <div class="card-fluid text-dark bg-light mb-3" style="width: 18rem; height: 6em;">
+        <div class="card-body">
+          <h4 class="card-title">{{ student["Name"] }}</h4>
+          <h4 class="card-text">{{ student["USN"] }}</h4>
+        </div>
+        <div class="card-body">
+          <a class="btn btn-warning btn-sm" href="./update_student/{{student.USN}}"><i class="fa fa-pencil" style="font-size:32px"></i></a>
+          <a class="btn btn-danger btn-sm" href="./delete_student/{{student.USN}}"><i class="fa fa-trash" style="font-size:32px"></i></a>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal{{student.USN}}">More Details</button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 {% for student in student_list: %}
 <!-- Modal -->
 <div class="modal fade" id="myModal{{ student.USN }}" role="dialog">
