@@ -24,10 +24,10 @@
         </div>
       </div>
     </div>
-    {% endfor %}
+
   </div>
 </div>
-{% for student in student_list: %}
+
 <!-- Modal -->
 <div class="modal fade" id="myModal{{ student.USN }}" role="dialog">
   <div class="modal-dialog modal-lg">
@@ -38,13 +38,25 @@
         <h4 class="modal-title">Modal Header</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Semester</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ student.Name }}</td>
+              <td>{{ student.Semester }}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
-
     </div>
   </div>
-  {% endfor %}
+      {% endfor %}
   {% endblock %}
