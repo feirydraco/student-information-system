@@ -1,50 +1,35 @@
 {% extends "base.html" %}
 {% set active_switch_student = "active" %}
-{% block title %}{% endblock %}
+{% block title %}Student List{% endblock %}
 {% block content %}
-<div class="container-fluid">
-
-
+<div class="jumbotron">
+  <table class="table table-hover table-bordered table-sm table-primary">
+    <thead>
+      <tr class="bg-dark">
+        <th scope="col">USN</th>
+        <th scope="col">Name</th>
+        <th scope="col">Semester</th>
+        <th scope="col">Date Of Birth</th>
+        <th scope="col">Section</th>
+        <th scope="col">Modify</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for student in student_list: %}
+      <tr>
+        <td>{{ student["USN"] }}</td>
+        <td>{{ student["Name"] }}</td>
+        <td>{{ student["Semester"] }}</td>
+        <td>{{ student["dob"] }}</td>
+        <td>{{ student["Section"] }}</td>
+        <td>
+          <a class="btn btn-warning btn-sm" href="./update_student/{{student.USN}}"><i class="fa fa-pencil"></i></a>
+          <a class="btn btn-danger btn-sm" href="./delete_student/{{student.USN}}"><i class="fa fa-trash"></i></a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 
 </div>
-
-<div class="container-fluid">
-  <div class="card-group padding-cards">
-    {% for student in student_list: %}
-    <div class="card-group padding-cards">
-      <div class="card-fluid text-dark bg-light mb-3" style="width: 18rem; height: 6em;">
-        <div class="card-body">
-          <h4 class="card-title">{{ student["Name"] }}</h4>
-          <h4 class="card-text">{{ student["USN"] }}</h4>
-        </div>
-        <div class="card-body">
-          <a class="btn btn-warning btn-sm" href="./update_student/{{student.USN}}"><i class="fa fa-pencil" style="font-size:32px"></i></a>
-          <a class="btn btn-danger btn-sm" href="./delete_student/{{student.USN}}"><i class="fa fa-trash" style="font-size:32px"></i></a>
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal{{student.USN}}">More Details</button>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-{% for student in student_list: %}
-<!-- Modal -->
-<div class="modal fade" id="myModal{{ student.USN }}" role="dialog">
-  <div class="modal-dialog modal-lg">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-  {% endfor %}
-  {% endblock %}
+{% endblock %}
