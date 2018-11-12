@@ -62,11 +62,12 @@ def index_student():
                                  ORDER BY USN")
         return render_template("/student/index_student.html", student_list=student_list)
     if request.method == "POST":
-        student = request.form.to_dict()
-        #TODO
+        text = request.form.get('partial')
+        # TODO
         student_list = query_db("SELECT * FROM student \
-                                 ORDER BY USN")
+                                 WHERE Name LIKE '%{}%'".format(text))
         return render_template("/student/index_student.html", student_list=student_list)
+
 
 @app.route('/create_student', methods=['GET', 'POST'])
 def create_student():
@@ -294,8 +295,8 @@ def update_test(USN, SubCode):
         values = [tests["Test1"], tests["Test2"], tests["Test3"], USN, SubCode]
         change_db(
             "UPDATE Tests SET Test1=?, Test2=?, Test3=? WHERE USN=? and SubCode=?", values)
-        avg = (int(tests["Test1"]) + int(tests["Test2"]) +
-               int(tests["Test3"])) // 3
+        avg = (int(tests["Test1"]) + int(tests["Test2"])
+               + int(tests["Test3"])) // 3
         values = [avg, USN, SubCode]
         change_db(
             "UPDATE Tests Set Test_Cumalative=? WHERE USN=? and SubCode=?", values)
