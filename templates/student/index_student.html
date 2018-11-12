@@ -1,56 +1,60 @@
 {% extends "base.html" %}
 {% set active_switch_student = "active" %}
-{% block title %}Student List{% endblock %}
+{% block title %}Students{% endblock %}
+
 {% block content %}
 <div class="jumbotron">
-  <!-- <form action="#" method="post" class="form-control form-control-sm ">
+  
+  <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
+  <form action="#" method="post" class="form-group">
+
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="text">
+    <button><input type="submit">Search</button>
+  </form>
+
+
+  <p class="mb-1">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6"></div>
+      <div class="col-sm-3"></div>
+    </div>
+    <table class="table table-hover table-bordered table-sm table-primary">
+      <thead>
+        <tr class="bg-dark">
+          <th scope="col">USN</th>
+          <th scope="col">Name</th>
+          <th scope="col">Semester</th>
+          <th scope="col">Date Of Birth</th>
+          <th scope="col">Section</th>
+          <th scope="col">Modify</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for student in student_list: %}
+        <tr>
+          <td>{{ student["USN"] }}</td>
+          <td>{{ student["Name"] }}</td>
+          <td>{{ student["Semester"] }}</td>
+          <td>{{ student["dob"] }}</td>
+          <td>{{ student["Section"] }}</td>
+          <td>
+            <a class="btn btn-warning btn-sm" href="./update_student/{{student.USN}}"><i class="fa fa-pencil"></i></a>
+            <a class="btn btn-danger btn-sm" href="./delete_student/{{student.USN}}"><i class="fa fa-trash"></i></a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+</div>
+
+
+<!-- <form action="#" method="post" class="form-control form-control-sm ">
 
     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="text">
     <button><input type="submit">Search</button>
   </form> -->
-  <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6"></div>
-    <div class="col-sm-3">
-      <div class="form-group">
-        <table>
-          <tr>
-            <th><input type="text" class="form-control" placeholder="Default input" id="inputDefault"></th>
-            <th><button type="button" class="btn btn-secondary">Search</button></th>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
 
-
-  <table class="table table-hover table-bordered table-sm table-primary">
-    <thead>
-      <tr class="bg-dark">
-        <th scope="col">USN</th>
-        <th scope="col">Name</th>
-        <th scope="col">Semester</th>
-        <th scope="col">Date Of Birth</th>
-        <th scope="col">Section</th>
-        <th scope="col">Modify</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for student in student_list: %}
-      <tr>
-        <td>{{ student["USN"] }}</td>
-        <td>{{ student["Name"] }}</td>
-        <td>{{ student["Semester"] }}</td>
-        <td>{{ student["dob"] }}</td>
-        <td>{{ student["Section"] }}</td>
-        <td>
-          <a class="btn btn-warning btn-sm" href="./update_student/{{student.USN}}"><i class="fa fa-pencil"></i></a>
-          <a class="btn btn-danger btn-sm" href="./delete_student/{{student.USN}}"><i class="fa fa-trash"></i></a>
-        </td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
 
 </div>
 {% endblock %}
