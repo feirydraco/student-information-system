@@ -28,7 +28,7 @@
       </thead>
       <tbody>
         {% for student in student_list: %}
-        <tr>
+        <tr onclick="displayModal(this)">
           <td>{{ student["USN"] }}</td>
           <td>{{ student["Name"] }}</td>
           <td>{{ student["Semester"] }}</td>
@@ -43,4 +43,10 @@
       </tbody>
     </table>
 </div>
+
+<script>
+  function displayModal() {
+    alert("YES");
+  }
+</script>
 {% endblock %}

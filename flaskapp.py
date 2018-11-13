@@ -64,6 +64,12 @@ def index_student():
                                  ORDER BY Name".format(text))
         return render_template("/student/index_student.html", student_list=student_list)
 
+@app.route("/view_student/<string:USN>", methods=['GET', 'POST'])
+def view_student(USN):
+    student = qquery_db(
+        "SELECT * FROM Student WHERE USN=?", [USN], one=True)
+    return render_template("/student/view_student.html", student=student)
+
 
 @app.route('/create_student', methods=['GET', 'POST'])
 def create_student():
@@ -82,7 +88,6 @@ def update_student(USN):
     if request.method == "GET":
         student = query_db(
             "SELECT * FROM Student WHERE USN=?", [USN], one=True)
-        print(student["Mentor"])
         return render_template("/student/update_student.html", student=student)
     if request.method == "POST":
         student = request.form.to_dict()
