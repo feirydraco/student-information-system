@@ -42,12 +42,7 @@ def close_connection(exception):
 
 @app.route("/")
 def index():
-    if request.method == "GET":
-        return render_template("index.html")
-    if request.method == "POST":
-        tokens = request.form.to_list()
-        print(tokens)
-        return render_template("search_results.html")
+    return render_template("index.html")
 
 #
 # STUDENT BLOCK
@@ -65,7 +60,8 @@ def index_student():
         text = request.form.get('partial')
         # TODO
         student_list = query_db("SELECT * FROM student \
-                                 WHERE Name LIKE '%{}%'".format(text))
+                                 WHERE Name LIKE '%{}%' \
+                                 ORDER BY Name".format(text))
         return render_template("/student/index_student.html", student_list=student_list)
 
 
