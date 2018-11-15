@@ -10,6 +10,7 @@ DATABASE = "data.db"
 # Config
 app.config.from_object(__name__)
 
+
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
@@ -41,30 +42,33 @@ def close_connection(exception):
 @app.route("/")
 def index():
     if not session.get('logged_in'):
-        return render_template("login.html", error=False)
+        return login()
     else:
         return render_template("index.html")
 
 
-@app.route("/login", methods=['POST'])
+@app.route("/login", methods=['GET', 'POST'])
 def login():
-    try:
-        password = request.form['password']
-        teacher_id = int(request.form['teacher_id'])
-        print(password, teacher_id)
-    except ValueError:
-        return render_template("login.html", error=True)
+    if request.method == 'GET':
+        return render_template("login.html", error=False)
+    if request.method == 'POST':
+        try:
+            password = request.form['password']
+            teacher_id = int(request.form['teacher_id'])
+            print(password, teacher_id)
+        except ValueError:
+            return render_template("login.html", error=True)
 
-    teacher = query_db("SELECT * FROM Teacher \
-                            WHERE teacher_id = ?", [teacher_id], one=True)
-    if teacher is None:
-        return render_template("login.html", error=True)
-        # TODO
-    if teacher["password"] == password:
-        session['logged_in'] = True
-        return index()
-    else:
-        return render_template("login.html", error=True)
+        teacher = query_db("SELECT * FROM Teacher \
+                                WHERE teacher_id = ?", [teacher_id], one=True)
+        if teacher is None:
+            return render_template("login.html", error=True)
+            # TODO
+        if teacher["password"] == password:
+            session['logged_in'] = True
+            return index()
+        else:
+            return render_template("login.html", error=True)
 
 
 if __name__ == '__main__':
