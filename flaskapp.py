@@ -70,6 +70,11 @@ def login():
         else:
             return render_template("login.html", error=True)
 
+@app.route('/logout')
+def logout():
+    session.pop('logged_in', None)
+    flash('You were logged out')
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)

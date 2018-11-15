@@ -242,7 +242,7 @@
             <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
             </li>
             <li class="divider"></li>
-            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
             </li>
           </ul>
           <!-- /.dropdown-user -->
@@ -360,30 +360,41 @@
     </nav>
 
 
-    {% block content %}
-    <h1>No content provided.</h1>
-    {% endblock content %}
-    <!-- /#page-wrapper -->
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">
+            {% block title %}
+            Undefined
+            {% endblock %}
+          </h1>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      {% block content %}
+      <h1>No content provided.</h1>
+      {% endblock content %}
+      <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
 
-  </div>
-  <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
 
-  <!-- jQuery -->
-  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/metisMenu/metisMenu.min.js') }}"></script>
 
-  <!-- Metis Menu Plugin JavaScript -->
-  <script src="{{ url_for('static', filename='vendor/metisMenu/metisMenu.min.js') }}"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/raphael/raphael.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/morrisjs/morris.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='data/morris-data.js') }}"></script>
 
-  <!-- Morris Charts JavaScript -->
-  <script src="{{ url_for('static', filename='vendor/raphael/raphael.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='vendor/morrisjs/morris.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='data/morris-data.js') }}"></script>
-
-  <!-- Custom Theme JavaScript -->
-  <script src="{{ url_for('static', filename='dist/js/sb-admin-2.js') }}"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ url_for('static', filename='dist/js/sb-admin-2.js') }}"></script>
 
 </body>
 
