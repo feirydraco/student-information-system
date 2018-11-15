@@ -12,6 +12,7 @@ app.config.from_object(__name__)
 
 ID = None
 
+
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
@@ -73,43 +74,54 @@ def login():
         else:
             return render_template("login.html", error=True)
 
+
 @app.route('/logout')
 def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
     return redirect(url_for('index'))
 
-@app.route('/view')
+
+@app.route('/view', methods=['GET', 'POST'])
 def view():
-    if not session.get('logged_in'):
-        return login()
-    else:
-        global ID
+    global ID
+    if request.method == 'GET':
+        if not session.get('logged_in'):
+            return login()
+        else:
+            teacher = query_db("SELECT * FROM Teacher \
+                                 WHERE teacher_id=?", [ID], one=True)
+            print(teacher)
+            return render_template("user.html", id=ID, teacher=teacher, error=None)
+    if request.method == 'POST':
+        old = request.form['oldPassword']
+        new = request.form['newPassword']
+
         teacher = query_db("SELECT * FROM Teacher \
-                             WHERE teacher_id=?", [ID], one=True)
-        print(teacher)
-        return render_template("user.html", id=ID, teacher=teacher)
+                            WHERE teacher_id=?", [ID], one=True)
+        if teacher['password'] == old:
+            change_db("UPDATE Teacher SET password = ? WHERE teacher_id = ?", (new, ID))
+            return render_template("user.html", id=ID, teacher=teacher, changed=True)
+        else:
+            return render_template("user.html", id=ID, teacher=teacher, error=True)
 
-class ReusableForm(Form):
-    name = TextField('Name:', validators=[validators.required()])
 
-@app.route("/view", methods=['POST'])
-def changePassword():
-	form = ReusableForm(request.form)
-	if request.method == 'POST':
-		old = request.form.get('oldPassword')
-		new = request.form.get('newPassword')
-		global ID
-		teacher = query_db("SELECT * FROM Teacher \
-                             WHERE teacher_id=?", [ID], one=True)
-		password = teacher['password']
-		if password == old:
-			conn = sqlite3.connect(DATABASE)
-			change_db("UPDATE Teacher SET password = ? WHERE teacher_id = ?", (new, ID))
-		
-		else:
-			return render_template("login.html", error=True)	
-	return render_template("user.html", id=ID, teacher=teacher)
+# @app.route("/view", methods=['POST'])
+# def changePassword():
+# 	form = ReusableForm(request.form)
+# 	if request.method == 'POST':
+# 		old = request.form.get('oldPassword')
+# 		new = request.form.get('newPassword')
+# 		global ID
+# 		teacher = query_db("SELECT * FROM Teacher \
+#                              WHERE teacher_id=?", [ID], one=True)
+# 		password = teacher['password']
+# 		if password == old:
+# 			change_db("UPDATE Teacher SET password = ? WHERE teacher_id = ?", (new, ID))
+#
+# 		else:
+# 			return render_template("login.html", error=True)
+# 	return render_template("user.html", id=ID, teacher=teacher)
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)

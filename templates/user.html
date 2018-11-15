@@ -34,27 +34,33 @@ Teacher Profile
       </div>
       <div class="tab-pane fade" id="settings">
         <h4>Change Password</h4>
-        <form method="post" class="form-inline pull-right search1">
-			
-		<div class="form-group">
-			<label>Old Password</label>
-			<input class= "form-control mr-sm-2" type="text" placeholder= "Enter Text" aria-label = "oldPassword" name = "oldPassword">
-		</div>           
+        <form method="post" class="form">
+          <div class="form-group">
+            <label>Old Password</label>
+            <input class="form-control" type="text" placeholder="Enter Text" aria-label="oldPassword" name="oldPassword">
+          </div>
           <div class="form-group">
             <label>New Password</label>
-            <input class="form-control" placeholder="Enter text" aria-label = "newPassword" name = "newPassword">
+            <input class="form-control" type="password" placeholder="Enter text" aria-label="newPassword" name="newPassword">
           </div>
-          <input type= "submit" class="btn btn-outline btn-warning"> </button>
-		{% if error == True:%}
-   		<div class="alert alert-danger alert-dismissable" style="text-align: center">
-      		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      Invalid Details
-    	</div>
-    {% endif %}
+          <button type="submit" class="btn btn-lg btn-primary btn-block btn-outline" value="Submit">Update</button>
         </form>
       </div>
     </div>
   </div>
-    <!-- /.panel-body -->
+  {% if error == True:%}
+  <div class="alert alert-danger alert-dismissable" style="text-align: center">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    Invalid Details
+    {% endif %}
+    {% if changed == True: %}
+    <div class="alert alert-success alert-dismissable" style="text-align: center">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      Password Updated
+      {% endif %}
+    </div>
+  </div>
 
-    {% endblock content%}
+  <!-- /.panel-body -->
+
+  {% endblock content%}
