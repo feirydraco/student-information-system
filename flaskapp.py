@@ -84,7 +84,11 @@ def view():
     if not session.get('logged_in'):
         return login()
     else:
-        return render_template("user.html", id=ID)
+        global ID
+        teacher = query_db("SELECT * FROM Teacher \
+                             WHERE teacher_id=?", [ID], one=True)
+        print(teacher)
+        return render_template("user.html", id=ID, teacher=teacher)
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
