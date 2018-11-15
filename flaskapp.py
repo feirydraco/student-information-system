@@ -12,6 +12,7 @@ app.config.from_object(__name__)
 
 ID = None
 
+
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
@@ -73,22 +74,33 @@ def login():
         else:
             return render_template("login.html", error=True)
 
+
 @app.route('/logout')
 def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
     return redirect(url_for('index'))
 
-@app.route('/view')
+
+@app.route('/view', methods=['GET', 'POST'])
 def view():
-    if not session.get('logged_in'):
-        return login()
-    else:
-        global ID
-        teacher = query_db("SELECT * FROM Teacher \
-                             WHERE teacher_id=?", [ID], one=True)
-        print(teacher)
-        return render_template("user.html", id=ID, teacher=teacher)
+    global ID
+    if request.method == 'GET':
+        if not session.get('logged_in'):
+            return login()
+        else:
+            teacher = query_db("SELECT * FROM Teacher \
+                                 WHERE teacher_id=?", [ID], one=True)
+            print(teacher)
+            return render_template("user.html", id=ID, teacher=teacher)
+    if request.method == 'POST':
+        if not session.get('logged_in'):
+            return login()
+        else:
+
+            print(teacher)
+            return render_template("user.html", id=ID, teacher=teacher)
+
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
