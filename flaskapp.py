@@ -38,10 +38,10 @@ def close_connection(exception):
         db.close()
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def index():
     if not session.get('logged_in'):
-        return login()
+        return render_template("login.html", error=False)
     else:
         return render_template("index.html")
 
