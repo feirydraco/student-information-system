@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SB Admin 2 - Bootstrap Admin Theme</title>
+  <title>Student Information System</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -39,7 +39,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+        <a class="navbar-brand" href="index.html">Student Information System</a>
       </div>
       <!-- /.navbar-header -->
 
@@ -239,7 +239,7 @@
             <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
           </a>
           <ul class="dropdown-menu dropdown-user">
-            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+            <li><a href="/view"><i class="fa fa-user fa-fw"></i> {{ id }}</a>
             </li>
             <li class="divider"></li>
             <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>

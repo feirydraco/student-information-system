@@ -10,6 +10,7 @@ DATABASE = "data.db"
 # Config
 app.config.from_object(__name__)
 
+ID = None
 
 def get_db():
     db = getattr(g, '_database', None)
@@ -44,7 +45,7 @@ def index():
     if not session.get('logged_in'):
         return login()
     else:
-        return render_template("index.html")
+        return render_template("index.html", id=ID)
 
 
 @app.route("/login", methods=['GET', 'POST'])
@@ -66,6 +67,8 @@ def login():
             # TODO
         if teacher["password"] == password:
             session['logged_in'] = True
+            global ID
+            ID = teacher_id
             return index()
         else:
             return render_template("login.html", error=True)
@@ -75,6 +78,13 @@ def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
     return redirect(url_for('index'))
+
+@app.route('/view')
+def view():
+    if not session.get('logged_in'):
+        return login()
+    else:
+        return render_template("user.html", id=ID)
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
