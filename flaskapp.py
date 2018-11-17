@@ -85,25 +85,25 @@ def logout():
 @app.route('/view', methods=['GET', 'POST'])
 def view():
     global ID
+    teacher = query_db("SELECT * FROM Teacher \
+                         WHERE teacher_id=?", [ID], one=True)
+    student_list = query_db("SELECT * FROM Student")
     if request.method == 'GET':
         if not session.get('logged_in'):
             return login()
         else:
-            teacher = query_db("SELECT * FROM Teacher \
-                                 WHERE teacher_id=?", [ID], one=True)
+
             print(teacher)
-            return render_template("user.html", id=ID, teacher=teacher, error=None)
+            return render_template("user.html", id=ID, teacher=teacher, error=None, student_list=student_list)
     if request.method == 'POST':
         old = request.form['oldPassword']
         new = request.form['newPassword']
 
-        teacher = query_db("SELECT * FROM Teacher \
-                            WHERE teacher_id=?", [ID], one=True)
         if teacher['password'] == old:
             change_db("UPDATE Teacher SET password = ? WHERE teacher_id = ?", (new, ID))
-            return render_template("user.html", id=ID, teacher=teacher, changed=True)
+            return render_template("user.html", id=ID, teacher=teacher, changed=True, student_list=student_list)
         else:
-            return render_template("user.html", id=ID, teacher=teacher, error=True)
+            return render_template("user.html", id=ID, teacher=teacher, error=True, student_list=student_list)
 
 
 # @app.route("/view", methods=['POST'])
