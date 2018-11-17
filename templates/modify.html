@@ -28,8 +28,39 @@ Modify
         <label>Phone</label>
         <input type="number" class="form-control" id="phone" name="phone" value={{identity.phone}}>
       </div>
-      <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+      {% elif entity=="Student" %}
+      <div class="form-group">
+        <label>Student ID</label>
+        <input type="text" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="student_name" name="student_name" value={{identity.student_name}}>
+      </div>
+      <div class="form-group">
+        <label>Academic Year</label>
+        <input type="text" class="form-control" id="academic_year" name="academic_year" value={{identity.academic_year}}>
+      </div>
+      <div class="form-group">
+        <label>Branch</label>
+        <input type="text" class="form-control" id="branch_code" name="branch_code" value={{identity.branch_code}}>
+      </div>
+      <div class="form-group">
+        <label>Semester</label>
+        <select class="form-control" selected="{{identity.semester}}">
+          <option selected disabled hidden>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+        </select>
+      </div>
       {% endif %}
+      <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
     </form>
   </div>
   <div class="alert alert-danger alert-dismissable" style="text-align: center;">
@@ -39,6 +70,8 @@ Modify
   <div class="panel-footer">
     {% if entity=="Teacher" %}
     ID: {{ identity['teacher_id'] }}
+    {% elif entity=="Student" %}
+    ID: {{ identity['student_id'] }}
     {% endif %}
   </div>
 </div>

@@ -18,6 +18,13 @@ Delete
           <p>The following changes cannot be reverted.</p>
         </div>
         <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+        {% elif entity=="Student" %}
+        <div class="form-group">
+          <div class="well" style="text-align: center;">
+            <h4>Deleting: {{ identity['student_name'] }}</h4>
+            <p>The following changes cannot be reverted.</p>
+          </div>
+          <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
         {% endif %}
     </form>
   </div>
