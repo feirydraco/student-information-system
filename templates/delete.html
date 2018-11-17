@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}
+Delete
+{% endblock title %}
+
+{% block content %}
+<div class="panel panel-yellow">
+  <div class="panel-heading">
+    Currently modifying: {{ entity }}
+  </div>
+  <div class="panel-body">
+    <form action="#" method="post">
+      {% if entity=="Teacher" %}
+      <div class="form-group">
+        <div class="well" style="text-align: center;">
+          <h4>Deleting: {{ identity['teacher_name'] }}</h4>
+          <p>The following changes cannot be reverted.</p>
+        </div>
+        <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+        {% endif %}
+    </form>
+  </div>
+  <div class="alert alert-danger alert-dismissable" style="text-align: center;">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    Application will logout for security.
+  </div>
+  <div class="panel-footer">
+    {% if entity=="Teacher" %}
+    ID: {{ identity['teacher_id'] }}
+    {% endif %}
+  </div>
+</div>
+{% endblock content %}

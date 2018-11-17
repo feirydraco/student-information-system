@@ -119,8 +119,6 @@ def teachers():
 def modify(uid, entity):
     global ID
     teacher_list = query_db("SELECT * FROM TEACHER")
-    teacher = query_db("SELECT * FROM Teacher \
-                         WHERE teacher_id=?", [ID], one=True)
     if entity == "teacher":
         values = query_db("SELECT * FROM Teacher \
                             WHERE teacher_id=?", [uid], one=True)
@@ -130,6 +128,20 @@ def modify(uid, entity):
             data = request.form.to_dict()
             dict = [data['teacher_id'], data['sub_code'], data['teacher_name'], data['phone'], uid]
             change_db("UPDATE Teacher SET teacher_id=?, sub_code=?, teacher_name=?, phone=? WHERE teacher_id=?", dict)
+            return logout()
+
+@app.route('/delete/<string:entity>/<string:uid>', methods=['GET', 'POST'])
+def delete(uid, entity):
+    global ID
+    teacher = query_db("SELECT * FROM Teacher \
+                         WHERE teacher_id=?", [ID], one=True)
+    if entity == "teacher":
+        values = query_db("SELECT * FROM Teacher \
+                            WHERE teacher_id=?", [uid], one=True)
+        if request.method == 'GET':
+            return render_template("delete.html", id=ID, entity="Teacher", identity=values)
+        if request.method == 'POST':
+            change_db("DELETE FROM Teacher WHERE teacher_id=?", [uid])
             return logout()
 
 
