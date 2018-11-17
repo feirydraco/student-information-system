@@ -110,7 +110,7 @@ def teachers():
     global ID
     if request.method == 'GET':
         teacher_list = query_db("SELECT * FROM TEACHER")
-        return render_template("/teachers_info.html", teacher_list = teacher_list)
+        return render_template("/teachers_info.html", id=ID, teacher_list = teacher_list)
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)

@@ -10,10 +10,11 @@
   <!-- Bootstrap Core CSS -->
   <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
+
   <!-- MetisMenu CSS -->
   <link href="{{ url_for('static', filename='vendor/metisMenu/metisMenu.min.css') }}" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS (INCLUDES DATATABLES)-->
   <link href="{{ url_for('static', filename='dist/css/sb-admin-2.css') }}" rel="stylesheet">
 
   <!-- Morris Charts CSS -->
@@ -21,8 +22,6 @@
 
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 
 </head>
 
@@ -225,7 +224,7 @@
             </li>
             <li class="divider"></li>
             <li>
-              <a class="text-center" href="#">
+              <a class="text-center" href="#">class="table"
                 <strong>See All Alerts</strong>
                 <i class="fa fa-angle-right"></i>
               </a>
@@ -304,7 +303,7 @@
                 <li>
                   <a href="typography.html">Typography</a>
                 </li>
-                <li>
+                <li>//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js
                   <a href="icons.html"> Icons</a>
                 </li>
                 <li>
@@ -400,6 +399,7 @@
     <script src="{{ url_for('static', filename='dist/js/sb-admin-2.js') }}"></script>
 
     <!-- DataTables JavaScript -->
+    <script src="{{ url_for('static', filename='dist/js/sb-admin-2.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/datatables-plugins/dataTables.bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/datatables-responsive/dataTables.responsive.js') }}"></script>
