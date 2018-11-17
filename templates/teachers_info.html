@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}Teacher Details{% endblock %}
-
+<!-- TODO: MAKE sub_code field scrollable -->
 {% block content %}
 <table class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline collapsed" style="width: 100%;" id="dataTables">
   <thead>
@@ -10,7 +10,9 @@
       <th scope="col">Name</th>
       <th scope="col">Subject Code</th>
       <th scope="col">Date of Birth</th>
-	  <th scope="col">Phone</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Modify</th>
+
     </tr>
   </thead>
   {% for teacher in teacher_list: %}
@@ -19,7 +21,11 @@
     <td>{{ teacher["teacher_name"] }}</td>
     <td>{{ teacher["sub_code"] }}</td>
     <td>{{ teacher["date_of_birth"] }}</td>
-	<td>{{ teacher["phone"] }}</td>
+    <td>{{ teacher["phone"] }}</td>
+    <td>
+      <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/teacher/{{ teacher['teacher_id'] }}'"></button>
+      <button type="button" class="btn btn-outline btn-danger fa fa-trash" onclick="window.location.href='/delete/teacher/{{ teacher['teacher_id'] }}'"></button>
+    </td>
   </tr>
   {% endfor %}
 </table>

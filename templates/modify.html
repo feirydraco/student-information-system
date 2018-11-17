@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}
+Modify
+{% endblock title %}
+
+{% block content %}
+<div class="panel panel-yellow">
+  <div class="panel-heading">
+    Currently modifying: {{ entity }}
+  </div>
+  <div class="panel-body">
+    <form action="#" method="post">
+      {% if entity=="Teacher" %}
+      <div class="form-group">
+        <label>Teacher ID</label>
+        <input type="text" class="form-control" id="teacher_id" name="teacher_id" value={{identity.teacher_id}}>
+      </div>
+      <div class="form-group">
+        <label>Subject Code</label>
+        <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="teacher_name" name="teacher_name" value={{identity.teacher_name}}>
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="number" class="form-control" id="phone" name="phone" value={{identity.phone}}>
+      </div>
+      <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+      {% endif %}
+    </form>
+  </div>
+  <div class="alert alert-danger alert-dismissable" style="text-align: center;">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    Application will logout for security.
+  </div>
+  <div class="panel-footer">
+    {% if entity=="Teacher" %}
+    ID: {{ identity['teacher_id'] }}
+    {% endif %}
+  </div>
+</div>
+{% endblock content %}

@@ -100,17 +100,37 @@ def view():
         new = request.form['newPassword']
 
         if teacher['password'] == old:
-            change_db("UPDATE Teacher SET password = ? WHERE teacher_id = ?", (new, ID))
+            change_db(
+                "UPDATE Teacher SET password = ? WHERE teacher_id = ?", (new, ID))
             return render_template("user.html", id=ID, teacher=teacher, changed=True, student_list=student_list)
         else:
             return render_template("user.html", id=ID, teacher=teacher, error=True, student_list=student_list)
 
-@app.route('/teachers', methods=['GET', 'POST'])
+
+@app.route('/teachers')
 def teachers():
     global ID
-    if request.method == 'GET':
-        teacher_list = query_db("SELECT * FROM TEACHER")
-        return render_template("/teachers_info.html", id=ID, teacher_list = teacher_list)
+    print(ID)
+    teacher_list = query_db("SELECT * FROM TEACHER")
+    return render_template("/teachers_info.html", id=ID, teacher_list=teacher_list)
+
+
+@app.route('/modify/<string:entity>/<string:uid>', methods=['GET', 'POST'])
+def modify(uid, entity):
+    global ID
+    teacher_list = query_db("SELECT * FROM TEACHER")
+    teacher = query_db("SELECT * FROM Teacher \
+                         WHERE teacher_id=?", [ID], one=True)
+    if entity == "teacher":
+        values = query_db("SELECT * FROM Teacher \
+                            WHERE teacher_id=?", [uid], one=True)
+        if request.method == 'GET':
+            return render_template("modify.html", id=ID, entity="Teacher", identity=values)
+        if request.method == 'POST':
+            data = request.form.to_dict()
+            dict = [data['teacher_id'], data['sub_code'], data['teacher_name'], data['phone'], uid]
+            change_db("UPDATE Teacher SET teacher_id=?, sub_code=?, teacher_name=?, phone=? WHERE teacher_id=?", dict)
+            return logout()
 
 
 if __name__ == '__main__':
