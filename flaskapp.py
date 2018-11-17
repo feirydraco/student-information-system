@@ -105,23 +105,11 @@ def view():
         else:
             return render_template("user.html", id=ID, teacher=teacher, error=True, student_list=student_list)
 
-
-# @app.route("/view", methods=['POST'])
-# def changePassword():
-# 	form = ReusableForm(request.form)
-# 	if request.method == 'POST':
-# 		old = request.form.get('oldPassword')
-# 		new = request.form.get('newPassword')
-# 		global ID
-# 		teacher = query_db("SELECT * FROM Teacher \
-#                              WHERE teacher_id=?", [ID], one=True)
-# 		password = teacher['password']
-# 		if password == old:
-# 			change_db("UPDATE Teacher SET password = ? WHERE teacher_id = ?", (new, ID))
-#
-# 		else:
-# 			return render_template("login.html", error=True)
-# 	return render_template("user.html", id=ID, teacher=teacher)
+@app.route('/teachers', methods=['GET', 'POST'])
+def teachers():
+    global ID
+    if request.method == 'GET':
+        pass
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
