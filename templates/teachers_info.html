@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% set active_switch_teacher = "active" %}
+
+{% block title %}Teacher Details{% endblock %}
+
+{% block content %}
+<table class="table" id="dataTable">
+  <thead>
+    <tr>
+      <th scope="col">Teacher ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Subject Code</th>
+      <th scope="col">Dob</th>
+	  <th scope="col">Phone</th>
+    </tr>
+  </thead>
+  {% for teacher in teacher_list: %}
+  <tr>
+    <td>{{ teacher["teacher_id"] }}</td>
+    <td>{{ teacher["teacher_name"] }}</td>
+    <td>{{ teacher["sub_code"] }}</td>
+    <td>{{ teacher["date_of_birth"] }}</td>
+	<td>{{ teacher["phone"] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
