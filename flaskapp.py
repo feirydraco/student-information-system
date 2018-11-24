@@ -173,7 +173,7 @@ def delete(uid, entity):
         if request.method == 'POST':
             change_db("DELETE FROM Student WHERE student_id=?", [uid])
             return logout()
-#TODO 
+#TODO
 # def request_graph_data():
 #     date =
 
@@ -183,7 +183,7 @@ def attendance():
     if not session.get('logged_in'):
         return login()
     else:
-
+        attendance_list = query_db("SELECT * FROM Attendance")
         return render_template("attendance.html", id=ID)
 
 if __name__ == '__main__':
