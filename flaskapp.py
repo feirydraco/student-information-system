@@ -173,7 +173,18 @@ def delete(uid, entity):
         if request.method == 'POST':
             change_db("DELETE FROM Student WHERE student_id=?", [uid])
             return logout()
+#TODO 
+# def request_graph_data():
+#     date =
 
+@app.route("/attendance")
+def attendance():
+    global ID
+    if not session.get('logged_in'):
+        return login()
+    else:
+
+        return render_template("attendance.html", id=ID)
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
