@@ -1,8 +1,32 @@
 {% extends "base.html" %}
 
-{% block title %}Visualisations{% endblock %}
+{% block title %}Attendance{% endblock %}
 
 {% block content %}
+<table class="table table-striped table-bordered table-hover dataTables no-footer dtr-inline collapsed" style="width: 100%;" id="dataTables">
+  <thead>
+    <tr>
+      <th scope="col">Subject Code</th>
+      <th scope="col">Student ID</th>
+      <th scope="col"><strong>1</strong></th>
+      <th scope="col"><strong>2</strong></th>
+      <th scope="col"><strong>3</strong></th>
+      <th scope="col">Final Attendance</th>
+      <th scope="col">Modify</th>
+    </tr>
+  </thead>
+  {% for entry in entry_list: %}
+  <tr>
+    <td>{{ entry['sub_code'] }}</td>
+    <td>{{ entry['student_id'] }}</td>
+    <td>{{ entry['a1'] }}</td>
+    <td>{{ entry['a2'] }}</td>
+    <td>{{ entry['a3'] }}</td>
+    <td>{{ entry['final_attendance'] }}</td>
+    <td>
 
-<div id="placeholder" style="width:600px;height:300px"></div>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
 {% endblock content %}

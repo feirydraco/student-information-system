@@ -183,8 +183,8 @@ def attendance():
     if not session.get('logged_in'):
         return login()
     else:
-        attendance_list = query_db("SELECT * FROM Attendance")
-        return render_template("attendance.html", id=ID)
+        entry_list = query_db("SELECT * FROM Attendance")
+        return render_template("attendance.html", id=ID, entry_list=entry_list)
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
