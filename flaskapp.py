@@ -186,6 +186,15 @@ def attendance():
         entry_list = query_db("SELECT * FROM Attendance")
         return render_template("attendance.html", id=ID, entry_list=entry_list)
 
+@app.route("/courses")
+def courses():
+    global ID
+    if not session.get('logged_in'):
+        return login()
+    else:
+        entry_list = query_db("SELECT * FROM Courses")
+        return render_template("courses.html", id=ID, entry_list=entry_list)
+
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
     app.run(host="0.0.0.0", port=5000, debug=True)
