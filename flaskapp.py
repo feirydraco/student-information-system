@@ -4,6 +4,7 @@ from wtforms import Form, TextField, TextAreaField, validators, StringField, Sub
 import os
 import sqlite3
 from urllib.parse import unquote
+from jinja2 import Template
 
 app = Flask(__name__)
 DATABASE = "data.db"
@@ -203,6 +204,18 @@ def branch():
     else:
         entry_list = query_db("SELECT * FROM Branch")
         return render_template("branch.html", id=ID, entry_list=entry_list)
+
+@app.route("/semester")
+def semester():
+    global ID
+    if not session.get('logged_in'):
+        return login()
+    else:
+        semester_list = []
+        for i in range(8):
+            semester_list.append(query_db("SELECT * FROM Subject WHERE semester={}".format(i + 1)))
+        return render_template("semester.html", id=ID, semester_list=semester_list)
+
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)

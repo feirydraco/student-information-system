@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Courses Available{% endblock %}
+
+{% block content %}
+{% for semester in semester_list : %}
+<div class="col-lg-4">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Semester {{ loop.index0 + 1 }}
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Subject Code</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Credits</th>
+              <th scope="col">Elective</th>
+            </tr>
+          </thead>
+          {% for entry in semester_list[loop.index0] %}
+          <tr>
+            <td>{{ entry['sub_code'] }}</td>
+            <td>{{ entry['sub_name'] }}</td>
+            <td>{{ entry['credits'] }}</td>
+            <td>{{ entry['elective'] }}</td>
+          </tr>
+          {% endfor %}
+      </table>
+    </div>
+  </div>
+  <div class="panel-footer">
+    More details
+  </div>
+</div>
+</div>
+{% endfor %}
+{% endblock content %}
