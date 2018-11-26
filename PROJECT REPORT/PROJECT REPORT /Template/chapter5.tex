@@ -1,0 +1,18 @@
+\chapter{FLASK-SQLITE DATABASE CONNECTIVITY}
+Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. However, Flask supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Extensions are updated far more regularly than the core Flask program. Flask is commonly used with MongoDB, which gives it more control over databases and history.
+
+Applications that use the Flask framework include Pinterest, LinkedIn, and the community web page for Flask itself.\\
+\section{Database Schema}
+In Flask we need only a single table for the application and it will support SQLite. All we need to do is put the contents of the .sql file in the same folder where program.py file id there.
+\\
+\section{5 Steps to connect to the database in flask}
+There are 5 steps to connect any flask application with the database in sqlite. They are as follows: 
+\begin{itemize}
+\item{Import the dependencies }
+\item{Open a connection to an SQLite database file} 
+\item{Load the data from the dataframe into the database} 
+\item{Make functions to execute different SQL queries} 
+\item{Closing connection}
+\end{itemize}
+
+

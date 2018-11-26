@@ -1,0 +1,96 @@
+\documentclass[12pt,oneside]{report}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{multicol}
+\usepackage{titletoc}
+\usepackage{ragged2e}
+\usepackage{fancyhdr} 
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+
+
+\usepackage{listings}
+\lstset{frame=tb,
+  language=Java,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} 
+
+\usepackage{etoolbox} % enable fancyhdr on chapter pages.
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\patchcmd{\lstlisting}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\renewcommand\bibname{References}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{STUDENT INFORMATION SYSTEM}
+\fancyfoot[L]{RNSIT, Dept. of CSE}
+\fancyfoot[R]{Page \thepage}
+
+\renewcommand{\headrulewidth}{5pt}
+\renewcommand{\footrulewidth}{5pt}
+\newlength\FHoffset
+\fancyheadoffset{\FHoffset}
+
+\definecolor{darkbrown}{RGB}{153, 51, 51}
+\definecolor{blue}{RGB}{102, 102, 255}
+\definecolor{black}{RGB}{0, 0, 0}
+
+\renewcommand{\headrule}{\hbox to\headwidth{\color{darkbrown}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{darkbrown}\leaders\hrule height \footrulewidth\hfill}}
+
+
+\renewcommand{\contentsname}{\centering Contents}
+
+\AtBeginDocument{%
+  \addtocontents{toc}{\protect\thispagestyle{empty}}%
+  \addtocontents{lof}{\protect\thispagestyle{empty}}%
+}
+
+\usepackage{geometry}
+\geometry{
+	lmargin = 31.75mm,
+	rmargin = 25.4mm,
+	top = 19.05mm,
+	bottom = 19.05mm,
+}
+
+\begin{document}
+	
+\input{./title.tex}
+\input{./certificate.tex}
+\input{./abstract.tex}
+\input{./acknowledgements.tex}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\listoffigures
+
+\pagenumbering{arabic}
+\input{./chapter1.tex}
+\input{./chapter2.tex}
+\input{./chapter3.tex}
+\input{./chapter4.tex}
+\input{./chapter5.tex}
+\input{./chapter6.tex}
+\input{./chapter7.tex}
+\input{./chapter8.tex}
+\input{./chapter9.tex}
+\input{./ref.tex}
+
+\end{document}
+
+
