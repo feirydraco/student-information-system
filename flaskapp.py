@@ -23,7 +23,7 @@ def get_db():
     return db
 
 
-def query_db(query, args, one = False):
+def query_db(query: object, args: object, one: object = False) -> object:
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
@@ -113,21 +113,21 @@ def view():
 def teachers():
     global ID
     print(ID)
-    teacher_list = query_db("SELECT * FROM TEACHER")
+    teacher_list = query_db("SELECT * FROM TEACHER", [])
     return render_template("/teachers_info.html", id=ID, teacher_list=teacher_list)
 
 
 @app.route('/students')
 def students():
     global ID
-    student_list = query_db("SELECT * FROM Student")
+    student_list = query_db("SELECT * FROM Student", [])
     return render_template("/students_info.html", id=ID, student_list=student_list)
 
 
 @app.route('/modify/<string:entity>/<string:uid>/<string:uid2>', methods=['GET', 'POST'])
 def modify(uid, uid2, entity):
     global ID
-    teacher_list = query_db("SELECT * FROM TEACHER")
+    teacher_list = query_db("SELECT * FROM TEACHER", [])
     if entity == "teacher":
         values = query_db("SELECT * FROM Teacher \
                             WHERE teacher_id=?", [uid], one=True)
@@ -190,7 +190,7 @@ def marksheet():
     if not session.get('logged_in'):
         return login()
     else:
-        entry_list = query_db("SELECT * FROM Marksheet")
+        entry_list = query_db("SELECT * FROM Marksheet", [])
         return render_template("marksheet.html", id=ID, entry_list=entry_list)
 
 @app.route("/attendance")
@@ -199,7 +199,7 @@ def attendance():
     if not session.get('logged_in'):
         return login()
     else:
-        entry_list = query_db("SELECT * FROM Attendance")
+        entry_list = query_db("SELECT * FROM Attendance", [])
         return render_template("attendance.html", id=ID, entry_list=entry_list)
 
 @app.route("/courses")
@@ -208,7 +208,7 @@ def courses():
     if not session.get('logged_in'):
         return login()
     else:
-        entry_list = query_db("SELECT * FROM Courses")
+        entry_list = query_db("SELECT * FROM Courses", [])
         return render_template("courses.html", id=ID, entry_list=entry_list)
 
 @app.route("/branch")
@@ -217,7 +217,7 @@ def branch():
     if not session.get('logged_in'):
         return login()
     else:
-        entry_list = query_db("SELECT * FROM Branch")
+        entry_list = query_db("SELECT * FROM Branch", [])
         return render_template("branch.html", id=ID, entry_list=entry_list)
 
 @app.route("/semester")
@@ -228,7 +228,7 @@ def semester():
     else:
         semester_list = []
         for i in range(8):
-            semester_list.append(query_db("SELECT * FROM Subject WHERE semester={}".format(i + 1)))
+            semester_list.append(query_db("SELECT * FROM Subject WHERE semester=?", [i + 1]))
         return render_template("semester.html", id=ID, semester_list=semester_list)
 
 @app.route('/delete/<string:entity>/<string:uid>', methods=['GET', 'POST'])
