@@ -167,6 +167,7 @@ def modify(uid, uid2, entity):
             # avg = int((int(data['a1']) + int(data['a2']) + int(data['a3']))/3)
             dic = [data['sub_code'], data['student_id'],
                     data['a1'], data['a2'], data['a3'], data['a1'], data['a2'], data['a3'], uid2, uid]
+            #STORED_PROCEDURE_DEMO
             change_db(
                 "UPDATE Attendance SET sub_code=?, student_id=?, a1=?, a2=?, a3=?, final_attendance=avg(?, ?, ?) WHERE sub_code=? AND student_id=?", dic)
             return redirect(url_for("attendance"))
