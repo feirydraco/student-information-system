@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add
+{% endblock title %}
+
+{% block content %}
+<div class="panel panel-yellow">
+  <div class="panel-heading">
+    Add to Database
+  </div>
+  <div class="panel-body">
+    <form action="#" method="post">
+      {% if entity=="Teacher" %}
+      <div class="form-group">
+        <label>Teacher ID</label>
+        <input type="text" class="form-control" id="teacher_id" name="teacher_id">
+      </div>
+      <div class="form-group">
+        <label>Subject Code</label>
+        <input type="number" class="form-control" id="sub_code" name="sub_code">
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="teacher_name" name="teacher_name">
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="number" class="form-control" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+      {% elif entity=="Student" %}
+      <div class="form-group">
+        <label>Student ID</label>
+        <input type="number" class="form-control" id="student_id" name="student_id">
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="student_name" name="student_name">
+      </div>
+       <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+      </div>
+      <div class="form-group">
+        <label>Academic Year</label>
+        <input type="number" class="form-control" id="academic_year" name="academic_year">
+      </div>
+      <div class="form-group">
+        <label>Branch</label>
+        <input type="text" class="form-control" id="branch_code" name="branch_code">
+      </div>
+      <div class="form-group">
+        <label>Semester</label>
+        <select class="form-control" id="semester" name="semester">
+          <option selected disabled hidden>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+        </select>
+      </div>
+      {% elif entity=="Courses": %}
+      <div class="form-group">
+        <label>Teacher ID</label>
+        <input type="number" class="form-control" id="academic_year" name="academic_year">
+      </div>
+      <div class="form-group">
+        <label>Subject Code</label>
+        <input type="number" class="form-control" id="academic_year" name="academic_year">
+      </div>
+      <div class="form-group">
+        <label>Room</label>
+        <input type="number" class="form-control" id="academic_year" name="academic_year">
+      </div>
+      {% endif %}
+      <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+    </form>
+  </div>
+  <div class="alert alert-danger alert-dismissable" style="text-align: center;">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    Application will logout for security.
+  </div>
+</div>
+{% endblock content %}

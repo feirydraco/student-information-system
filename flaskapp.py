@@ -132,10 +132,10 @@ def modify(uid, entity):
             return render_template("modify.html", id=ID, entity="Teacher", identity=values)
         if request.method == 'POST':
             data = request.form.to_dict()
-            dict = [data['teacher_id'], data['sub_code'],
+            dic = [data['teacher_id'], data['sub_code'],
                     data['teacher_name'], data['phone'], uid]
             change_db(
-                "UPDATE Teacher SET teacher_id=?, sub_code=?, teacher_name=?, phone=? WHERE teacher_id=?", dict)
+                "UPDATE Teacher SET teacher_id=?, sub_code=?, teacher_name=?, phone=? WHERE teacher_id=?", dic)
             return logout()
     if entity == "student":
         values = query_db("SELECT * FROM Student \
@@ -146,37 +146,14 @@ def modify(uid, entity):
         if request.method == 'POST':
             data = request.form.to_dict()
             print(data.keys())
-            dict = [data['student_id'], data['student_name'],
+            dic = [data['student_id'], data['student_name'],
                     data['academic_year'], data['branch_code'], uid]
             change_db(
-                "UPDATE Student SET student_id=?, student_name=?, academic_year=?, branch_code=? WHERE student_id=?", dict)
+                "UPDATE Student SET student_id=?, student_name=?, academic_year=?, branch_code=? WHERE student_id=?", dic)
             return logout()
 
 
-@app.route('/delete/<string:entity>/<string:uid>', methods=['GET', 'POST'])
-def delete(uid, entity):
-    global ID
-    teacher = query_db("SELECT * FROM Teacher \
-                         WHERE teacher_id=?", [ID], one=True)
-    if entity == "teacher":
-        values = query_db("SELECT * FROM Teacher \
-                            WHERE teacher_id=?", [uid], one=True)
-        if request.method == 'GET':
-            return render_template("delete.html", id=ID, entity="Teacher", identity=values)
-        if request.method == 'POST':
-            change_db("DELETE FROM Teacher WHERE teacher_id=?", [uid])
-            return logout()
-    if entity == "student":
-        values = query_db("SELECT * FROM Student \
-                            WHERE student_id=?", [uid], one=True)
-        if request.method == 'GET':
-            return render_template("delete.html", id=ID, entity="Student", identity=values)
-        if request.method == 'POST':
-            change_db("DELETE FROM Student WHERE student_id=?", [uid])
-            return logout()
-#TODO
-# def request_graph_data():
-#     date =
+
 
 @app.route("/attendance")
 def attendance():
@@ -215,6 +192,61 @@ def semester():
         for i in range(8):
             semester_list.append(query_db("SELECT * FROM Subject WHERE semester={}".format(i + 1)))
         return render_template("semester.html", id=ID, semester_list=semester_list)
+
+@app.route('/delete/<string:entity>/<string:uid>', methods=['GET', 'POST'])
+def delete(uid, entity):
+    global ID
+    teacher = query_db("SELECT * FROM Teacher \
+                         WHERE teacher_id=?", [ID], one=True)
+    if entity == "teacher":
+        values = query_db("SELECT * FROM Teacher \
+                            WHERE teacher_id=?", [uid], one=True)
+        if request.method == 'GET':
+            return render_template("delete.html", id=ID, entity="Teacher", identity=values)
+        if request.method == 'POST':
+            change_db("DELETE FROM Teacher WHERE teacher_id=?", [uid])
+            return logout()
+    if entity == "student":
+        values = query_db("SELECT * FROM Student \
+                            WHERE student_id=?", [uid], one=True)
+        if request.method == 'GET':
+            return render_template("delete.html", id=ID, entity="Student", identity=values)
+        if request.method == 'POST':
+            change_db("DELETE FROM Student WHERE student_id=?", [uid])
+            return logout()
+
+@app.route("/add/<string:entity>", methods=['GET', 'POST'])
+def add(entity):
+    global ID
+    if not session.get('logged_in'):
+        return login()
+    else:
+        if entity == "teacher":
+            if request.method == 'GET':
+                return render_template("add.html", id=ID, entity="Teacher")
+            if request.method == 'POST':
+                data = request.form.to_dict()
+                dic = [data['teacher_id'], data['sub_code'], data['teacher_name'], data['phone'], data['date_of_birth'], data['password']]
+                print(dic)
+                change_db("INSERT INTO Teacher VALUES (?, ?, ?, ?, ?, ?)", dic)
+                return logout()
+        if entity == "student":
+            if request.method == 'GET':
+                return render_template("add.html", id=ID, entity="Student")
+            if request.method == 'POST':
+                data = request.form.to_dict()
+                dic = [data['student_id'], data['student_name'], data['date_of_birth'], data['academic_year'], data['branch_code'], data['semester']]
+                change_db("INSERT INTO Student VALUES (?, ?, ?, ?, ?, ?)", dic)
+                return logout()
+        if entity == "courses":
+            if request.method == 'GET':
+                return render_template("add.html", id=ID, entity="Courses")
+            if request.method == 'POST':
+                data = request.form.to_dict()
+                dic = [data['teacher_id'], data['sub_code'], data['Room']]
+                change_db("INSERT INTO Courses VALUES (?, ?, ?", dic)
+                return logout()
+
 
 
 if __name__ == '__main__':

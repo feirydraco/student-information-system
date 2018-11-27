@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}Student Details{% endblock %}
+{% block title %}
+<div class="row">
+    <div class="col-lg-11">
+      Student Details
+    </div>
+    <div class="col-lg-1">
+      <button class="btn btn-primary btn-xl"  onclick="window.location.href='/add/student'">Add Student</button>
+    </div>
+  </div>
+{% endblock %}
 <!-- TODO: MAKE sub_code field scrollable -->
 {% block content %}
 <table class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline collapsed" style="width: 100%;" id="dataTables">

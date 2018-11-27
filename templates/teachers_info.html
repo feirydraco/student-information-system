@@ -1,35 +1,42 @@
 {% extends "base.html" %}
-
-{% block title %}Teacher Details{% endblock %}
-<!-- TODO: MAKE sub_code field scrollable -->
+{% block title %}
+  <div class="row">
+    <div class="col-lg-11">
+      Teacher Details
+    </div>
+    <div class="col-lg-1">
+      <button class="btn btn-primary btn-xl"  onclick="window.location.href='/add/student'">Add Teacher</button>
+    </div>
+  </div>
+{% endblock %}
 {% block content %}
-<table class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline collapsed" style="width: 100%;" id="dataTables">
-  <thead>
-    <tr>
-      <th scope="col">Teacher ID</th>
-      <th scope="col">Name</th>
-      <th scope="col">Subject Code</th>
-      <th scope="col">Date of Birth</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Modify</th>
-
-    </tr>
-  </thead>
-  {% for teacher in teacher_list: %}
-  <tr>
-    <td>{{ teacher["teacher_id"] }}</td>
-    <td>{{ teacher["teacher_name"] }}</td>
-    <td>{{ teacher["sub_code"] }}</td>
-    <td>{{ teacher["date_of_birth"] }}</td>
-    <td>{{ teacher["phone"] }}</td>
-    <td>
-      <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/teacher/{{ teacher['teacher_id'] }}'"></button>
-      <button type="button" class="btn btn-outline btn-danger fa fa-trash" onclick="window.location.href='/delete/teacher/{{ teacher['teacher_id'] }}'"></button>
-    </td>
-  </tr>
-  {% endfor %}
-</table>
-
-<div id="placeholder" style="width:600px;height:300px"></div>
-
+  <div class="row" style="align-content: center; padding-bottom: 16px;">
+    
+  </div>
+  <table class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline collapsed" style="width: 100%;" id="dataTables">
+    <thead>
+      <tr>
+        <th scope="col">Teacher ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Subject Code</th>
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Modify</th>
+      </tr>
+    </thead>
+    {% for teacher in teacher_list: %}
+      <tr>
+        <td>{{ teacher["teacher_id"] }}</td>
+        <td>{{ teacher["teacher_name"] }}</td>
+        <td>{{ teacher["sub_code"] }}</td>
+        <td>{{ teacher["date_of_birth"] }}</td>
+        <td>{{ teacher["phone"] }}</td>
+        <td>
+          <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/teacher/{{ teacher['teacher_id'] }}'"></button>
+          <button type="button" class="btn btn-outline btn-danger fa fa-trash" onclick="window.location.href='/delete/teacher/{{ teacher['teacher_id'] }}'"></button>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+  <div id="placeholder" style="width:600px;height:300px"></div>
 {% endblock %}
