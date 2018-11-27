@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71039edb-e799-4701-b9a5-5c59d17be93b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/attendance.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/attendance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/modify.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/semester.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/semester.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/flaskapp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="990">
-              <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+              <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -260,7 +252,7 @@
     <entry file="file://$PROJECT_DIR$/flaskapp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
-          <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
           </folding>

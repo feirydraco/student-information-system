@@ -14,6 +14,7 @@ app.config.from_object(__name__)
 ID = None
 
 
+
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
@@ -89,7 +90,8 @@ def view():
     teacher = query_db("SELECT * FROM Teacher \
                          WHERE teacher_id=?", [ID], one=True)
     student_list = query_db("SELECT * FROM Student \
-                             WHERE ")
+                             WHERE semester IN (SELECT semester FROM Subject, \
+                             Teacher WHERE Teacher.sub_code=Subject.sub_code AND teacher_id=?)", [ID])
     if request.method == 'GET':
         if not session.get('logged_in'):
             return login()
