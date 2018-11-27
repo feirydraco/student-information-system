@@ -23,7 +23,7 @@ def get_db():
     return db
 
 
-def query_db(query: object, args: object = (), one: object = False) -> object:
+def query_db(query, args, one = False):
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
