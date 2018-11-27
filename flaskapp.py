@@ -22,7 +22,7 @@ def get_db():
     return db
 
 
-def query_db(query, args=(), one=False):
+def query_db(query: object, args: object = (), one: object = False) -> object:
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
@@ -88,7 +88,8 @@ def view():
     global ID
     teacher = query_db("SELECT * FROM Teacher \
                          WHERE teacher_id=?", [ID], one=True)
-    student_list = query_db("SELECT * FROM Student")
+    student_list = query_db("SELECT * FROM Student \
+                             WHERE ")
     if request.method == 'GET':
         if not session.get('logged_in'):
             return login()
@@ -121,8 +122,8 @@ def students():
     return render_template("/students_info.html", id=ID, student_list=student_list)
 
 
-@app.route('/modify/<string:entity>/<string:uid>', methods=['GET', 'POST'])
-def modify(uid, entity):
+@app.route('/modify/<string:entity>/<string:uid>/<string:uid2>', methods=['GET', 'POST'])
+def modify(uid, uid2, entity):
     global ID
     teacher_list = query_db("SELECT * FROM TEACHER")
     if entity == "teacher":
@@ -151,9 +152,44 @@ def modify(uid, entity):
             change_db(
                 "UPDATE Student SET student_id=?, student_name=?, academic_year=?, branch_code=? WHERE student_id=?", dic)
             return logout()
+    if entity == "attendance":
+        values = query_db("SELECT * FROM Attendance \
+                            WHERE sub_code=? AND student_id=?", [uid2, uid], one=True)
+        if request.method == 'GET':
+            return render_template("modify.html", id=ID, entity="Attendance", identity=values)
+        if request.method == 'POST':
+            data = request.form.to_dict()
+            print(data.keys())
+            avg = int((int(data['a1']) + int(data['a2']) + int(data['a3']))/3)
+            dic = [data['sub_code'], data['student_id'],
+                    data['a1'], data['a2'], data['a3'], avg, uid2, uid]
+            change_db(
+                "UPDATE Attendance SET sub_code=?, student_id=?, a1=?, a2=?, a3=?, final_attendance=? WHERE sub_code=? AND student_id=?", dic)
+            return redirect(url_for("attendance"))
+    if entity == "courses":
+        values = query_db("SELECT * FROM Courses \
+                            WHERE teacher_id=? AND sub_code=?", [uid, uid2], one=True)
+        print(values.keys())
+        if request.method == 'GET':
+            return render_template("modify.html", id=ID, entity="Courses", identity=values)
+        if request.method == 'POST':
+            data = request.form.to_dict()
+            print(data.keys())
+            dic = [data['teacher_id'], data['sub_code'],
+                    data['Room'], uid, uid2]
+            change_db(
+                "UPDATE Courses SET teacher_id=?, sub_code=?, Room=? WHERE teacher_id=? AND sub_code=?", dic)
+            return redirect(url_for("courses"))
 
 
-
+@app.route("/marksheet")
+def marksheet():
+    global ID
+    if not session.get('logged_in'):
+        return login()
+    else:
+        entry_list = query_db("SELECT * FROM Marksheet")
+        return render_template("marksheet.html", id=ID, entry_list=entry_list)
 
 @app.route("/attendance")
 def attendance():

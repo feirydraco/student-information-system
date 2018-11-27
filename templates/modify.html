@@ -1,78 +1,114 @@
 {% extends "base.html" %}
-
 {% block title %}
-Modify
+  Modify
 {% endblock title %}
-
 {% block content %}
-<div class="panel panel-yellow">
-  <div class="panel-heading">
-    Currently modifying: {{ entity }}
-  </div>
-  <div class="panel-body">
-    <form action="#" method="post">
-      {% if entity=="Teacher" %}
-      <div class="form-group">
-        <label>Teacher ID</label>
-        <input type="text" class="form-control" id="teacher_id" name="teacher_id" value={{identity.teacher_id}}>
+  <div class="panel panel-yellow">
+    <div class="panel-heading">
+      Currently modifying: {{ entity }}
+    </div>
+    <div class="panel-body">
+      <form action="#" method="post">
+        {% if entity=="Teacher" %}
+          <div class="form-group">
+            <label>Teacher ID</label>
+            <input type="text" class="form-control" id="teacher_id" name="teacher_id" value={{identity.teacher_id}}>
+          </div>
+          <div class="form-group">
+            <label>Subject Code</label>
+            <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+          </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="teacher_name" name="teacher_name" value={{identity.teacher_name}}>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="number" class="form-control" id="phone" name="phone" value={{identity.phone}}>
+          </div>
+          {% elif entity=="Student" %}
+          <div class="form-group">
+            <label>Student ID</label>
+            <input type="number" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
+          </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="student_name" name="student_name" value={{identity.student_name}}>
+          </div>
+          <div class="form-group">
+            <label>Academic Year</label>
+            <input type="number" class="form-control" id="academic_year" name="academic_year" value={{identity.academic_year}}>
+          </div>
+          <div class="form-group">
+            <label>Branch</label>
+            <input type="text" class="form-control" id="branch_code" name="branch_code" value={{identity.branch_code}}>
+          </div>
+          <div class="form-group">
+            <label>Semester</label>
+            <select class="form-control" selected="{{identity.semester}}">
+              <option selected disabled hidden>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+              </select>
+            </div>
+            {% elif entity=="Attendance" %}
+            <div class="form-group">
+              <label>Subject Code</label>
+              <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+            </div>
+            <div class="form-group">
+              <label>Name</label>
+              <input type="number" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
+            </div>
+            <div class="form-group">
+              <label><strong>A 1</strong></label>
+              <input type="number" class="form-control" id="a1" name="a1" value={{identity.a1}}>
+            </div>
+            <div class="form-group">
+              <label><strong>A 2</strong></label>
+              <input type="number" class="form-control" id="a2" name="a2" value={{identity.a2}}>
+            </div>
+            <div class="form-group">
+              <label><strong>A 3</strong></label>
+              <input type="number" class="form-control" id="a3" name="a3" value={{identity.a3}}>
+            </div>
+            {% elif entity=="Courses" %}
+            <div class="form-group">
+              <label>Teacher ID</label>
+              <input type="number" class="form-control" id="teacher_id" name="teacher_id" value={{identity.teacher_id}}>
+            </div>
+            <div class="form-group">
+              <label>Subject Code</label>
+              <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+            </div>
+            <div class="form-group">
+              <label>Room</label>
+              <input type="number" class="form-control" id="Room" name="Room" value={{identity.Room}}>
+            </div>
+          {% endif %}
+          <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+        </form>
       </div>
-      <div class="form-group">
-        <label>Subject Code</label>
-        <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+      <div class="alert alert-danger alert-dismissable" style="text-align: center;">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        Application will logout for security.
       </div>
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" class="form-control" id="teacher_name" name="teacher_name" value={{identity.teacher_name}}>
+      <div class="panel-footer">
+        {% if entity=="Teacher" %}
+          ID: {{ identity['teacher_id'] }}
+          {% elif entity=="Student" %}
+          ID: {{ identity['student_id'] }}
+          {% elif entity=="Attendance" %}
+          <strong>Attendance Modification</strong>
+          {% elif entity=="Attendance" %}
+          <strong>Course Modification</strong>
+        {% endif %}
       </div>
-      <div class="form-group">
-        <label>Phone</label>
-        <input type="number" class="form-control" id="phone" name="phone" value={{identity.phone}}>
-      </div>
-      {% elif entity=="Student" %}
-      <div class="form-group">
-        <label>Student ID</label>
-        <input type="text" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
-      </div>
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" class="form-control" id="student_name" name="student_name" value={{identity.student_name}}>
-      </div>
-      <div class="form-group">
-        <label>Academic Year</label>
-        <input type="text" class="form-control" id="academic_year" name="academic_year" value={{identity.academic_year}}>
-      </div>
-      <div class="form-group">
-        <label>Branch</label>
-        <input type="text" class="form-control" id="branch_code" name="branch_code" value={{identity.branch_code}}>
-      </div>
-      <div class="form-group">
-        <label>Semester</label>
-        <select class="form-control" selected="{{identity.semester}}">
-          <option selected disabled hidden>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-        </select>
-      </div>
-      {% endif %}
-      <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
-    </form>
-  </div>
-  <div class="alert alert-danger alert-dismissable" style="text-align: center;">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-    Application will logout for security.
-  </div>
-  <div class="panel-footer">
-    {% if entity=="Teacher" %}
-    ID: {{ identity['teacher_id'] }}
-    {% elif entity=="Student" %}
-    ID: {{ identity['student_id'] }}
-    {% endif %}
-  </div>
-</div>
-{% endblock content %}
+    </div>
+  {% endblock content %}

@@ -25,6 +25,8 @@
         <td>{{ entry['sub_code'] }}</td>
         <td>{{ entry['Room'] }}</td>
         <td>
+          <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/courses/{{ entry['teacher_id'] }}/{{ entry['sub_code'] }}'"></button>
+          <button type="button" class="btn btn-outline btn-danger fa fa-trash" onclick="window.location.href='/delete/courses/{{ entry['teacher_id'] }}/{{ entry['sub_code'] }}'"></button>
         </td>
       </tr>
     {% endfor %}
