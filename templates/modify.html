@@ -78,6 +78,27 @@
               <label><strong>A 3</strong></label>
               <input type="number" class="form-control" id="a3" name="a3" value={{identity.a3}}>
             </div>
+             {% elif entity=="Marksheet" %}
+            <div class="form-group">
+              <label>Subject Code</label>
+              <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+            </div>
+            <div class="form-group">
+              <label>Student ID</label>
+              <input type="number" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
+            </div>
+            <div class="form-group">
+              <label><strong>T 1</strong></label>
+              <input type="number" class="form-control" id="t1" name="t1" value={{identity.t1}}>
+            </div>
+            <div class="form-group">
+              <label><strong>T 2</strong></label>
+              <input type="number" class="form-control" id="t2" name="t2" value={{identity.t2}}>
+            </div>
+            <div class="form-group">
+              <label><strong>T 3</strong></label>
+              <input type="number" class="form-control" id="t3" name="t3" value={{identity.t3}}>
+            </div>
             {% elif entity=="Courses" %}
             <div class="form-group">
               <label>Teacher ID</label>
