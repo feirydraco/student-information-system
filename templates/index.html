@@ -1,11 +1,15 @@
 {% extends "base.html" %}
-
 {% block title %}
-Dashboard
+	Dashboard
 {% endblock title %}
-
 {% block content %}
-<div class="jumbotron">
-	<h1>5th Semester DBMS Project</h1>
-</div>
-{% endblock content%}
+	<div class="jumbotron">
+		<h1>5th Semester DBMS Project</h1>
+		<h2>Student Information System</h2>
+		<div class="col-lg-2">
+			<h3>Created By:</h3> 
+			<button class="btn btn-primary btn-outline btn-block fa fa-github" onclick="window.location.href='https://github.com/feirydraco'" aria-hidden="true">Yash Vora</button>
+			<button class="btn btn-primary btn-outline btn-block fa fa-github" onclick="window.location.href='https://github.com/VivekKumarSingh07'" aria-hidden="true">Vivek Kumar Singh</button>
+		</div>
+	</div>	
+	{% endblock content%}

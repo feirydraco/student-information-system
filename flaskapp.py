@@ -13,12 +13,14 @@ app.config.from_object(__name__)
 
 ID = None
 
-
+def average(t1, t2, t3):
+    return int((int(t1) + int(t2) + int(t3))//3)
 
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
         db = g._database = sqlite3.connect(DATABASE)
+        db.create_function('avg', 3, average)
         db.row_factory = sqlite3.Row
     return db
 
@@ -34,7 +36,6 @@ def change_db(query, args=()):
     cur = get_db().execute(query, args)
     get_db().commit()
     cur.close()
-
 
 @app.teardown_appcontext
 def close_connection(exception):
@@ -162,11 +163,12 @@ def modify(uid, uid2, entity):
         if request.method == 'POST':
             data = request.form.to_dict()
             print(data.keys())
-            avg = int((int(data['a1']) + int(data['a2']) + int(data['a3']))/3)
+            #TODO
+            # avg = int((int(data['a1']) + int(data['a2']) + int(data['a3']))/3)
             dic = [data['sub_code'], data['student_id'],
-                    data['a1'], data['a2'], data['a3'], avg, uid2, uid]
+                    data['a1'], data['a2'], data['a3'], data['a1'], data['a2'], data['a3'], uid2, uid]
             change_db(
-                "UPDATE Attendance SET sub_code=?, student_id=?, a1=?, a2=?, a3=?, final_attendance=? WHERE sub_code=? AND student_id=?", dic)
+                "UPDATE Attendance SET sub_code=?, student_id=?, a1=?, a2=?, a3=?, final_attendance=avg(?, ?, ?) WHERE sub_code=? AND student_id=?", dic)
             return redirect(url_for("attendance"))
     if entity == "courses":
         values = query_db("SELECT * FROM Courses \
@@ -289,4 +291,5 @@ def add(entity):
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
+
     app.run(host="0.0.0.0", port=5000, debug=True)
