@@ -29,6 +29,8 @@
 \BOOKMARK [1][-]{section.5.2}{5 Steps to connect to the database in flask}{chapter.5}% 29
 \BOOKMARK [0][-]{chapter.6}{Implementation}{}% 30
 \BOOKMARK [1][-]{section.6.1}{FlaskApp - Python}{chapter.6}% 31
-\BOOKMARK [0][-]{chapter.7}{Snapshots}{}% 32
-\BOOKMARK [0][-]{chapter.8}{Future Enhancements}{}% 33
-\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 34
+\BOOKMARK [1][-]{section.6.2}{Backbone - HTML, CSS, Bootstrap, Javascript, jQuery}{chapter.6}% 32
+\BOOKMARK [0][-]{chapter.7}{Snapshots}{}% 33
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 34
+\BOOKMARK [1][-]{section.8.1}{Conclusion}{chapter.8}% 35
+\BOOKMARK [1][-]{section.8.2}{Future Enhancements}{chapter.8}% 36
