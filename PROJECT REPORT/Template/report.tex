@@ -13,7 +13,10 @@
 \usepackage{titlesec}
 \usepackage{listings}
 \usepackage{mathptmx} %times new roman
+
+
 \linespread{1.3}
+
 
 \titleformat{\chapter}[display]
   {\normalfont\Large\bfseries}{\filright\chaptertitlename\ \thechapter}
@@ -78,7 +81,7 @@
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 \patchcmd{\lstlisting}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 
-\renewcommand\bibname{References}
+\renewcommand\bibname{Bibliography}
 
 \pagestyle{fancy}
 \fancyhf{}
