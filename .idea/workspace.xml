@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71039edb-e799-4701-b9a5-5c59d17be93b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/Actual ERD.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/accountUserTable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter1.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter2.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter2.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter3.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter3.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter4.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter5.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter5.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.log" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/erd.png" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/erd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/loadingPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/loginPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/profilePage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.out" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.toc" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/rs.png" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/rs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/branch.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/branch.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,23 +12,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4966">
-              <caret line="323" column="75" lean-forward="true" selection-start-line="323" selection-start-column="75" selection-end-line="323" selection-end-column="75" />
+            <state relative-caret-position="183">
+              <caret line="123" column="21" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="21" />
               <folding>
-                <element signature="e#0#93#0" expanded="true" />
+                <element signature="e#0#94#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/courses.html">
+        <entry file="file://$PROJECT_DIR$/templates/teachers_info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="160" selection-start-line="28" selection-start-column="160" selection-end-line="28" selection-end-column="160" />
+            <state relative-caret-position="255">
+              <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="622">
+              <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -63,6 +50,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>modify</find>
+      <find>teachers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -71,8 +59,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/courses.html" />
         <option value="$PROJECT_DIR$/flaskapp.py" />
+        <option value="$PROJECT_DIR$/templates/teachers_info.html" />
+        <option value="$PROJECT_DIR$/templates/courses.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -89,7 +79,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,10 +91,20 @@
               <item name="student-information-system" type="462c0819:PsiDirectoryNode" />
               <item name="PROJECT REPORT" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="student-information-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student-information-system" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="student-information-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flaskapp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="flaskapp" type="PythonConfigurationType" factoryName="Python">
       <module name="student-information-system" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -168,11 +167,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.flaskapp" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -206,6 +200,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -218,7 +213,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32583067" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290461" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.114683814" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -280,18 +275,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4966">
-          <caret line="323" column="75" lean-forward="true" selection-start-line="323" selection-start-column="75" selection-end-line="323" selection-end-column="75" />
+        <state relative-caret-position="183">
+          <caret line="123" column="21" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="21" />
           <folding>
-            <element signature="e#0#93#0" expanded="true" />
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/courses.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="160" selection-start-line="28" selection-start-column="160" selection-end-line="28" selection-end-column="160" />
+        <state relative-caret-position="204">
+          <caret line="12" column="70" lean-forward="true" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
         </state>
       </provider>
     </entry>
