@@ -24,7 +24,8 @@ def get_db():
     return db
 
 
-def query_db(query, args=(), one=False):
+def query_db(query: object, args: object,
+             one: object = False) -> object:
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
@@ -70,7 +71,7 @@ def login():
         if teacher is None:
             return render_template("login.html", error=True)
             # TODO
-        if teacher['password'] == password:
+        if teacher["password"] == password:
             session['logged_in'] = True
             global ID
             ID = teacher_id
@@ -186,37 +187,15 @@ def modify(uid, uid2, entity):
         if request.method == 'POST':
             data = request.form.to_dict()
             print(data.keys())
-
             dic = [data['sub_code'], data['student_id'],
                    data['a1'], data['a2'], data['a3'], data['a1'],
                    data['a2'], data['a3'], uid2, uid]
-
             change_db(
                 "UPDATE Attendance SET sub_code=?, student_id=?, "
                 "a1=?, a2=?, a3=?, final_attendance=avg(?, ?, "
                 "?) WHERE sub_code=? AND student_id=?",
                 dic)
             return redirect(url_for("attendance"))
-    if entity == "marksheet":
-        values = query_db("SELECT * FROM Marksheet \
-                            WHERE sub_code=? AND student_id=?",
-                          [uid2, uid], one=True)
-        if request.method == 'GET':
-            return render_template("modify.html", id=ID,
-                                   entity="Marksheet",
-                                   identity=values)
-        if request.method == 'POST':
-            data = request.form.to_dict()
-            print(data.keys())
-            dic = [data['sub_code'], data['student_id'],
-                   data['t1'], data['t2'], data['t3'], data['t1'],
-                   data['t2'], data['t3'], uid2, uid]
-            change_db(
-                "UPDATE Marksheet SET sub_code=?, student_id=?, "
-                "t1=?, t2=?, t3=?, cm=avg(?, ?, ?) WHERE sub_code=? "
-                "AND student_id=?",
-                dic)
-            return redirect(url_for("marksheet"))
     if entity == "courses":
         values = query_db("SELECT * FROM Courses \
                             WHERE teacher_id=? AND sub_code=?",
@@ -369,4 +348,5 @@ def add(entity):
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
+
     app.run(host="0.0.0.0", port=5000, debug=True)

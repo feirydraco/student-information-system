@@ -6,9 +6,9 @@
       <tr>
         <th scope="col">Subject Code</th>
         <th scope="col">Student ID</th>
-        <th scope="col"><strong>T 1</strong></th>
-        <th scope="col"><strong>T 2</strong></th>
-        <th scope="col"><strong>T 3</strong></th>
+        <th scope="col"><strong>1</strong></th>
+        <th scope="col"><strong>2</strong></th>
+        <th scope="col"><strong>3</strong></th>
         <th scope="col">Cumulative Marks</th>
         <th scope="col">Review</th>
         <th scope="col">Modify</th>
@@ -24,7 +24,7 @@
         <td>{{ entry['cm'] }}</td>
         <td>{{ entry['review'] }}</td>
         <td>
-          <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/marksheet/{{ entry['student_id'] }}/{{ entry['sub_code'] }}'"></button>
+          <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/attendance/{{ entry['student_id'] }}/{{ entry['sub_code'] }}'"></button>
         </td>
       </tr>
     {% endfor %}
