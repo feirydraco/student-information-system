@@ -70,7 +70,7 @@ def login():
                            one=True)
         if teacher is None:
             return render_template("login.html", error=True)
-            # TODO
+      
         if teacher["password"] == password:
             session['logged_in'] = True
             global ID
@@ -291,13 +291,18 @@ def delete(uid, entity):
             change_db("DELETE FROM Teacher WHERE teacher_id=?", [uid])
             return logout()
     if entity == "student":
+    	#TODO : /3 is coming everytime i'm trying to delete student in URL.
         values = query_db("SELECT * FROM Student \
                             WHERE student_id=?", [uid], one=True)
+        print(values)
         if request.method == 'GET':
             return render_template("delete.html", id=ID,
                                    entity="Student", identity=values)
+                                   
         if request.method == 'POST':
             change_db("DELETE FROM Student WHERE student_id=?", [uid])
+            change_db("DELETE FROM Marksheet WHERE student_id=?", [uid])
+            change_db("DELETE FROM Attendance WHERE Student_id=?", [uid])
             return logout()
 
 
@@ -307,6 +312,7 @@ def add(entity):
     if not session.get('logged_in'):
         return login()
     else:
+	#TODO :  THE WEBSITE IS NOT ABLE TO ROUTE TO /add/teacher
         if entity == "teacher":
             if request.method == 'GET':
                 return render_template("add.html", id=ID,
@@ -350,3 +356,5 @@ if __name__ == '__main__':
     app.secret_key = os.urandom(12)
 
     app.run(host="0.0.0.0", port=5000, debug=True)
+
+
