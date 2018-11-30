@@ -9,7 +9,6 @@
       <th scope="col">Branch Code</th>
       <th scope="col">Semester</th>
       <th scope="col">Name</th>
-      <th scope="col">Modify</th>
     </tr>
   </thead>
   {% for entry in entry_list: %}
@@ -17,9 +16,6 @@
     <td>{{ entry['branch_code'] }}</td>
     <td>{{ entry['semester'] }}</td>
     <td>{{ entry['branch_name'] }}</td>
-    <td>
-
-    </td>
   </tr>
   {% endfor %}
 </table>

@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71039edb-e799-4701-b9a5-5c59d17be93b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/flaskapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.log" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.out" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.toc" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,23 +23,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="169" column="34" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
+            <state relative-caret-position="170">
+              <caret line="10" column="9" selection-end-line="352" />
               <folding>
-                <element signature="e#0#94#0" expanded="true" />
+                <element signature="e#0#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/courses.html">
+        <entry file="file://$PROJECT_DIR$/templates/teachers_info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="160" selection-start-line="28" selection-start-column="160" selection-end-line="28" selection-end-column="160" />
+            <state relative-caret-position="255">
+              <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="39" selection-end-line="135" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/marksheet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -38,6 +83,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>modify</find>
+      <find>teachers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -46,8 +92,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/templates/teachers_info.html" />
         <option value="$PROJECT_DIR$/templates/courses.html" />
         <option value="$PROJECT_DIR$/flaskapp.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -79,8 +128,11 @@
             <path>
               <item name="student-information-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="student-information-system" type="462c0819:PsiDirectoryNode" />
-              <item name="PROJECT REPORT" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="student-information-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -92,6 +144,7 @@
   <component name="PropertiesComponent">
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -127,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flaskapp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="flaskapp" type="PythonConfigurationType" factoryName="Python">
       <module name="student-information-system" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,11 +201,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.flaskapp" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -188,18 +236,18 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33118972" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33118972" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32583067" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.114683814" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -252,20 +300,62 @@
     <option name="LAST_COMMIT_MESSAGE" value="removed navbar items" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flaskapp.py">
+    <entry file="file://C:/Program Files (x86)/Python37-32/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="169" column="34" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="1956" selection-start-line="1956" selection-end-line="1956" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/courses.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="160" selection-start-line="28" selection-start-column="160" selection-end-line="28" selection-end-column="160" />
+        <state relative-caret-position="204">
+          <caret line="12" column="70" lean-forward="true" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/marksheet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="9" selection-end-line="352" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" selection-end-line="135" selection-end-column="9" />
         </state>
       </provider>
     </entry>
