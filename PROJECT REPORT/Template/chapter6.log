@@ -1,11 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  26 NOV 2018 22:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  27 NOV 2018 11:39
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**chapter6.tex
-(./chapter6.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 6 language(s) loaded.
+**./chapter6.tex
+(chapter6.tex
+LaTeX2e <2018-04-01> patch level 5
 ! Undefined control sequence.
 l.1 \chapter
             {Implementation}
@@ -46,39 +43,4301 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
 [] 
  []
 
+! Undefined control sequence.
+l.3 \section
+            {FlaskApp - Python}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-! LaTeX Error: \begin{document} ended by \end{itemsize}.
+
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \end{itemsize}
+l.3 \section{F
+              laskApp - Python}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[]
+ []
+
+
+! LaTeX Error: Environment python undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \begin{python}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.6 \end{itemsize}
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 f
+     rom flask import Flask, url_for, render_template, g, request, \
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.6 from flask import Flask, url_
+                                 for, render_template, g, request, \
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--15
+[]
+ []
+
+
+Overfull \hbox (1219.74315pt too wide) in paragraph at lines 6--15
+[]\OML/cmm/m/it/10 or; render[]emplate; g; request;  redirect; flash; session; 
+abortfromflask[]oginimportLoginManagerfromwtformsimportForm; TextField; TextAre
+aField; validators;  StringField; SubmitFieldimportosimportsqlite\OT1/cmr/m/n/1
+0 3\OML/cmm/m/it/10 fromurllib:parseimportunquotefromjinja\OT1/cmr/m/n/10 2\OML
+/cmm/m/it/10 importTemplate$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 a
+      pp = Flask(__name__)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no ( in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.16 app = Flask(_
+                  _name__)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.16 app = Flask(__
+                   name__)
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.16 app = Flask(__name__
+                         )
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `macro parameter character #' in math mode.
+l.18 #
+       Config
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.19 app.config.from_object(__
+                              name__)
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.19 app.config.from_object(__name__
+                                    )
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.20 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.20 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.20 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.20 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.20 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--20
+[]
+ []
+
+
+Overfull \hbox (224.49898pt too wide) in paragraph at lines 16--20
+[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 I
+      D = None
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--22
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 d
+      ef average(t1, t2, t3):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 23--25
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 d
+      ef get_db():
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 def get_
+             db():
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.33 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 26--33
+[]
+ []
+
+
+Overfull \hbox (22.28783pt too wide) in paragraph at lines 26--33
+[]\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 () :
+ []
+
+
+Overfull \hbox (20.05203pt too wide) in paragraph at lines 26--33
+\OML/cmm/m/it/10 db \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (174.92471pt too wide) in paragraph at lines 26--33
+\OML/cmm/m/it/10 getattr\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g;[] atabase[]; None\
+OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifdbisNone \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.05203pt too wide) in paragraph at lines 26--33
+\OML/cmm/m/it/10 db \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (56.22884pt too wide) in paragraph at lines 26--33
+\OML/cmm/m/it/10 g:[]atabase \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (364.36044pt too wide) in paragraph at lines 26--33
+\OML/cmm/m/it/10 sqlite\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :connect\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 DATABASE\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 db:create[]unctio
+n\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 avg[]; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ;
+ average\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 db:row[]actory \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (91.19649pt too wide) in paragraph at lines 26--33
+\OML/cmm/m/it/10 sqlite\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :Rowreturndb$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 d
+      ef query_db(query: object, args: object, one: object = False) -> object:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.35 def query_
+               db(query: object, args: object, one: object = False) -> object:
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.40 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 35--40
+[]
+ []
+
+
+Overfull \hbox (43.65364pt too wide) in paragraph at lines 35--40
+[]\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 query \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (56.31544pt too wide) in paragraph at lines 35--40
+\OML/cmm/m/it/10 object; args \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (51.93007pt too wide) in paragraph at lines 35--40
+\OML/cmm/m/it/10 object; one \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (36.97983pt too wide) in paragraph at lines 35--40
+\OML/cmm/m/it/10 object \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (47.8519pt too wide) in paragraph at lines 35--40
+\OML/cmm/m/it/10 False\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10   \OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (31.97981pt too wide) in paragraph at lines 35--40
+\OML/cmm/m/it/10 object \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (25.39702pt too wide) in paragraph at lines 35--40
+\OML/cmm/m/it/10 cur \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (144.17232pt too wide) in paragraph at lines 35--40
+\OML/cmm/m/it/10 get[]b\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 :execute\OT1/cmr/m/n/
+10 (\OML/cmm/m/it/10 query; args\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 rv \OT1/cmr/m
+/n/10 =
+ []
+
+
+Overfull \hbox (278.58322pt too wide) in paragraph at lines 35--40
+\OML/cmm/m/it/10 cur:fetchall\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 cur:close\OT1/c
+mr/m/n/10 ()\OML/cmm/m/it/10 return\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rv\OT1/cmr
+/m/n/10 [0]\OML/cmm/m/it/10 ifrvelseNone\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifone
+elserv$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 d
+      ef change_db(query, args=()):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.42 def change_
+                db(query, args=()):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.46 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 42--46
+[]
+ []
+
+
+Overfull \hbox (72.98929pt too wide) in paragraph at lines 42--46
+[]\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 query; args \OT1/cmr/m/n/
+10 =
+ []
+
+
+Overfull \hbox (17.2222pt too wide) in paragraph at lines 42--46
+\OT1/cmr/m/n/10 ()) :
+ []
+
+
+Overfull \hbox (25.39702pt too wide) in paragraph at lines 42--46
+\OML/cmm/m/it/10 cur \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (244.63716pt too wide) in paragraph at lines 42--46
+\OML/cmm/m/it/10 get[]b\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 :execute\OT1/cmr/m/n/
+10 (\OML/cmm/m/it/10 query; args\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 get[]b\OT1/cm
+r/m/n/10 ()\OML/cmm/m/it/10 :commit\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 cur:close
+\OT1/cmr/m/n/10 ()$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 @
+      app.teardown_appcontext
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47 @app.teardown_
+                   appcontext
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (208.64462pt too wide) in paragraph at lines 47--52
+[]$[]\OML/cmm/m/it/10 ppcontextdefclose[]onnection\OT1/cmr/m/n/10 (\OML/cmm/m/i
+t/10 exception\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (20.05203pt too wide) in paragraph at lines 47--52
+\OML/cmm/m/it/10 db \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (189.3854pt too wide) in paragraph at lines 47--52
+\OML/cmm/m/it/10 getattr\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g;[] atabase[]; None\
+OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifdbisnotNone \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (41.75124pt too wide) in paragraph at lines 47--52
+\OML/cmm/m/it/10 db:close\OT1/cmr/m/n/10 ()$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 @
+      app.route("/")
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.56     if not session.get('logged_
+                                    in'):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.60 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 54--60
+[]
+ []
+
+
+Overfull \hbox (21.58159pt too wide) in paragraph at lines 54--60
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (82.69069pt too wide) in paragraph at lines 54--60
+\OML/cmm/m/it/10 returnlogin\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (184.79pt too wide) in paragraph at lines 54--60
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 index:
+html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (17.62639pt too wide) in paragraph at lines 54--60
+\OML/cmm/m/it/10 ID\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 @
+      app.route("/login", methods=['GET', 'POST'])
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.65         return render_
+                           template("login.html", error=False)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 62--73
+[]
+ []
+
+
+Overfull \hbox (138.19772pt too wide) in paragraph at lines 62--73
+[]\OML/cmm/m/it/10 emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 login:html\OT1/cmr
+/m/n/10 "\OML/cmm/m/it/10 ; error \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (128.66182pt too wide) in paragraph at lines 62--73
+\OML/cmm/m/it/10 False\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/c
+mr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 62--73
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (19.21758pt too wide) in paragraph at lines 62--73
+\OML/cmm/m/it/10 try \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (52.51736pt too wide) in paragraph at lines 62--73
+\OML/cmm/m/it/10 password \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (165.14323pt too wide) in paragraph at lines 62--73
+\OML/cmm/m/it/10 request:form\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 password[]\OT1
+/cmr/m/n/10 ]\OML/cmm/m/it/10 teacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (339.49968pt too wide) in paragraph at lines 62--73
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 request:form\OT1/cmr/m/n/
+10 [[]\OML/cmm/m/it/10 teacher[]d[]\OT1/cmr/m/n/10 ])\OML/cmm/m/it/10 print\OT1
+/cmr/m/n/10 (\OML/cmm/m/it/10 password; teacher[]d\OT1/cmr/m/n/10 )\OML/cmm/m/i
+t/10 exceptValueError \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (197.59146pt too wide) in paragraph at lines 62--73
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 login:
+html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; error \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (26.29176pt too wide) in paragraph at lines 62--73
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74         t
+              eacher = query_db("SELECT * FROM Teacher \
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74         teacher = query_
+                             db("SELECT * FROM Teacher \
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.79             #
+                   TODO
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 74--87
+[]
+ []
+
+
+Overfull \hbox (67.36911pt too wide) in paragraph at lines 74--87
+[]\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/n/10 
+
+ []
+
+
+Overfull \hbox (166.3414pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 FROMTeacher WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (91.5724pt too wide) in paragraph at lines 74--87
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 teacher[
+]d\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (107.11613pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifteacherisNone \OT1/cmr
+/m/n/10 :
+ []
+
+
+Overfull \hbox (197.59146pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 login:
+html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; error \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (176.24866pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 TODOifteacher\OT1/cmr/m/
+n/10 ["\OML/cmm/m/it/10 password\OT1/cmr/m/n/10 "] ==
+ []
+
+
+Overfull \hbox (47.51735pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 password \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (92.21317pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 session\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 logged[]n[]\OT1/cmr
+/m/n/10 ] =
+ []
+
+
+Overfull \hbox (86.34773pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 TrueglobalIDID \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (126.45523pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 teacher[]dreturnindex\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \
+OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (197.59146pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 login:
+html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; error \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (26.29176pt too wide) in paragraph at lines 74--87
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 @
+      app.route('/logout')
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.91     session.pop('logged_
+                             in', None)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 89--94
+[]
+ []
+
+
+Overfull \hbox (305.39856pt too wide) in paragraph at lines 89--94
+[]\OML/cmm/m/it/10 n[]; None\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 flash\OT1/cmr/m/n
+/10 ([]\OML/cmm/m/it/10 Youwereloggedout[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ret
+urnredirect\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 url[]or\OT1/cmr/m/n/10 ([]\OML/cmm
+/m/it/10 index[]\OT1/cmr/m/n/10 ))$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 @
+      app.route('/view', methods=['GET', 'POST'])
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.99     teacher = query_
+                         db("SELECT * FROM Teacher \
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 96--112
+[]
+ []
+
+
+Overfull \hbox (67.36911pt too wide) in paragraph at lines 96--112
+[]\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/n/10 
+
+ []
+
+
+Overfull \hbox (166.3414pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 FROMTeacher WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (63.96548pt too wide) in paragraph at lines 96--112
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 ID\OT1/c
+mr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (85.15826pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 student[]ist \OT1/cmr/m/
+n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (492.88843pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 FROMStudent WHEREsemesterIN\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S
+ELECTsemesterFROMSubject;  TeacherWHERETeacher:sub[]ode \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (147.35545pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 Subject:sub[]odeANDteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (140.38075pt too wide) in paragraph at lines 96--112
+\OT1/cmr/m/n/10 ?)"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 ID\OT1/
+cmr/m/n/10 ])\OML/cmm/m/it/10 ifrequest:method \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (129.48709pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 ifnotsession:get\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 logged[]n[
+]\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (82.69069pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 returnlogin\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (179.06827pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 user:h
+tml\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.82545pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 ID; teacher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.404pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 teacher; error \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (87.94173pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 None; student[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (151.34312pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 student[]ist\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method
+ \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (23.78818pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 old \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (157.89615pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 request:form\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 oldPassword[]\
+OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 new \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (134.10797pt too wide) in paragraph at lines 96--112
+\OML/cmm/m/it/10 request:form\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 newPassword[]\
+OT1/cmr/m/n/10 ]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113         i
+               f teacher['password'] == old:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.114             change_
+                         db(
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.121 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 113--121
+[]
+ []
+
+
+Overfull \hbox (175.94466pt too wide) in paragraph at lines 113--121
+[]\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 UPDATETeacherSETpassword
+ \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (100.16724pt too wide) in paragraph at lines 113--121
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (241.1704pt too wide) in paragraph at lines 113--121
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 new; ID\
+OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/c
+mm/m/it/10 user:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.82545pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 ID; teacher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (83.89938pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 teacher; changed \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (85.71378pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 True; student[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (74.93599pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 student[]ist\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (179.06827pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 user:h
+tml\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.82545pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 ID; teacher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.404pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 teacher; error \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (85.71378pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 True; student[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.19989pt too wide) in paragraph at lines 113--121
+\OML/cmm/m/it/10 student[]ist\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 @
+       app.route('/teachers')
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.127     teacher_
+                  list = query_db("SELECT * FROM TEACHER", [])
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.130 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 123--130
+[]
+ []
+
+
+Overfull \hbox (25.36871pt too wide) in paragraph at lines 123--130
+[]\OML/cmm/m/it/10 ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 123--130
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (331.07541pt too wide) in paragraph at lines 123--130
+\OML/cmm/m/it/10 FROMTEACHER\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
+ [])\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 =t
+eachers[]nfo:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (76.36087pt too wide) in paragraph at lines 123--130
+\OML/cmm/m/it/10 ID; teacher[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (51.51236pt too wide) in paragraph at lines 123--130
+\OML/cmm/m/it/10 teacher[]ist\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 @
+       app.route('/students')
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.135     student_
+                  list = query_db("SELECT * FROM Student", [])
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.138 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 132--138
+[]
+ []
+
+
+Overfull \hbox (25.36871pt too wide) in paragraph at lines 132--138
+[]\OML/cmm/m/it/10 ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 132--138
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (311.69685pt too wide) in paragraph at lines 132--138
+\OML/cmm/m/it/10 FROMStudent\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
+ [])\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 =s
+tudents[]nfo:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.0484pt too wide) in paragraph at lines 132--138
+\OML/cmm/m/it/10 ID; student[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.19989pt too wide) in paragraph at lines 132--138
+\OML/cmm/m/it/10 student[]ist\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 @
+       app.route('/modify/<string:entity>/<string:uid>/<string:uid2>',
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144     teacher_
+                  list = query_db("SELECT * FROM TEACHER", [])
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.184             #
+                   TODO
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.185             #
+                    avg = int((int(data['a1']) + int(data['a2']) + int(data[...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.188             #
+                   STORED_PROCEDURE_DEMO
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.203             #
+                   TODO
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.204             #
+                    avg = int((int(data['a1']) + int(data['a2']) + int(data[...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.208             #
+                   STORED_PROCEDURE_DEMO
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.230 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 140--230
+[]
+ []
+
+
+Overfull \hbox (25.36871pt too wide) in paragraph at lines 140--230
+[]\OML/cmm/m/it/10 ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (162.72089pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 FROMTEACHER\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
+ [])\OML/cmm/m/it/10 ifentity \OT1/cmr/m/n/10 ==
+ []
+
+
+Overfull \hbox (48.64357pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 teacher\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (39.29633pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (166.3414pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 FROMTeacher WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.60257pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid\OT1/
+cmr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (125.435pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/cm
+r/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (193.27733pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 modify
+:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (96.9471pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Teacher\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id
+entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (131.77295pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/
+cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (29.94327pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 data \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (118.70845pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 request:form:to[]ict\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 dic \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (524.51968pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 teach
+er[]d[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it
+/10 sub[]ode[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/c
+mm/m/it/10 teacher[]ame[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/1
+0 [[]\OML/cmm/m/it/10 phone[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; uid\OT1/cmr/m/
+n/10 ]\OML/cmm/m/it/10 change[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 UPDATETeache
+rSETteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (53.208pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; sub[]ode \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (86.69806pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 teacher[
+]ame \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (46.02083pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; phone \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (100.16724pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (150.06142pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; dic\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 retur
+nlogout\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 ifentity \OT1/cmr/m/n/10 ==
+ []
+
+
+Overfull \hbox (49.05331pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 student\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (39.29633pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (165.83795pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 FROMStudent WHEREstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.60257pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid\OT1/
+cmr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (253.66292pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 (\O
+ML/cmm/m/it/10 values\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 student[]ame[]\OT1/cmr
+/m/n/10 ])\OML/cmm/m/it/10 ifrequest:method \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (193.27733pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 modify
+:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.75612pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Student\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id
+entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (131.77295pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/
+cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (29.94327pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 data \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (199.43501pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 request:form:to[]ict\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 print\O
+T1/cmr/m/n/10 (\OML/cmm/m/it/10 data:keys\OT1/cmr/m/n/10 ())\OML/cmm/m/it/10 di
+c \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (575.69885pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 stude
+nt[]d[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it
+/10 student[]ame[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\O
+ML/cmm/m/it/10 academic[]ear[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/
+m/n/10 [[]\OML/cmm/m/it/10 branch[]ode[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; uid
+\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 change[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 U
+PDATEStudentSETstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.38556pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; student[]ame \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (90.57375pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 academic
+[]ear \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (68.96266pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; branch[]ode \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (100.85477pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 WHEREstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (150.06142pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; dic\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 retur
+nlogout\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 ifentity \OT1/cmr/m/n/10 ==
+ []
+
+
+Overfull \hbox (64.19919pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 attendance\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (39.29633pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (172.63104pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 FROMAttendance WHEREsub[]ode \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (82.49161pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ANDstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (88.42157pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid\OT1/
+cmr/m/n/10 2\OML/cmm/m/it/10 ; uid\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (125.435pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/cm
+r/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (193.27733pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 modify
+:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (111.0953pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Attendance\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ;
+ identity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (131.77295pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/
+cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (29.94327pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 data \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (233.67851pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 request:form:to[]ict\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 print\O
+T1/cmr/m/n/10 (\OML/cmm/m/it/10 data:keys\OT1/cmr/m/n/10 ())\OML/cmm/m/it/10 TO
+DOavg \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (90.29094pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 1[]]) +
+ []
+
+
+Overfull \hbox (69.45454pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\O
+ML/cmm/m/it/10 a\OT1/cmr/m/n/10 2[]]) +
+ []
+
+
+Overfull \hbox (102.98764pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\O
+ML/cmm/m/it/10 a\OT1/cmr/m/n/10 3[]]))\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 3)\OML/
+cmm/m/it/10 dic \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (823.00685pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 sub[]
+ode[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/1
+0 student[]d[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/c
+mm/m/it/10 a\OT1/cmr/m/n/10 1[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/
+cmm/m/it/10 a\OT1/cmr/m/n/10 2[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML
+/cmm/m/it/10 a\OT1/cmr/m/n/10 3[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OM
+L/cmm/m/it/10 a\OT1/cmr/m/n/10 1[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\O
+ML/cmm/m/it/10 a\OT1/cmr/m/n/10 2[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\
+OML/cmm/m/it/10 a\OT1/cmr/m/n/10 3[]]\OML/cmm/m/it/10 ; uid\OT1/cmr/m/n/10 2\OM
+L/cmm/m/it/10 ; uid\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 STORED[]ROCEDURE[]EMOchang
+e[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 UPDATEAttendanceSETsub[]ode \OT1/cmr/m/n
+/10 =
+ []
+
+
+Overfull \hbox (61.75409pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; student[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (40.00809pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 a\OT1/cm
+r/m/n/10 1 =
+ []
+
+
+Overfull \hbox (30.00806pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; a\OT1/cmr/m/n/10 2 =
+ []
+
+
+Overfull \hbox (30.00806pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; a\OT1/cmr/m/n/10 3 =
+ []
+
+
+Overfull \hbox (91.607pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; final[]ttendance \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (134.04012pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 avg\OT1/cmr/m/n/10 (?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?\OML/
+cmm/m/it/10 ; \OT1/cmr/m/n/10 ?)\OML/cmm/m/it/10 WHEREsub[]ode \OT1/cmr/m/n/10 
+=
+ []
+
+
+Overfull \hbox (82.49161pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ANDstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (252.94208pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; dic\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 retur
+nredirect\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 url[]or\OT1/cmr/m/n/10 ("\OML/cmm/m/
+it/10 attendance\OT1/cmr/m/n/10 "))\OML/cmm/m/it/10 ifentity \OT1/cmr/m/n/10 ==
+
+ []
+
+
+Overfull \hbox (63.30449pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 marksheet\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (39.29633pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (171.53374pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 FROMMarksheet WHEREsub[]ode \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (82.49161pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ANDstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (88.42157pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid\OT1/
+cmr/m/n/10 2\OML/cmm/m/it/10 ; uid\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (125.435pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/cm
+r/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (193.27733pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 modify
+:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (109.998pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Marksheet\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; 
+identity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (131.77295pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/
+cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (29.94327pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 data \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (233.67851pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 request:form:to[]ict\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 print\O
+T1/cmr/m/n/10 (\OML/cmm/m/it/10 data:keys\OT1/cmr/m/n/10 ())\OML/cmm/m/it/10 TO
+DOavg \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (90.29094pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 1[]]) +
+ []
+
+
+Overfull \hbox (69.45454pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\O
+ML/cmm/m/it/10 a\OT1/cmr/m/n/10 2[]]) +
+ []
+
+
+Overfull \hbox (102.98764pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\O
+ML/cmm/m/it/10 a\OT1/cmr/m/n/10 3[]]))\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 3)\OML/
+cmm/m/it/10 dic \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (811.8609pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 sub[]
+ode[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/1
+0 student[]d[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/c
+mm/m/it/10 t\OT1/cmr/m/n/10 1[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/
+cmm/m/it/10 t\OT1/cmr/m/n/10 2[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML
+/cmm/m/it/10 t\OT1/cmr/m/n/10 3[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OM
+L/cmm/m/it/10 t\OT1/cmr/m/n/10 1[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\O
+ML/cmm/m/it/10 t\OT1/cmr/m/n/10 2[]]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\
+OML/cmm/m/it/10 t\OT1/cmr/m/n/10 3[]]\OML/cmm/m/it/10 ; uid\OT1/cmr/m/n/10 2\OM
+L/cmm/m/it/10 ; uid\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 STORED[]ROCEDURE[]EMOchang
+e[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 UPDATEMarksheetSETsub[]ode \OT1/cmr/m/n/
+10 =
+ []
+
+
+Overfull \hbox (61.75409pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; student[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (38.33331pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 t\OT1/cm
+r/m/n/10 1 =
+ []
+
+
+Overfull \hbox (28.33328pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; t\OT1/cmr/m/n/10 2 =
+ []
+
+
+Overfull \hbox (28.33328pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; t\OT1/cmr/m/n/10 3 =
+ []
+
+
+Overfull \hbox (32.82985pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; cm \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (134.04012pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 avg\OT1/cmr/m/n/10 (?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?\OML/
+cmm/m/it/10 ; \OT1/cmr/m/n/10 ?)\OML/cmm/m/it/10 WHEREsub[]ode \OT1/cmr/m/n/10 
+=
+ []
+
+
+Overfull \hbox (82.49161pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ANDstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (252.04738pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; dic\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 retur
+nredirect\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 url[]or\OT1/cmr/m/n/10 ("\OML/cmm/m/
+it/10 marksheet\OT1/cmr/m/n/10 "))\OML/cmm/m/it/10 ifentity \OT1/cmr/m/n/10 ==
+ []
+
+
+Overfull \hbox (49.27553pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 courses\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (39.29633pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (166.88675pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 FROMCourses WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (73.94551pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ANDsub[]ode \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (88.42157pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid; uid
+\OT1/cmr/m/n/10 2]\OML/cmm/m/it/10 ; one \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (215.51462pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 (\O
+ML/cmm/m/it/10 values:keys\OT1/cmr/m/n/10 ())\OML/cmm/m/it/10 ifrequest:method 
+\OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (193.27733pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 modify
+:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (97.49245pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Courses\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id
+entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (131.77295pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 values\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/
+cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (29.94327pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 data \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (199.43501pt too wide) in paragraph at lines 140--230
+\OML/cmm/m/it/10 request:form:to[]ict\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 print\O
+T1/cmr/m/n/10 (\OML/cmm/m/it/10 data:keys\OT1/cmr/m/n/10 ())\OML/cmm/m/it/10 di
+c \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (456.75537pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 teach
+er[]d[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it
+/10 sub[]ode[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/c
+mm/m/it/10 Room[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; uid; uid\OT1/cmr/m/n/10 2]
+\OML/cmm/m/it/10 change[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 UPDATECoursesSETte
+acher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (53.208pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; sub[]ode \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.86693pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 Room \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (100.16724pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (73.94551pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ANDsub[]ode \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (183.68015pt too wide) in paragraph at lines 140--230
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; dic\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 retur
+nredirect\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 url[]or\OT1/cmr/m/n/10 ("\OML/cmm/m/
+it/10 courses\OT1/cmr/m/n/10 "))$ 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{C:/Users/feiry/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 @
+       app.route("/marksheet")
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.235     if not session.get('logged_
+                                     in'):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.241 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 232--241
+[]
+ []
+
+
+Overfull \hbox (21.58159pt too wide) in paragraph at lines 232--241
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (82.69069pt too wide) in paragraph at lines 232--241
+\OML/cmm/m/it/10 returnlogin\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (49.33063pt too wide) in paragraph at lines 232--241
+\OML/cmm/m/it/10 entry[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 232--241
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (310.35127pt too wide) in paragraph at lines 232--241
+\OML/cmm/m/it/10 FROMMarksheet\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/
+10 [])\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 
+marksheet:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (67.51253pt too wide) in paragraph at lines 232--241
+\OML/cmm/m/it/10 ID; entry[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (42.66402pt too wide) in paragraph at lines 232--241
+\OML/cmm/m/it/10 entry[]ist\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.242 @
+       app.route("/attendance")
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.245     if not session.get('logged_
+                                     in'):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.251 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 242--251
+[]
+ []
+
+
+Overfull \hbox (21.58159pt too wide) in paragraph at lines 242--251
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (82.69069pt too wide) in paragraph at lines 242--251
+\OML/cmm/m/it/10 returnlogin\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (49.33063pt too wide) in paragraph at lines 242--251
+\OML/cmm/m/it/10 entry[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 242--251
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (312.34328pt too wide) in paragraph at lines 242--251
+\OML/cmm/m/it/10 FROMAttendance\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n
+/10 [])\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10
+ attendance:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (67.51253pt too wide) in paragraph at lines 242--251
+\OML/cmm/m/it/10 ID; entry[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (42.66402pt too wide) in paragraph at lines 242--251
+\OML/cmm/m/it/10 entry[]ist\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.252 @
+       app.route("/courses")
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.255     if not session.get('logged_
+                                     in'):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.261 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 252--261
+[]
+ []
+
+
+Overfull \hbox (21.58159pt too wide) in paragraph at lines 252--261
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (82.69069pt too wide) in paragraph at lines 252--261
+\OML/cmm/m/it/10 returnlogin\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (49.33063pt too wide) in paragraph at lines 252--261
+\OML/cmm/m/it/10 entry[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 252--261
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (283.81676pt too wide) in paragraph at lines 252--261
+\OML/cmm/m/it/10 FROMCourses\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
+ [])\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 co
+urses:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (67.51253pt too wide) in paragraph at lines 252--261
+\OML/cmm/m/it/10 ID; entry[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (42.66402pt too wide) in paragraph at lines 252--261
+\OML/cmm/m/it/10 entry[]ist\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.262 @
+       app.route("/branch")
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265     if not session.get('logged_
+                                     in'):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.271 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 262--271
+[]
+ []
+
+
+Overfull \hbox (21.58159pt too wide) in paragraph at lines 262--271
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (82.69069pt too wide) in paragraph at lines 262--271
+\OML/cmm/m/it/10 returnlogin\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (49.33063pt too wide) in paragraph at lines 262--271
+\OML/cmm/m/it/10 entry[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 262--271
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (277.55379pt too wide) in paragraph at lines 262--271
+\OML/cmm/m/it/10 FROMBranch\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 
+[])\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 bra
+nch:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (67.51253pt too wide) in paragraph at lines 262--271
+\OML/cmm/m/it/10 ID; entry[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (42.66402pt too wide) in paragraph at lines 262--271
+\OML/cmm/m/it/10 entry[]ist\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.272 @
+       app.route("/semester")
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.275     if not session.get('logged_
+                                     in'):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.284 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 272--284
+[]
+ []
+
+
+Overfull \hbox (21.58159pt too wide) in paragraph at lines 272--284
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (82.69069pt too wide) in paragraph at lines 272--284
+\OML/cmm/m/it/10 returnlogin\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (65.61534pt too wide) in paragraph at lines 272--284
+\OML/cmm/m/it/10 semester[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (78.25269pt too wide) in paragraph at lines 272--284
+\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 foriinrange\OT1/cmr/m/n/10 (8) :
+ []
+
+
+Overfull \hbox (185.20343pt too wide) in paragraph at lines 272--284
+\OML/cmm/m/it/10 semester[]ist:append\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 query[]b
+\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (172.82184pt too wide) in paragraph at lines 272--284
+\OML/cmm/m/it/10 FROMSubject\OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 WHEREsemester \O
+T1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (28.16737pt too wide) in paragraph at lines 272--284
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 i \OT1/c
+mr/m/n/10 +
+ []
+
+
+Overfull \hbox (215.29057pt too wide) in paragraph at lines 272--284
+\OT1/cmr/m/n/10 1]))\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OM
+L/cmm/m/it/10 semester:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/
+10 =
+ []
+
+
+Overfull \hbox (83.79724pt too wide) in paragraph at lines 272--284
+\OML/cmm/m/it/10 ID; semester[]ist \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (58.94873pt too wide) in paragraph at lines 272--284
+\OML/cmm/m/it/10 semester[]ist\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 @
+       app.route('/delete/<string:entity>/<string:uid>', methods=['GET', 'PO...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.288     teacher = query_
+                          db("SELECT * FROM Teacher \
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.309 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 285--309
+[]
+ []
+
+
+Overfull \hbox (67.36911pt too wide) in paragraph at lines 285--309
+[]\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/n/10 
+
+ []
+
+
+Overfull \hbox (166.3414pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 FROMTeacher WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (63.96548pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 ID\OT1/c
+mr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (80.63004pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifentity \OT1/cmr/m/n/10
+ ==
+ []
+
+
+Overfull \hbox (48.64357pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 teacher\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (39.29633pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 values \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (166.3414pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 FROMTeacher WHEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.60257pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid\OT1/
+cmr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (125.435pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/cm
+r/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (185.73146pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 delete
+:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (96.9471pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Teacher\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id
+entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (131.77295pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 values\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/
+cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (261.81706pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 change[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 DELETEFROMTeacherW
+HEREteacher[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (157.014pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid\OT1/
+cmr/m/n/10 ])\OML/cmm/m/it/10 returnlogout\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 if
+entity \OT1/cmr/m/n/10 ==
+ []
+
+
+Overfull \hbox (49.05331pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 student\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (39.29633pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 values \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.26505pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 query[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 SELECT \OMS/cmsy/m/
+n/10 
+ []
+
+
+Overfull \hbox (165.83795pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 FROMStudent WHEREstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.60257pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid\OT1/
+cmr/m/n/10 ]\OML/cmm/m/it/10 ; one \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (125.435pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 True\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/cm
+r/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (185.73146pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 delete
+:html\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.75612pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Student\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id
+entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (131.77295pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 values\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ifrequest:method \OT1/
+cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (261.31361pt too wide) in paragraph at lines 285--309
+\OML/cmm/m/it/10 change[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 DELETEFROMStudentW
+HEREstudent[]d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (102.67574pt too wide) in paragraph at lines 285--309
+\OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 uid\OT1/
+cmr/m/n/10 ])\OML/cmm/m/it/10 returnlogout\OT1/cmr/m/n/10 ()$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 @
+       app.route("/add/<string:entity>", methods=['GET', 'POST'])
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.313     if not session.get('logged_
+                                     in'):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.348 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 310--348
+[]
+ []
+
+
+Overfull \hbox (21.58159pt too wide) in paragraph at lines 310--348
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (82.69069pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 returnlogin\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 else \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (54.33827pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 ifentity \OT1/cmr/m/n/10 ==
+ []
+
+
+Overfull \hbox (48.64357pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 teacher\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (99.14323pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 ifrequest:method \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (175.46173pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 add:ht
+ml\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (149.74174pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Teacher\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 ifr
+equest:method \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (29.94327pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 data \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (118.70845pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 request:form:to[]ict\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 dic \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (912.18259pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 teach
+er[]d[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it
+/10 sub[]ode[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/c
+mm/m/it/10 teacher[]ame[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/1
+0 [[]\OML/cmm/m/it/10 phone[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m
+/n/10 [[]\OML/cmm/m/it/10 date[]f[]irth[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; da
+ta\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 password[]\OT1/cmr/m/n/10 ]]\OML/cmm/m/it
+/10 print\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dic\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
+ change[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 INSERTINTOTeacherVALUES\OT1/cmr/m/
+n/10 (?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?
+\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?\OML/cm
+m/m/it/10 ; \OT1/cmr/m/n/10 ?)"\OML/cmm/m/it/10 ; dic\OT1/cmr/m/n/10 )\OML/cmm/
+m/it/10 returnlogout\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 ifentity \OT1/cmr/m/n/10
+ ==
+ []
+
+
+Overfull \hbox (49.05331pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 student\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (99.14323pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 ifrequest:method \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (175.46173pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 add:ht
+ml\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (148.55077pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Student\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 ifr
+equest:method \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (29.94327pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 data \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (118.70845pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 request:form:to[]ict\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 dic \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (917.60222pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 stude
+nt[]d[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it
+/10 student[]ame[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\O
+ML/cmm/m/it/10 date[]f[]irth[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/
+m/n/10 [[]\OML/cmm/m/it/10 academic[]ear[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; d
+ata\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 branch[]ode[]\OT1/cmr/m/n/10 ]\OML/cmm/m
+/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 semester[]\OT1/cmr/m/n/10 ]]\O
+ML/cmm/m/it/10 change[]b\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 INSERTINTOStudentVAL
+UES\OT1/cmr/m/n/10 (?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT
+1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m
+/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?)"\OML/cmm/m/it/10 ; dic\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 returnlogout\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 ifentity \
+OT1/cmr/m/n/10 ==
+ []
+
+
+Overfull \hbox (49.27553pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 courses\OT1/cmr/m/n/10 " :
+ []
+
+
+Overfull \hbox (99.14323pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 ifrequest:method \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (31.4145pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 GET[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (175.46173pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 returnrender[]emplate\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 add:ht
+ml\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; id \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.32498pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 ID; entity \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (150.2871pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Courses\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 ifr
+equest:method \OT1/cmr/m/n/10 ==[]
+ []
+
+
+Overfull \hbox (38.0166pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 POST[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (29.94327pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 data \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (118.70845pt too wide) in paragraph at lines 310--348
+\OML/cmm/m/it/10 request:form:to[]ict\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 dic \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (529.55298pt too wide) in paragraph at lines 310--348
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 teach
+er[]d[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/cmm/m/it
+/10 sub[]ode[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; data\OT1/cmr/m/n/10 [[]\OML/c
+mm/m/it/10 Room[]\OT1/cmr/m/n/10 ]]\OML/cmm/m/it/10 change[]b\OT1/cmr/m/n/10 ("
+\OML/cmm/m/it/10 INSERTINTOCoursesVALUES\OT1/cmr/m/n/10 (?\OML/cmm/m/it/10 ; \O
+T1/cmr/m/n/10 ?\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ?"\OML/cmm/m/it/10 ; dic\OT1/
+cmr/m/n/10 )\OML/cmm/m/it/10 returnlogout\OT1/cmr/m/n/10 ()$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 i
+       f __name__ == '__main__':
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.351 if _
+          _name__ == '__main__':
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.351 if __
+           name__ == '__main__':
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.351 if __name__
+                  == '__main__':
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.351 if __name__ == '__
+                        main__':
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.351 if __name__ == '__main__
+                              ':
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   ^
+l.351 if __name__ == '__main__'
+                               :
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.353 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.353 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.353 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.353 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.353 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.353 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 351--353
+[]
+ []
+
+
+Overfull \hbox (156.48592pt too wide) in paragraph at lines 351--353
+[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354     a
+           pp.run(host="0.0.0.0", port=5000, debug=False)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 354--355
+[]
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{python}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.356 \end{python}
                   
-Things are pretty mixed up, but I think the worst is over.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 )
 ! Emergency stop.
-<*> chapter6.tex
-                
+<*> ./chapter6.tex
+                  
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 6 strings out of 494888
- 149 string characters out of 6179126
- 45758 words of memory out of 5000000
- 3408 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
- 38 hyphenation exceptions out of 8191
- 6i,0n,6p,41b,16s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 13 strings out of 492970
+ 321 string characters out of 3135854
+ 80727 words of memory out of 3000000
+ 3984 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,7n,12p,128b,117s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

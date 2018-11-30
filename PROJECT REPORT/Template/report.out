@@ -1,7 +1,7 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction To Database Management System}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{History of dbms }{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Characteristics of dbms }{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{History of DBMS }{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Characteristics of DBMS }{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.3.1}{Self-Describing Nature of a Database System}{section.1.3}% 5
 \BOOKMARK [2][-]{subsection.1.3.2}{Insulation between Programs and Data, and Data Abstraction}{section.1.3}% 6
 \BOOKMARK [2][-]{subsection.1.3.3}{Support of Multiple Views of the Data}{section.1.3}% 7
@@ -17,17 +17,18 @@
 \BOOKMARK [1][-]{section.3.1}{Entities, Attributes and Relationships}{chapter.3}% 17
 \BOOKMARK [1][-]{section.3.2}{Identify Major entities, attributes and relationships}{chapter.3}% 18
 \BOOKMARK [1][-]{section.3.3}{ER Schema}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.4}{Relational Schema}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{DESCRIPTION OF TOOLS AND TECHNOLOGIES}{}% 21
+\BOOKMARK [1][-]{section.3.4}{Schema Diagram}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Description Of Tools And Technologies}{}% 21
 \BOOKMARK [1][-]{section.4.1}{HTML}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{BOOTSTRAP -A CSS FRAMEWORK}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.3}{JAVASCRIPT}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.4}{PYTHON}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.5}{SQLITE}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{FLASK-SQLITE DATABASE CONNECTIVITY}{}% 27
+\BOOKMARK [1][-]{section.4.2}{Bootstrap - A CSS Framework}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Javascript}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Python}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.5}{SQLite}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Flask-SQLite Database Connectivity}{}% 27
 \BOOKMARK [1][-]{section.5.1}{Database Schema}{chapter.5}% 28
 \BOOKMARK [1][-]{section.5.2}{5 Steps to connect to the database in flask}{chapter.5}% 29
 \BOOKMARK [0][-]{chapter.6}{Implementation}{}% 30
-\BOOKMARK [0][-]{chapter.7}{Snapshots}{}% 31
-\BOOKMARK [0][-]{chapter.8}{Future Enhancements}{}% 32
-\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 33
+\BOOKMARK [1][-]{section.6.1}{FlaskApp - Python}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Snapshots}{}% 32
+\BOOKMARK [0][-]{chapter.8}{Future Enhancements}{}% 33
+\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 34

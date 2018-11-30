@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71039edb-e799-4701-b9a5-5c59d17be93b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/Actual ERD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/accountUserTable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter1.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter2.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter2.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter3.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter3.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter4.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter5.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter5.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.log" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/erd.png" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/erd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/loadingPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/loginPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/profilePage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.out" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.toc" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/rs.png" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/rs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/branch.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/branch.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,10 +40,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="169" column="34" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
+            <state relative-caret-position="4966">
+              <caret line="323" column="75" lean-forward="true" selection-start-line="323" selection-start-column="75" selection-end-line="323" selection-end-column="75" />
               <folding>
-                <element signature="e#0#94#0" expanded="true" />
+                <element signature="e#0#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,6 +89,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -76,22 +102,16 @@
               <item name="student-information-system" type="462c0819:PsiDirectoryNode" />
               <item name="PROJECT REPORT" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="student-information-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="student-information-system" type="462c0819:PsiDirectoryNode" />
-              <item name="PROJECT REPORT" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -186,14 +206,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33118972" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33118972" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -252,12 +271,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="removed navbar items" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://C:/Program Files (x86)/Python37-32/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="1956" selection-start-line="1956" selection-end-line="1956" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flaskapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="169" column="34" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
+        <state relative-caret-position="4966">
+          <caret line="323" column="75" lean-forward="true" selection-start-line="323" selection-start-column="75" selection-end-line="323" selection-end-column="75" />
           <folding>
-            <element signature="e#0#94#0" expanded="true" />
+            <element signature="e#0#93#0" expanded="true" />
           </folding>
         </state>
       </provider>
