@@ -1,0 +1,43 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction To Database Management System}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{History of DBMS }{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Characteristics of DBMS }{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Self-Describing Nature of a Database System}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Insulation between Programs and Data, and Data Abstraction}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{Support of Multiple Views of the Data}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.4}{Sharing of Data and Multiuser Transaction Processing}{section.1.3}% 8
+\BOOKMARK [1][-]{section.1.4}{Applications of DBMS}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Requirement Analysis}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Hardware Requirements}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Software Requirements}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Functional Requirements}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{Major Entities}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.2}{End User Requirements}{section.2.3}% 15
+\BOOKMARK [0][-]{chapter.3}{Database Design}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Entities, Attributes and Relationships}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Identify Major entities, attributes and relationships}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.3}{ER Schema}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Schema Diagram}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Description Of Tools And Technologies}{}% 21
+\BOOKMARK [1][-]{section.4.1}{HTML}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Bootstrap - A CSS Framework}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Javascript}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Python}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.5}{SQLite}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Flask-SQLite Database Connectivity}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Database Schema}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{5 Steps to connect to the database in flask}{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{Implementation}{}% 30
+\BOOKMARK [1][-]{section.6.1}{FlaskApp - Python}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{Backbone - HTML, Bootstrap, Javascript, jQuery}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.3}{Custom CSS}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.4}{Delete Page - HTML}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.5}{Modify Page - HTML}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.6}{Viewing Data - HTML}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.7}{Create Statements - SQLite3}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.8}{Triggers - SQLite3}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.9}{Login Page - HTML}{chapter.6}% 39
+\BOOKMARK [0][-]{chapter.7}{Snapshots}{}% 40
+\BOOKMARK [0][-]{chapter.8}{Conclusion and Future Enhancements}{}% 41
+\BOOKMARK [1][-]{section.8.1}{Conclusion}{chapter.8}% 42
+\BOOKMARK [1][-]{section.8.2}{Future Enhancements}{chapter.8}% 43
