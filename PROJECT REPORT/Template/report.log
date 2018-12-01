@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  1 DEC 2018 08:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  1 DEC 2018 09:39
 entering extended mode
 **./report.tex
 (report.tex
@@ -647,6 +647,9 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")) (report.aux
 
+LaTeX Warning: Label `fig:Index Page' multiply defined.
+
+
 LaTeX Warning: Label `' multiply defined.
 
 
@@ -1096,7 +1099,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--31
  []
 
 
-Overfull \hbox (7.56201pt too wide) in paragraph at lines 49--49
+Overfull \hbox (7.56201pt too wide) in paragraph at lines 48--48
 []\OT1/ptm/m/n/12 The per-son look-ing for the in-for-ma-tion doesn't need to g
 o through the whole database
  []
@@ -1116,17 +1119,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 [10
 
  <./StudentTable.png>]
-<./erd.png, id=259, 1329.96875pt x 830.10126pt>
+<./erd.png, id=259, 961.34157pt x 587.94656pt>
 File: ./erd.png Graphic file (type png)
 <use ./erd.png>
 Package pdftex.def Info: ./erd.png  used on input line 35.
-(pdftex.def)             Requested size: 465.49603pt x 290.5398pt.
-
-Overfull \hbox (13.8085pt too wide) in paragraph at lines 35--36
- [][] 
- []
-
-[11 <./erd.png>]
+(pdftex.def)             Requested size: 451.6986pt x 276.25418pt.
+ [11 <./erd.png>]
 <./schema.png, id=266, 788.9475pt x 531.48563pt>
 File: ./schema.png Graphic file (type png)
 <use ./schema.png>
@@ -1187,9 +1185,85 @@ File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 ) [26] [27]
 [28]) (chapter7.tex [29]
 Chapter 7.
-) (chapter8.tex [30
+<./snaps/1.png, id=835, 1927.2pt x 1084.05pt>
+File: ./snaps/1.png Graphic file (type png)
+<use ./snaps/1.png>
+Package pdftex.def Info: ./snaps/1.png  used on input line 6.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+<./snaps/2.png, id=836, 1927.2pt x 1084.05pt>
+File: ./snaps/2.png Graphic file (type png)
+<use ./snaps/2.png>
+Package pdftex.def Info: ./snaps/2.png  used on input line 14.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+[30
 
-]
+ <./snaps/1.png>]
+<./snaps/3.png, id=842, 1927.2pt x 1084.05pt>
+File: ./snaps/3.png Graphic file (type png)
+<use ./snaps/3.png>
+Package pdftex.def Info: ./snaps/3.png  used on input line 22.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+<./snaps/4.png, id=843, 1927.2pt x 1084.05pt>
+File: ./snaps/4.png Graphic file (type png)
+<use ./snaps/4.png>
+Package pdftex.def Info: ./snaps/4.png  used on input line 30.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+ [31 <./snaps/2.png> <./snaps/3.png>]
+<./snaps/5.png, id=850, 1927.2pt x 1084.05pt>
+File: ./snaps/5.png Graphic file (type png)
+<use ./snaps/5.png>
+Package pdftex.def Info: ./snaps/5.png  used on input line 38.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+<./snaps/6.png, id=851, 1927.2pt x 1084.05pt>
+File: ./snaps/6.png Graphic file (type png)
+<use ./snaps/6.png>
+Package pdftex.def Info: ./snaps/6.png  used on input line 46.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+ [32 <./snaps/4.png> <./snaps/5.png>]
+<./snaps/7.png, id=859, 1927.2pt x 1084.05pt>
+File: ./snaps/7.png Graphic file (type png)
+<use ./snaps/7.png>
+Package pdftex.def Info: ./snaps/7.png  used on input line 54.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+<./snaps/8.png, id=860, 1927.2pt x 1084.05pt>
+File: ./snaps/8.png Graphic file (type png)
+<use ./snaps/8.png>
+Package pdftex.def Info: ./snaps/8.png  used on input line 62.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+ [33 <./snaps/6.png> <./snaps/7.png>]
+<./snaps/9.png, id=867, 1927.2pt x 1084.05pt>
+File: ./snaps/9.png Graphic file (type png)
+<use ./snaps/9.png>
+Package pdftex.def Info: ./snaps/9.png  used on input line 70.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+<./snaps/10.png, id=868, 1927.2pt x 1084.05pt>
+File: ./snaps/10.png Graphic file (type png)
+<use ./snaps/10.png>
+Package pdftex.def Info: ./snaps/10.png  used on input line 78.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+ [34 <./snaps/8.png> <./snaps/9.png>]
+<./snaps/11.png, id=875, 1927.2pt x 1084.05pt>
+File: ./snaps/11.png Graphic file (type png)
+<use ./snaps/11.png>
+Package pdftex.def Info: ./snaps/11.png  used on input line 86.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+<./snaps/12.png, id=876, 1927.2pt x 1084.05pt>
+File: ./snaps/12.png Graphic file (type png)
+<use ./snaps/12.png>
+Package pdftex.def Info: ./snaps/12.png  used on input line 94.
+(pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
+ [35 <./snaps/10.png> <./snaps/11.png>]
+<./snaps/13.png, id=883, 1445.4pt x 737.00343pt>
+File: ./snaps/13.png Graphic file (type png)
+<use ./snaps/13.png>
+Package pdftex.def Info: ./snaps/13.png  used on input line 102.
+(pdftex.def)             Requested size: 451.6864pt x 230.313pt.
+<./snaps/14.png, id=884, 1445.4pt x 735.49782pt>
+File: ./snaps/14.png Graphic file (type png)
+<use ./snaps/14.png>
+Package pdftex.def Info: ./snaps/14.png  used on input line 110.
+(pdftex.def)             Requested size: 451.6864pt x 229.8425pt.
+) (chapter8.tex [36 <./snaps/12.png> <./snaps/13.png>] [37 <./snaps/14.png>]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -1201,19 +1275,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[31
+[38
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-) (ref.tex [32]) [33
+) (ref.tex [39]) [40
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
@@ -1255,10 +1329,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 19892 strings out of 492970
- 354835 string characters out of 3135854
- 751444 words of memory out of 3000000
- 22823 multiletter control sequences out of 15000+200000
+ 19996 strings out of 492970
+ 356356 string characters out of 3135854
+ 751972 words of memory out of 3000000
+ 22891 multiletter control sequences out of 15000+200000
  36560 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,54p,1856b,2049s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1269,9 +1343,9 @@ ype1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (38 pages, 1779619 bytes).
+Output written on report.pdf (45 pages, 2450911 bytes).
 PDF statistics:
- 1008 PDF objects out of 1200 (max. 8388607)
- 569 named destinations out of 1000 (max. 500000)
- 326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1072 PDF objects out of 1200 (max. 8388607)
+ 590 named destinations out of 1000 (max. 500000)
+ 396 words of extra memory for PDF output out of 10000 (max. 10000000)
 
