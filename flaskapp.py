@@ -61,7 +61,6 @@ def login():
         try:
             password = request.form['password']
             teacher_id = int(request.form['teacher_id'])
-            print(password, teacher_id)
         except ValueError:
             return render_template("login.html", error=True)
 
@@ -125,7 +124,6 @@ def view():
 @app.route('/teachers')
 def teachers():
     global ID
-    print(ID)
     teacher_list = query_db("SELECT * FROM TEACHER", [])
     return render_template("/teachers_info.html", id=ID,
                            teacher_list=teacher_list)
@@ -162,13 +160,11 @@ def modify(uid, uid2, entity):
     if entity == "student":
         values = query_db("SELECT * FROM Student \
                             WHERE student_id=?", [uid], one=True)
-        print(values['student_name'])
         if request.method == 'GET':
             return render_template("modify.html", id=ID,
                                    entity="Student", identity=values)
         if request.method == 'POST':
             data = request.form.to_dict()
-            print(data.keys())
             dic = [data['student_id'], data['student_name'],
                    data['academic_year'], data['branch_code'], uid]
             change_db(
@@ -186,7 +182,6 @@ def modify(uid, uid2, entity):
                                    identity=values)
         if request.method == 'POST':
             data = request.form.to_dict()
-            print(data.keys())
             dic = [data['sub_code'], data['student_id'],
                    data['a1'], data['a2'], data['a3'], data['a1'],
                    data['a2'], data['a3'], uid2, uid]
@@ -200,13 +195,11 @@ def modify(uid, uid2, entity):
         values = query_db("SELECT * FROM Courses \
                             WHERE teacher_id=? AND sub_code=?",
                           [uid, uid2], one=True)
-        print(values.keys())
         if request.method == 'GET':
             return render_template("modify.html", id=ID,
                                    entity="Courses", identity=values)
         if request.method == 'POST':
             data = request.form.to_dict()
-            print(data.keys())
             dic = [data['teacher_id'], data['sub_code'],
                    data['Room'], uid, uid2]
             change_db(
@@ -291,10 +284,8 @@ def delete(uid, entity):
             change_db("DELETE FROM Teacher WHERE teacher_id=?", [uid])
             return logout()
     if entity == "student":
-    	#TODO : /3 is coming everytime i'm trying to delete student in URL.
         values = query_db("SELECT * FROM Student \
                             WHERE student_id=?", [uid], one=True)
-        print(values)
         if request.method == 'GET':
             return render_template("delete.html", id=ID,
                                    entity="Student", identity=values)
@@ -312,7 +303,6 @@ def add(entity):
     if not session.get('logged_in'):
         return login()
     else:
-	#TODO :  THE WEBSITE IS NOT ABLE TO ROUTE TO /add/teacher
         if entity == "teacher":
             if request.method == 'GET':
                 return render_template("add.html", id=ID,
@@ -322,7 +312,6 @@ def add(entity):
                 dic = [data['teacher_id'], data['sub_code'],
                        data['teacher_name'], data['phone'],
                        data['date_of_birth'], data['password']]
-                print(dic)
                 change_db(
                     "INSERT INTO Teacher VALUES (?, ?, ?, ?, ?, ?)",
                     dic)

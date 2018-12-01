@@ -34,7 +34,7 @@
     <td>{{ student['semester'] }}</td>
     <td>
       <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/student/{{ student['student_id'] }}/{{ student['academic_year'] }}'"></button>
-      <button type="button" class="btn btn-outline btn-danger fa fa-trash" onclick="window.location.href='/delete/student/{{ student['student_id'] }}/{{ student['academic_year'] }}'"></button>
+      <button type="button" class="btn btn-outline btn-danger fa fa-trash" onclick="window.location.href='/delete/student/{{ student['student_id'] }}'"></button>
     </td>
   </tr>
   {% endfor %}
