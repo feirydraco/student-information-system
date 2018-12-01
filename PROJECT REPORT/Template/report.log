@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  1 DEC 2018 09:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.27)  1 DEC 2018 10:05
 entering extended mode
 **./report.tex
 (report.tex
@@ -928,7 +928,7 @@ LaTeX Info: Redefining \nameref on input line 120.
 (title.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
-<./VTU.png, id=150, 730.73pt x 1027.84pt>
+<./VTU.png, id=178, 730.73pt x 1027.84pt>
 File: ./VTU.png Graphic file (type png)
 <use ./VTU.png>
 Package pdftex.def Info: ./VTU.png  used on input line 9.
@@ -968,7 +968,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
-<./RNS_logo.png, id=152, 992.20688pt x 1066.7353pt>
+<./RNS_logo.png, id=180, 992.20688pt x 1066.7353pt>
 File: ./RNS_logo.png Graphic file (type png)
 <use ./RNS_logo.png>
 Package pdftex.def Info: ./RNS_logo.png  used on input line 27.
@@ -1106,7 +1106,7 @@ o through the whole database
 
 ) (chapter3.tex [9]
 Chapter 3.
-<./StudentTable.png, id=253, 887.315pt x 302.12875pt>
+<./StudentTable.png, id=288, 887.315pt x 302.12875pt>
 File: ./StudentTable.png Graphic file (type png)
 <use ./StudentTable.png>
 Package pdftex.def Info: ./StudentTable.png  used on input line 9.
@@ -1119,13 +1119,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 [10
 
  <./StudentTable.png>]
-<./erd.png, id=259, 961.34157pt x 587.94656pt>
+<./erd.png, id=294, 961.34157pt x 587.94656pt>
 File: ./erd.png Graphic file (type png)
 <use ./erd.png>
 Package pdftex.def Info: ./erd.png  used on input line 35.
 (pdftex.def)             Requested size: 451.6986pt x 276.25418pt.
  [11 <./erd.png>]
-<./schema.png, id=266, 788.9475pt x 531.48563pt>
+<./schema.png, id=301, 788.9475pt x 531.48563pt>
 File: ./schema.png Graphic file (type png)
 <use ./schema.png>
 Package pdftex.def Info: ./schema.png  used on input line 47.
@@ -1183,87 +1183,92 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 ) [26] [27]
-[28]) (chapter7.tex [29]
+[28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) [40] [41]
+[42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55])
+(chapter7.tex [56]
 Chapter 7.
-<./snaps/1.png, id=835, 1927.2pt x 1084.05pt>
+<./snaps/1.png, id=1785, 1927.2pt x 1084.05pt>
 File: ./snaps/1.png Graphic file (type png)
 <use ./snaps/1.png>
 Package pdftex.def Info: ./snaps/1.png  used on input line 6.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
-<./snaps/2.png, id=836, 1927.2pt x 1084.05pt>
+<./snaps/2.png, id=1786, 1927.2pt x 1084.05pt>
 File: ./snaps/2.png Graphic file (type png)
 <use ./snaps/2.png>
 Package pdftex.def Info: ./snaps/2.png  used on input line 14.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
-[30
+[57
 
  <./snaps/1.png>]
-<./snaps/3.png, id=842, 1927.2pt x 1084.05pt>
+<./snaps/3.png, id=1792, 1927.2pt x 1084.05pt>
 File: ./snaps/3.png Graphic file (type png)
 <use ./snaps/3.png>
 Package pdftex.def Info: ./snaps/3.png  used on input line 22.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
-<./snaps/4.png, id=843, 1927.2pt x 1084.05pt>
+<./snaps/4.png, id=1793, 1927.2pt x 1084.05pt>
 File: ./snaps/4.png Graphic file (type png)
 <use ./snaps/4.png>
 Package pdftex.def Info: ./snaps/4.png  used on input line 30.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
- [31 <./snaps/2.png> <./snaps/3.png>]
-<./snaps/5.png, id=850, 1927.2pt x 1084.05pt>
+ [58 <./snaps/2.png> <./snaps/3.png>]
+<./snaps/5.png, id=1800, 1927.2pt x 1084.05pt>
 File: ./snaps/5.png Graphic file (type png)
 <use ./snaps/5.png>
 Package pdftex.def Info: ./snaps/5.png  used on input line 38.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
-<./snaps/6.png, id=851, 1927.2pt x 1084.05pt>
+<./snaps/6.png, id=1801, 1927.2pt x 1084.05pt>
 File: ./snaps/6.png Graphic file (type png)
 <use ./snaps/6.png>
 Package pdftex.def Info: ./snaps/6.png  used on input line 46.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
- [32 <./snaps/4.png> <./snaps/5.png>]
-<./snaps/7.png, id=859, 1927.2pt x 1084.05pt>
+ [59 <./snaps/4.png> <./snaps/5.png>]
+<./snaps/7.png, id=1808, 1927.2pt x 1084.05pt>
 File: ./snaps/7.png Graphic file (type png)
 <use ./snaps/7.png>
 Package pdftex.def Info: ./snaps/7.png  used on input line 54.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
-<./snaps/8.png, id=860, 1927.2pt x 1084.05pt>
+<./snaps/8.png, id=1809, 1927.2pt x 1084.05pt>
 File: ./snaps/8.png Graphic file (type png)
 <use ./snaps/8.png>
 Package pdftex.def Info: ./snaps/8.png  used on input line 62.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
- [33 <./snaps/6.png> <./snaps/7.png>]
-<./snaps/9.png, id=867, 1927.2pt x 1084.05pt>
+ [60 <./snaps/6.png> <./snaps/7.png>]
+<./snaps/9.png, id=1816, 1927.2pt x 1084.05pt>
 File: ./snaps/9.png Graphic file (type png)
 <use ./snaps/9.png>
 Package pdftex.def Info: ./snaps/9.png  used on input line 70.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
-<./snaps/10.png, id=868, 1927.2pt x 1084.05pt>
+<./snaps/10.png, id=1817, 1927.2pt x 1084.05pt>
 File: ./snaps/10.png Graphic file (type png)
 <use ./snaps/10.png>
 Package pdftex.def Info: ./snaps/10.png  used on input line 78.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
- [34 <./snaps/8.png> <./snaps/9.png>]
-<./snaps/11.png, id=875, 1927.2pt x 1084.05pt>
+ [61 <./snaps/8.png> <./snaps/9.png>]
+<./snaps/11.png, id=1824, 1927.2pt x 1084.05pt>
 File: ./snaps/11.png Graphic file (type png)
 <use ./snaps/11.png>
 Package pdftex.def Info: ./snaps/11.png  used on input line 86.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
-<./snaps/12.png, id=876, 1927.2pt x 1084.05pt>
+<./snaps/12.png, id=1825, 1927.2pt x 1084.05pt>
 File: ./snaps/12.png Graphic file (type png)
 <use ./snaps/12.png>
 Package pdftex.def Info: ./snaps/12.png  used on input line 94.
 (pdftex.def)             Requested size: 451.6864pt x 254.0736pt.
- [35 <./snaps/10.png> <./snaps/11.png>]
-<./snaps/13.png, id=883, 1445.4pt x 737.00343pt>
+ [62 <./snaps/10.png> <./snaps/11.png>]
+<./snaps/13.png, id=1833, 1445.4pt x 737.00343pt>
 File: ./snaps/13.png Graphic file (type png)
 <use ./snaps/13.png>
 Package pdftex.def Info: ./snaps/13.png  used on input line 102.
 (pdftex.def)             Requested size: 451.6864pt x 230.313pt.
-<./snaps/14.png, id=884, 1445.4pt x 735.49782pt>
+<./snaps/14.png, id=1834, 1445.4pt x 735.49782pt>
 File: ./snaps/14.png Graphic file (type png)
 <use ./snaps/14.png>
 Package pdftex.def Info: ./snaps/14.png  used on input line 110.
 (pdftex.def)             Requested size: 451.6864pt x 229.8425pt.
-) (chapter8.tex [36 <./snaps/12.png> <./snaps/13.png>] [37 <./snaps/14.png>]
+) (chapter8.tex [63 <./snaps/12.png> <./snaps/13.png>] [64 <./snaps/14.png>]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -1275,7 +1280,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[38
+[65
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
@@ -1287,7 +1292,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-) (ref.tex [39]) [40
+) (ref.tex [66]) [67
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
@@ -1320,20 +1325,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 60AC8D48A05853A2FCBF9A53E3565812;2562.
 
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 96B115B79FEAD9AD2315E247A3E0450A;3018
+(rerunfilecheck)             After:  64EAB9B5E097DB26FEFFB1A7D425949D;3084.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 19996 strings out of 492970
- 356356 string characters out of 3135854
- 751972 words of memory out of 3000000
- 22891 multiletter control sequences out of 15000+200000
- 36560 words of font info for 75 fonts, out of 3000000 for 9000
+ 21082 strings out of 492970
+ 372606 string characters out of 3135854
+ 756928 words of memory out of 3000000
+ 23139 multiletter control sequences out of 15000+200000
+ 38145 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,54p,1856b,2049s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -1343,9 +1354,9 @@ ype1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (45 pages, 2450911 bytes).
+Output written on report.pdf (72 pages, 2622694 bytes).
 PDF statistics:
- 1072 PDF objects out of 1200 (max. 8388607)
- 590 named destinations out of 1000 (max. 500000)
- 396 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2188 PDF objects out of 2487 (max. 8388607)
+ 1425 named destinations out of 1440 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 

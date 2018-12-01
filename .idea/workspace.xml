@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71039edb-e799-4701-b9a5-5c59d17be93b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/Sample Reports/django-sqllite.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/Sample Reports/php-sample.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/Sample Reports/php.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter7.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter7.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-01-32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-01-40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-01-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-02-06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-02-14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-02-23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-02-30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-02-37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-02-44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-02-49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-03-18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-03-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-03-42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/snaps/Screenshot from 2018-12-01 01-03-49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/chapter6.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.out" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT REPORT/Template/report.toc" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT REPORT/Template/report.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/typography.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="310" column="38" selection-start-line="310" selection-start-column="38" selection-end-line="310" selection-end-column="38" />
+            <state relative-caret-position="134">
+              <caret line="311" column="38" selection-start-line="311" selection-start-column="38" selection-end-line="311" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -257,7 +248,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33118972" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33118972" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -374,8 +365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="310" column="38" selection-start-line="310" selection-start-column="38" selection-end-line="310" selection-end-column="38" />
+        <state relative-caret-position="134">
+          <caret line="311" column="38" selection-start-line="311" selection-start-column="38" selection-end-line="311" selection-end-column="38" />
         </state>
       </provider>
     </entry>
