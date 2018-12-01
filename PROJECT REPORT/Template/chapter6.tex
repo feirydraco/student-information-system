@@ -501,307 +501,6 @@ if __name__ == '__main__':
 \pagebreak
 
 \section{Custom CSS}
-\pagebreak
-
-\section{Add Page - HTML}
-\begin{lstlisting}[language=HTML]
-\end{lstlisting}
-\pagebreak
-
-\section{Delete Page - HTML}
-\begin{lstlisting}[language=HTML]
-{% extends "base.html" %}
-
-{% block title %}
-Add
-{% endblock title %}
-
-{% block content %}
-<div class="panel panel-yellow">
-  <div class="panel-heading">
-    Add to Database
-  </div>
-  <div class="panel-body">
-    <form action="#" method="post">
-      {% if entity=="Teacher" %}
-      <div class="form-group">
-        <label>Teacher ID</label>
-        <input type="text" class="form-control" id="teacher_id" name="teacher_id">
-      </div>
-      <div class="form-group">
-        <label>Subject Code</label>
-        <input type="number" class="form-control" id="sub_code" name="sub_code">
-      </div>
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" class="form-control" id="teacher_name" name="teacher_name">
-      </div>
-      <div class="form-group">
-        <label>Phone</label>
-        <input type="number" class="form-control" id="phone" name="phone">
-      </div>
-      <div class="form-group">
-        <label>Date of Birth</label>
-        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" class="form-control" id="password" name="password">
-      </div>
-      {% elif entity=="Student" %}
-      <div class="form-group">
-        <label>Student ID</label>
-        <input type="number" class="form-control" id="student_id" name="student_id">
-      </div>
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" class="form-control" id="student_name" name="student_name">
-      </div>
-       <div class="form-group">
-        <label>Date of Birth</label>
-        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
-      </div>
-      <div class="form-group">
-        <label>Academic Year</label>
-        <input type="number" class="form-control" id="academic_year" name="academic_year">
-      </div>
-      <div class="form-group">
-        <label>Branch</label>
-        <input type="text" class="form-control" id="branch_code" name="branch_code">
-      </div>
-      <div class="form-group">
-        <label>Semester</label>
-        <select class="form-control" id="semester" name="semester">
-          <option selected disabled hidden>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-        </select>
-      </div>
-      {% elif entity=="Courses": %}
-      <div class="form-group">
-        <label>Teacher ID</label>
-        <input type="number" class="form-control" id="teacher_id" name="teacher_id">
-      </div>
-      <div class="form-group">
-        <label>Subject Code</label>
-        <input type="number" class="form-control" id="sub_code" name="sub_code">
-      </div>
-      <div class="form-group">
-        <label>Room</label>
-        <input type="number" class="form-control" id="Room" name="Room">
-      </div>
-      {% endif %}
-      <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
-    </form>
-  </div>
-  <div class="alert alert-danger alert-dismissable" style="text-align: center;">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
-    Application will logout for security.
-  </div>
-</div>
-{% endblock content %}
-
-\end{lstlisting}
-\pagebreak
-
-\section{Modify Page - HTML}
-\begin{lstlisting}[language=HTML]
-{% extends "base.html" %}
-{% block title %}
-  Modify
-{% endblock title %}
-{% block content %}
-  <div class="panel panel-yellow">
-    <div class="panel-heading">
-      Currently modifying: {{ entity }}
-    </div>
-    <div class="panel-body">
-      <form action="#" method="post">
-        {% if entity=="Teacher" %}
-          <div class="form-group">
-            <label>Teacher ID</label>
-            <input type="text" class="form-control" id="teacher_id" name="teacher_id" value={{identity.teacher_id}}>
-          </div>
-          <div class="form-group">
-            <label>Subject Code</label>
-            <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
-          </div>
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" id="teacher_name" name="teacher_name" value={{identity.teacher_name}}>
-          </div>
-          <div class="form-group">
-            <label>Phone</label>
-            <input type="number" class="form-control" id="phone" name="phone" value={{identity.phone}}>
-          </div>
-          {% elif entity=="Student" %}
-          <div class="form-group">
-            <label>Student ID</label>
-            <input type="number" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
-          </div>
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" id="student_name" name="student_name" value={{identity.student_name}}>
-          </div>
-          <div class="form-group">
-            <label>Academic Year</label>
-            <input type="number" class="form-control" id="academic_year" name="academic_year" value={{identity.academic_year}}>
-          </div>
-          <div class="form-group">
-            <label>Branch</label>
-            <input type="text" class="form-control" id="branch_code" name="branch_code" value={{identity.branch_code}}>
-          </div>
-          <div class="form-group">
-            <label>Semester</label>
-            <select class="form-control" selected="{{identity.semester}}">
-              <option selected disabled hidden>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-              </select>
-            </div>
-            {% elif entity=="Attendance" %}
-            <div class="form-group">
-              <label>Subject Code</label>
-              <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
-            </div>
-            <div class="form-group">
-              <label>Student ID</label>
-              <input type="number" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
-            </div>
-            <div class="form-group">
-              <label><strong>A 1</strong></label>
-              <input type="number" class="form-control" id="a1" name="a1" value={{identity.a1}}>
-            </div>
-            <div class="form-group">
-              <label><strong>A 2</strong></label>
-              <input type="number" class="form-control" id="a2" name="a2" value={{identity.a2}}>
-            </div>
-            <div class="form-group">
-              <label><strong>A 3</strong></label>
-              <input type="number" class="form-control" id="a3" name="a3" value={{identity.a3}}>
-            </div>
-            {% elif entity=="Courses" %}
-            <div class="form-group">
-              <label>Teacher ID</label>
-              <input type="number" class="form-control" id="teacher_id" name="teacher_id" value={{identity.teacher_id}}>
-            </div>
-            <div class="form-group">
-              <label>Subject Code</label>
-              <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
-            </div>
-            <div class="form-group">
-              <label>Room</label>
-              <input type="number" class="form-control" id="Room" name="Room" value={{identity.Room}}>
-            </div>
-          {% endif %}
-          <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
-        </form>
-      </div>
-      <div class="alert alert-danger alert-dismissable" style="text-align: center;">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
-        Application will logout for security.
-      </div>
-      <div class="panel-footer">
-        {% if entity=="Teacher" %}
-          ID: {{ identity['teacher_id'] }}
-          {% elif entity=="Student" %}
-          ID: {{ identity['student_id'] }}
-          {% elif entity=="Attendance" %}
-          <strong>Attendance Modification</strong>
-          {% elif entity=="Attendance" %}
-          <strong>Course Modification</strong>
-        {% endif %}
-      </div>
-    </div>
-  {% endblock content %}
-\end{lstlisting}
-\pagebreak
-
-\section{Viewing Data - HTML}
-\begin{lstlisting}[language=HTML]
-{% extends "base.html" %}
-{% block title %}Attendance{% endblock %}
-{% block content %}
-  <table class="table table-striped table-bordered table-hover dataTables no-footer dtr-inline collapsed" style="width: 100%;" id="dataTables">
-    <thead>
-      <tr>
-        <th scope="col">Subject Code</th>
-        <th scope="col">Student ID</th>
-        <th scope="col"><strong>1</strong></th>
-        <th scope="col"><strong>2</strong></th>
-        <th scope="col"><strong>3</strong></th>
-        <th scope="col">Final Attendance</th>
-        <th scope="col">Modify</th>
-      </tr>
-    </thead>
-    {% for entry in entry_list: %}
-      <tr>
-        <td>{{ entry['sub_code'] }}</td>
-        <td>{{ entry['student_id'] }}</td>
-        <td>{{ entry['a1'] }}</td>
-        <td>{{ entry['a2'] }}</td>
-        <td>{{ entry['a3'] }}</td>
-        <td>{{ entry['final_attendance'] }}</td>
-        <td>
-          <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/attendance/{{ entry['student_id'] }}/{{ entry['sub_code'] }}'"></button>
-        </td>
-      </tr>
-    {% endfor %}
-  </table>
-{% endblock content %}
-\end{lstlisting}
-\pagebreak
-
-\section{Create Statements - SQLite3}
-\begin{lstlisting}[
-           language=SQL,
-           showspaces=false,
-           basicstyle=\ttfamily,
-           numbers=left,
-           numberstyle=\tiny,
-           commentstyle=\color{gray}
-        ]
-CREATE TABLE Attendance ( sub_code integer NOT NULL , student_id teger NOT NULL, a1 integer unsigned NULL , a2 integer unsigned NULL , a3 integer unsigned NULL , final_attendance integer unsigned NULL , PRIMARY KEY (sub_code, student_id), FOREIGN KEY (student_id) REFERENCES Student (student_id) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (sub_code) REFERENCES Subject (sub_code) ON DELETE CASCADE ON UPDATE CASCADE );
-CREATE TABLE Branch ( branch_code text NOT NULL , semester integer NOT NULL, branch_name NOT NULL , PRIMARY KEY (branch_code, semester) );
-CREATE TABLE Courses ( teacher_id integer NOT NULL , sub_code integer NOT NULL , Room integer NOT NULL , PRIMARY KEY (teacher_id, sub_code), FOREIGN KEY (teacher_id, sub_code) REFERENCES Teacher (teacher_id, sub_code) ON DELETE CASCADE ON UPDATE CASCADE );
-CREATE TABLE Student ( student_id integer NOT NULL , student_name text NOT NULL , date_of_birth date NOT NULL , academic_year year NOT NULL , branch_code text NOT NULL , semester integer NOT NULL , PRIMARY KEY (student_id), FOREIGN KEY (branch_code,semester) REFERENCES Branch (branch_code, semester) ON DELETE CASCADE ON UPDATE CASCADE );
-CREATE TABLE Subject ( sub_code integer NOT NULL , sub_name text NOT NULL , elective integer NOT NULL , credits integer NOT NULL , branch_code text NOT NULL , semester integer NOT NULL , PRIMARY KEY (sub_code), FOREIGN KEY (branch_code) REFERENCES Branch(branch_code) ON DELETE CASCADE ON UPDATE CASCADE FOREIGN KEY (semester) REFERENCES Branch(semester) ON DELETE CASCADE ON UPDATE CASCADE );
-CREATE TABLE Teacher ( teacher_id integer NOT NULL , sub_code integer NOT NULL , teacher_name text NOT NULL , phone numeric NOT NULL , date_of_birth date NOT NULL , password text NOT NULL , PRIMARY KEY (teacher_id, sub_code), FOREIGN KEY (sub_code) REFERENCES Subject(sub_code) ON DELETE CASCADE ON UPDATE CASCADE );
-\end{lstlisting}
-\pagebreak
-
-\section{Triggers - SQLite3}
-
-\begin{lstlisting}[
-           language=SQL,
-           showspaces=false,
-           basicstyle=\ttfamily,
-           numbers=left,
-           numberstyle=\tiny,
-           commentstyle=\color{gray}
-        ]
-CREATE TRIGGER add_attendance AFTER INSERT ON Student BEGIN INSERT INTO Attendance VALUES(10, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(11, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(12, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(13, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(14, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(15, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(16, New.student_id, 0, 0, 0, ""); END
-CREATE TRIGGER add_marksheet AFTER INSERT ON Student BEGIN INSERT INTO Marksheet VALUES(10, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(11, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(12, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(13, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(14, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(15, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(16, New.student_id, 0, 0, 0, 0, ""); END
-\end{lstlisting}
-\pagebreak
-
-\section{Login Page - HTML}
-\begin{lstlisting}[language=HTML]
-\end{lstlisting}
-\pagebreak
-
 \begin{lstlisting}[language=HTML]
 <style>
 body {
@@ -1348,3 +1047,483 @@ table.dataTable thead .sorting:after {
 }
 </style>
 \end{lstlisting}
+\pagebreak
+
+\section{Add Page - HTML}
+\begin{lstlisting}[language=HTML]
+{% extends "base.html" %}
+
+{% block title %}
+Add
+{% endblock title %}
+
+{% block content %}
+<div class="panel panel-yellow">
+  <div class="panel-heading">
+    Add to Database
+  </div>
+  <div class="panel-body">
+    <form action="#" method="post">
+      {% if entity=="Teacher" %}
+      <div class="form-group">
+        <label>Teacher ID</label>
+        <input type="text" class="form-control" id="teacher_id" name="teacher_id">
+      </div>
+      <div class="form-group">
+        <label>Subject Code</label>
+        <input type="number" class="form-control" id="sub_code" name="sub_code">
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="teacher_name" name="teacher_name">
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="number" class="form-control" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+      {% elif entity=="Student" %}
+      <div class="form-group">
+        <label>Student ID</label>
+        <input type="number" class="form-control" id="student_id" name="student_id">
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="student_name" name="student_name">
+      </div>
+       <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+      </div>
+      <div class="form-group">
+        <label>Academic Year</label>
+        <input type="number" class="form-control" id="academic_year" name="academic_year">
+      </div>
+      <div class="form-group">
+        <label>Branch</label>
+        <input type="text" class="form-control" id="branch_code" name="branch_code">
+      </div>
+      <div class="form-group">
+        <label>Semester</label>
+        <select class="form-control" id="semester" name="semester">
+          <option selected disabled hidden>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+        </select>
+      </div>
+      {% elif entity=="Courses": %}
+      <div class="form-group">
+        <label>Teacher ID</label>
+        <input type="number" class="form-control" id="teacher_id" name="teacher_id">
+      </div>
+      <div class="form-group">
+        <label>Subject Code</label>
+        <input type="number" class="form-control" id="sub_code" name="sub_code">
+      </div>
+      <div class="form-group">
+        <label>Room</label>
+        <input type="number" class="form-control" id="Room" name="Room">
+      </div>
+      {% endif %}
+      <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+    </form>
+  </div>
+  <div class="alert alert-danger alert-dismissable" style="text-align: center;">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    Application will logout for security.
+  </div>
+</div>
+{% endblock content %}
+\end{lstlisting}
+\pagebreak
+
+\section{Delete Page - HTML}
+\begin{lstlisting}[language=HTML]
+{% extends "base.html" %}
+
+{% block title %}
+Add
+{% endblock title %}
+
+{% block content %}
+<div class="panel panel-yellow">
+  <div class="panel-heading">
+    Add to Database
+  </div>
+  <div class="panel-body">
+    <form action="#" method="post">
+      {% if entity=="Teacher" %}
+      <div class="form-group">
+        <label>Teacher ID</label>
+        <input type="text" class="form-control" id="teacher_id" name="teacher_id">
+      </div>
+      <div class="form-group">
+        <label>Subject Code</label>
+        <input type="number" class="form-control" id="sub_code" name="sub_code">
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="teacher_name" name="teacher_name">
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="number" class="form-control" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+      {% elif entity=="Student" %}
+      <div class="form-group">
+        <label>Student ID</label>
+        <input type="number" class="form-control" id="student_id" name="student_id">
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="student_name" name="student_name">
+      </div>
+       <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+      </div>
+      <div class="form-group">
+        <label>Academic Year</label>
+        <input type="number" class="form-control" id="academic_year" name="academic_year">
+      </div>
+      <div class="form-group">
+        <label>Branch</label>
+        <input type="text" class="form-control" id="branch_code" name="branch_code">
+      </div>
+      <div class="form-group">
+        <label>Semester</label>
+        <select class="form-control" id="semester" name="semester">
+          <option selected disabled hidden>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+        </select>
+      </div>
+      {% elif entity=="Courses": %}
+      <div class="form-group">
+        <label>Teacher ID</label>
+        <input type="number" class="form-control" id="teacher_id" name="teacher_id">
+      </div>
+      <div class="form-group">
+        <label>Subject Code</label>
+        <input type="number" class="form-control" id="sub_code" name="sub_code">
+      </div>
+      <div class="form-group">
+        <label>Room</label>
+        <input type="number" class="form-control" id="Room" name="Room">
+      </div>
+      {% endif %}
+      <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+    </form>
+  </div>
+  <div class="alert alert-danger alert-dismissable" style="text-align: center;">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+    Application will logout for security.
+  </div>
+</div>
+{% endblock content %}
+
+\end{lstlisting}
+\pagebreak
+
+\section{Modify Page - HTML}
+\begin{lstlisting}[language=HTML]
+{% extends "base.html" %}
+{% block title %}
+  Modify
+{% endblock title %}
+{% block content %}
+  <div class="panel panel-yellow">
+    <div class="panel-heading">
+      Currently modifying: {{ entity }}
+    </div>
+    <div class="panel-body">
+      <form action="#" method="post">
+        {% if entity=="Teacher" %}
+          <div class="form-group">
+            <label>Teacher ID</label>
+            <input type="text" class="form-control" id="teacher_id" name="teacher_id" value={{identity.teacher_id}}>
+          </div>
+          <div class="form-group">
+            <label>Subject Code</label>
+            <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+          </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="teacher_name" name="teacher_name" value={{identity.teacher_name}}>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="number" class="form-control" id="phone" name="phone" value={{identity.phone}}>
+          </div>
+          {% elif entity=="Student" %}
+          <div class="form-group">
+            <label>Student ID</label>
+            <input type="number" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
+          </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="student_name" name="student_name" value={{identity.student_name}}>
+          </div>
+          <div class="form-group">
+            <label>Academic Year</label>
+            <input type="number" class="form-control" id="academic_year" name="academic_year" value={{identity.academic_year}}>
+          </div>
+          <div class="form-group">
+            <label>Branch</label>
+            <input type="text" class="form-control" id="branch_code" name="branch_code" value={{identity.branch_code}}>
+          </div>
+          <div class="form-group">
+            <label>Semester</label>
+            <select class="form-control" selected="{{identity.semester}}">
+              <option selected disabled hidden>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+              </select>
+            </div>
+            {% elif entity=="Attendance" %}
+            <div class="form-group">
+              <label>Subject Code</label>
+              <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+            </div>
+            <div class="form-group">
+              <label>Student ID</label>
+              <input type="number" class="form-control" id="student_id" name="student_id" value={{identity.student_id}}>
+            </div>
+            <div class="form-group">
+              <label><strong>A 1</strong></label>
+              <input type="number" class="form-control" id="a1" name="a1" value={{identity.a1}}>
+            </div>
+            <div class="form-group">
+              <label><strong>A 2</strong></label>
+              <input type="number" class="form-control" id="a2" name="a2" value={{identity.a2}}>
+            </div>
+            <div class="form-group">
+              <label><strong>A 3</strong></label>
+              <input type="number" class="form-control" id="a3" name="a3" value={{identity.a3}}>
+            </div>
+            {% elif entity=="Courses" %}
+            <div class="form-group">
+              <label>Teacher ID</label>
+              <input type="number" class="form-control" id="teacher_id" name="teacher_id" value={{identity.teacher_id}}>
+            </div>
+            <div class="form-group">
+              <label>Subject Code</label>
+              <input type="number" class="form-control" id="sub_code" name="sub_code" value={{identity.sub_code}}>
+            </div>
+            <div class="form-group">
+              <label>Room</label>
+              <input type="number" class="form-control" id="Room" name="Room" value={{identity.Room}}>
+            </div>
+          {% endif %}
+          <button type="submit" class="btn btn-warning btn-block btn-outline" value="Submit">Submit</button>
+        </form>
+      </div>
+      <div class="alert alert-danger alert-dismissable" style="text-align: center;">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+        Application will logout for security.
+      </div>
+      <div class="panel-footer">
+        {% if entity=="Teacher" %}
+          ID: {{ identity['teacher_id'] }}
+          {% elif entity=="Student" %}
+          ID: {{ identity['student_id'] }}
+          {% elif entity=="Attendance" %}
+          <strong>Attendance Modification</strong>
+          {% elif entity=="Attendance" %}
+          <strong>Course Modification</strong>
+        {% endif %}
+      </div>
+    </div>
+  {% endblock content %}
+\end{lstlisting}
+\pagebreak
+
+\section{Viewing Data - HTML}
+\begin{lstlisting}[language=HTML]
+{% extends "base.html" %}
+{% block title %}Attendance{% endblock %}
+{% block content %}
+  <table class="table table-striped table-bordered table-hover dataTables no-footer dtr-inline collapsed" style="width: 100%;" id="dataTables">
+    <thead>
+      <tr>
+        <th scope="col">Subject Code</th>
+        <th scope="col">Student ID</th>
+        <th scope="col"><strong>1</strong></th>
+        <th scope="col"><strong>2</strong></th>
+        <th scope="col"><strong>3</strong></th>
+        <th scope="col">Final Attendance</th>
+        <th scope="col">Modify</th>
+      </tr>
+    </thead>
+    {% for entry in entry_list: %}
+      <tr>
+        <td>{{ entry['sub_code'] }}</td>
+        <td>{{ entry['student_id'] }}</td>
+        <td>{{ entry['a1'] }}</td>
+        <td>{{ entry['a2'] }}</td>
+        <td>{{ entry['a3'] }}</td>
+        <td>{{ entry['final_attendance'] }}</td>
+        <td>
+          <button type="button" class="btn btn-outline btn-warning fa fa-pencil" onclick="window.location.href='/modify/attendance/{{ entry['student_id'] }}/{{ entry['sub_code'] }}'"></button>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock content %}
+\end{lstlisting}
+\pagebreak
+
+\section{Create Statements - SQLite3}
+\begin{lstlisting}[
+           language=SQL,
+           showspaces=false,
+           basicstyle=\ttfamily,
+           numbers=left,
+           numberstyle=\tiny,
+           commentstyle=\color{gray}
+        ]
+CREATE TABLE Attendance ( sub_code integer NOT NULL , student_id teger NOT NULL, a1 integer unsigned NULL , a2 integer unsigned NULL , a3 integer unsigned NULL , final_attendance integer unsigned NULL , PRIMARY KEY (sub_code, student_id), FOREIGN KEY (student_id) REFERENCES Student (student_id) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (sub_code) REFERENCES Subject (sub_code) ON DELETE CASCADE ON UPDATE CASCADE );
+CREATE TABLE Branch ( branch_code text NOT NULL , semester integer NOT NULL, branch_name NOT NULL , PRIMARY KEY (branch_code, semester) );
+CREATE TABLE Courses ( teacher_id integer NOT NULL , sub_code integer NOT NULL , Room integer NOT NULL , PRIMARY KEY (teacher_id, sub_code), FOREIGN KEY (teacher_id, sub_code) REFERENCES Teacher (teacher_id, sub_code) ON DELETE CASCADE ON UPDATE CASCADE );
+CREATE TABLE Student ( student_id integer NOT NULL , student_name text NOT NULL , date_of_birth date NOT NULL , academic_year year NOT NULL , branch_code text NOT NULL , semester integer NOT NULL , PRIMARY KEY (student_id), FOREIGN KEY (branch_code,semester) REFERENCES Branch (branch_code, semester) ON DELETE CASCADE ON UPDATE CASCADE );
+CREATE TABLE Subject ( sub_code integer NOT NULL , sub_name text NOT NULL , elective integer NOT NULL , credits integer NOT NULL , branch_code text NOT NULL , semester integer NOT NULL , PRIMARY KEY (sub_code), FOREIGN KEY (branch_code) REFERENCES Branch(branch_code) ON DELETE CASCADE ON UPDATE CASCADE FOREIGN KEY (semester) REFERENCES Branch(semester) ON DELETE CASCADE ON UPDATE CASCADE );
+CREATE TABLE Teacher ( teacher_id integer NOT NULL , sub_code integer NOT NULL , teacher_name text NOT NULL , phone numeric NOT NULL , date_of_birth date NOT NULL , password text NOT NULL , PRIMARY KEY (teacher_id, sub_code), FOREIGN KEY (sub_code) REFERENCES Subject(sub_code) ON DELETE CASCADE ON UPDATE CASCADE );
+\end{lstlisting}
+\pagebreak
+
+\section{Triggers - SQLite3}
+
+\begin{lstlisting}[
+           language=SQL,
+           showspaces=false,
+           basicstyle=\ttfamily,
+           numbers=left,
+           numberstyle=\tiny,
+           commentstyle=\color{gray}
+        ]
+CREATE TRIGGER add_attendance AFTER INSERT ON Student BEGIN INSERT INTO Attendance VALUES(10, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(11, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(12, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(13, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(14, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(15, New.student_id, 0, 0, 0, ""); INSERT INTO Attendance VALUES(16, New.student_id, 0, 0, 0, ""); END
+CREATE TRIGGER add_marksheet AFTER INSERT ON Student BEGIN INSERT INTO Marksheet VALUES(10, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(11, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(12, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(13, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(14, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(15, New.student_id, 0, 0, 0, 0, ""); INSERT INTO Marksheet VALUES(16, New.student_id, 0, 0, 0, 0, ""); END
+\end{lstlisting}
+\pagebreak
+
+\section{Login Page - HTML}
+\begin{lstlisting}[language=HTML]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Login</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{{  url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- MetisMenu CSS -->
+  <link href="{{  url_for('static', filename='vendor/metisMenu/metisMenu.min.css') }}" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{{  url_for('static', filename='dist/css/sb-admin-2.css') }}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="{{  url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="login-panel panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Please Sign In</h3>
+          </div>
+          <div class="panel-body">
+            <form action="{{ url_for('login') }}" method="post">
+              <fieldset>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Teacher ID" name="teacher_id" type="text" autofocus>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                </div>
+                <!-- Change this to a button or input when using this as a form -->
+                <button type="submit" class="btn btn-lg btn-primary btn-block btn-outline" value="Submit">Login</button>
+              </fieldset>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if error == True:%}
+    <div class="alert alert-danger alert-dismissable" style="text-align: center">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      Invalid Details
+    </div>
+    {% endif %}
+  </div>
+
+
+  <!-- jQuery -->
+  <script src="{{  url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="{{  url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+
+  <!-- Metis Menu Plugin JavaScript -->
+  <script src="{{  url_for('static', filename='vendor/metisMenu/metisMenu.min.js') }}"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="{{  url_for('static', filename='dist/js/sb-admin-2.js') }}"></script>
+
+</body>
+
+</html>
+
+\end{lstlisting}
+\pagebreak
+

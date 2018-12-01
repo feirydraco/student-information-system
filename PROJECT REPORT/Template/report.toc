@@ -32,15 +32,15 @@
 \contentsline {section}{\numberline {6.1}FlaskApp - Python}{18}{section.6.1}
 \contentsline {section}{\numberline {6.2}Backbone - HTML, Bootstrap, Javascript, jQuery}{26}{section.6.2}
 \contentsline {section}{\numberline {6.3}Custom CSS}{30}{section.6.3}
-\contentsline {section}{\numberline {6.4}Add Page - HTML}{31}{section.6.4}
-\contentsline {section}{\numberline {6.5}Delete Page - HTML}{32}{section.6.5}
-\contentsline {section}{\numberline {6.6}Modify Page - HTML}{35}{section.6.6}
-\contentsline {section}{\numberline {6.7}Viewing Data - HTML}{39}{section.6.7}
-\contentsline {section}{\numberline {6.8}Create Statements - SQLite3}{40}{section.6.8}
-\contentsline {section}{\numberline {6.9}Triggers - SQLite3}{42}{section.6.9}
-\contentsline {section}{\numberline {6.10}Login Page - HTML}{43}{section.6.10}
-\contentsline {chapter}{\numberline {7}Snapshots}{57}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion and Future Enhancements}{65}{chapter.8}
-\contentsline {section}{\numberline {8.1}Conclusion}{65}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Enhancements}{66}{section.8.2}
+\contentsline {section}{\numberline {6.4}Add Page - HTML}{43}{section.6.4}
+\contentsline {section}{\numberline {6.5}Delete Page - HTML}{46}{section.6.5}
+\contentsline {section}{\numberline {6.6}Modify Page - HTML}{49}{section.6.6}
+\contentsline {section}{\numberline {6.7}Viewing Data - HTML}{53}{section.6.7}
+\contentsline {section}{\numberline {6.8}Create Statements - SQLite3}{54}{section.6.8}
+\contentsline {section}{\numberline {6.9}Triggers - SQLite3}{56}{section.6.9}
+\contentsline {section}{\numberline {6.10}Login Page - HTML}{57}{section.6.10}
+\contentsline {chapter}{\numberline {7}Snapshots}{60}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion and Future Enhancements}{68}{chapter.8}
+\contentsline {section}{\numberline {8.1}Conclusion}{68}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Enhancements}{69}{section.8.2}
 \contentsfinish 
